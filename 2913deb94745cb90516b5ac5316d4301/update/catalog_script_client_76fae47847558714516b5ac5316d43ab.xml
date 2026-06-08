@@ -22,6 +22,7 @@
    if (isLoading || newValue == '') {
       return;
    }
+	console.log(newValue);
 
 
 
@@ -42,7 +43,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>76fae47847558714516b5ac5316d43ab</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>get Unit Price</sys_name>
         <sys_overrides/>
         <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
@@ -50,7 +51,7 @@
         <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
         <sys_update_name>catalog_script_client_76fae47847558714516b5ac5316d43ab</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-03 03:34:32</sys_updated_on>
+        <sys_updated_on>2026-06-08 14:37:56</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

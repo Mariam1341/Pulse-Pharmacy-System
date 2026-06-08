@@ -33,6 +33,7 @@
     // 2. Validate quantity
     var qtyField = g_form.getValue('quantity_needed');
     var validation = validateQuantity(qtyField);
+    g_cart.setQuantity(qtyField);
     if (!validation.valid) {
         errors.push(validation.message);
     }
@@ -93,7 +94,7 @@ function validateQuantity(value) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fcde387847198714516b5ac5316d43ee</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Validate Before Add to Cart</sys_name>
         <sys_overrides/>
         <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
@@ -101,7 +102,7 @@ function validateQuantity(value) {
         <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
         <sys_update_name>catalog_script_client_fcde387847198714516b5ac5316d43ee</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-06 21:22:37</sys_updated_on>
+        <sys_updated_on>2026-06-08 14:36:21</sys_updated_on>
         <table/>
         <type>onSubmit</type>
         <ui_type>10</ui_type>
