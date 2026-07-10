@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_theme_css_include">
+    <m2m_sp_theme_css_include action="INSERT_OR_UPDATE">
+        <order/>
+        <sp_css_include display_value="Font Awesome">de4ea61947910f14516b5ac5316d43da</sp_css_include>
+        <sp_theme display_value="Pulse Pharmacy Theme">d5857a8347c1c7d0516b5ac5316d4362</sp_theme>
+        <sys_class_name>m2m_sp_theme_css_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-05 02:24:59</sys_created_on>
+        <sys_id>1b5e6a1947910f14516b5ac5316d43ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Font Awesome.Pulse Pharmacy Theme</sys_name>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>m2m_sp_theme_css_include_1b5e6a1947910f14516b5ac5316d43ad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 02:24:59</sys_updated_on>
+    </m2m_sp_theme_css_include>
+</record_update>

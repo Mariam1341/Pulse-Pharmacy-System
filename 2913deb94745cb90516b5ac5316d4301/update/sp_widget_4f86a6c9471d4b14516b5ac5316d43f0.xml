@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>other</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.sp-tagline-color {
+	color: $sp-tagline-color;
+}
+
+@media (forced-colors: active) {
+  .sp-search-heading {
+    background-color: Canvas;
+  }
+}
+
+#homepage-search {
+  .aisearch {
+    --classicsponlydonotuse--rem-multipy: 1.6;
+  }
+  .aisearch-container {
+	  height: 36px;
+  }
+}
+  </css>
+        <data_table>sp_instance_ais</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>title,short_description,search_application,search_results_configuration,disable_all_suggestions,placeholder,ai_search_source_filter</field_list>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link() {
+      var geckoRegex = /Gecko\/\d+/; // Remove forced-colors css for Gecko engine (Firefox) as they already handle it
+      if (geckoRegex.test(navigator.userAgent)) {
+        $('.sp-search-heading').removeClass('sp-search-heading');
+      }
+}]]></link>
+        <name>Copy of Homepage Search</name>
+        <option_schema>[{"name":"typeahead_search","default_value":"{title: 'How can we help?', size: 'lg', color: 'default'}","section":"Presentation","label":"Typeahead Search","type":"string"}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[var aisEnabled = $sp.isAISearchEnabled();
+
+if (aisEnabled) {
+    options['utterancePlacement'] = 'body';
+    options['placement'] = 'dynamic-landing';
+	data.typeAheadSearch = $sp.getWidget('typeahead-search', options);
+} else
+	data.typeAheadSearch = $sp.getWidget('typeahead-search', options.typeahead_search);]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 07:12:21</sys_created_on>
+        <sys_id>4f86a6c9471d4b14516b5ac5316d43f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy of Homepage Search</sys_name>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sp_widget_4f86a6c9471d4b14516b5ac5316d43f0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 07:12:21</sys_updated_on>
+        <template><![CDATA[<div id="homepage-search" class="hidden-xs wrapper-xl">
+  <div class="wrapper-xl">
+  	<h2 class="text-center text-4x m-b-lg sp-tagline-color sp-search-heading" ng-bind="options.title"></h2>
+  	<div ng-if="options.short_description" class="text-center h4 m-b-lg sp-tagline-color sp-search-heading" ng-bind="options.short_description"></div>
+  	<sp-widget widget="data.typeAheadSearch"></sp-widget>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

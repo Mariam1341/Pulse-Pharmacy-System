@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_run_end/>
+        <entered_run_start/>
+        <entered_time>1970-01-01 06:00:00</entered_time>
+        <max_drift/>
+        <name>ExpiryCheck</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <repeat_every/>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_daysofweek/>
+        <run_end/>
+        <run_month>1</run_month>
+        <run_period/>
+        <run_start/>
+        <run_time>1970-01-01 06:00:00</run_time>
+        <run_type>daily</run_type>
+        <run_weekinmonth>1</run_weekinmonth>
+        <script><![CDATA[(function execute() {
+
+    var today = new GlideDate();
+    var thirtyDaysLater = new GlideDate();
+    thirtyDaysLater.setValue(gs.daysAgo(-30)); //add 30 days from today
+
+    var gr = new GlideRecord('x_1971078_smart_0_medicine_inventory'); 
+    gr.addActiveQuery(); 
+    gr.query();
+
+    while (gr.next()) {
+        var expDate = gr.getValue('expiration_date');
+        if (!expDate) continue; // Skip if no expiration date is set
+
+        var expGlide = new GlideDate();
+        expGlide.setValue(expDate);
+
+        // Check if expiration date is in the past
+        if (expGlide.compareTo(today) < 0) {
+            gr.status = 'expired';
+            gr.update();
+            gs.eventQueue('x_1971078_smart_0.pharmacy.expiry_alert', gr, 'expired', expDate);
+        } 
+        // Check if expiration date is within the next 30 days (including today)
+        else if (expGlide.compareTo(thirtyDaysLater) <= 0) {
+            gr.status = 'near expiry';
+            gr.update();
+            gs.eventQueue('x_1971078_smart_0.pharmacy.expiry_alert', gr, 'near expiry', expDate);
+        }
+    }
+})();]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-31 05:56:35</sys_created_on>
+        <sys_id>1d5e2d3b47094fd0516b5ac5316d432d</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>ExpiryCheck</sys_name>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sysauto_script_1d5e2d3b47094fd0516b5ac5316d432d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-07 03:22:29</sys_updated_on>
+        <time_zone>floating</time_zone>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

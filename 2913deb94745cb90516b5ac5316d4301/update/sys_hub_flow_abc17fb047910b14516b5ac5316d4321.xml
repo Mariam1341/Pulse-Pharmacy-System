@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>labelCacheCleanUpExecuted=true</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>medicine_approval_flow</internal_name>
+        <label_cache>[{"name":"{{static.1bd92eb14749cb90516b5ac5316d4331}}","label":"Pharmacy Admin","reference":"sys_user_group","reference_display":null,"type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"6f2d4849-ffa2-452c-8bb1-8507b437e105":["approval_conditions"]},"attributes":null},{"name":"6f2d4849-ffa2-452c-8bb1-8507b437e105.approval_state","label":"1➛Approval State","reference":null,"reference_display":"Approval State","type":"choice","base_type":"choice","parent_table_name":null,"column_name":null,"choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Request Record","reference":"sc_request","reference_display":"Request","type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"6f2d4849-ffa2-452c-8bb1-8507b437e105":["record"],"1faa3015-829a-45c3-91ac-9e6df8a58ab9":["conditions"]},"attributes":{"":""}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Medicine Approval Flow</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-03 18:02:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>abc17fb047910b14516b5ac5316d4321</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Medicine Approval Flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sys_hub_flow_abc17fb047910b14516b5ac5316d4321</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 21:54:15</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>85f9fa6947598f14516b5ac5316d43a0</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=abc17fb047910b14516b5ac5316d4321"/>
+    <sys_variable_value action="delete_multiple" query="document_key=abc17fb047910b14516b5ac5316d4321"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=abc17fb047910b14516b5ac5316d4321"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=abc17fb047910b14516b5ac5316d4321^sys_idNOT IN23c1773847910b14516b5ac5316d4309"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>abc17fb047910b14516b5ac5316d4321</id>
+        <name>Medicine Approval Flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-03 18:02:41</sys_created_on>
+        <sys_id>23c1773847910b14516b5ac5316d4309</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-03 18:02:41</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=23c1773847910b14516b5ac5316d4309"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=abc17fb047910b14516b5ac5316d4321^sys_idNOT INf8a8126d47158f14516b5ac5316d433c,fca8126d47158f14516b5ac5316d4361"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Medicine Approval Flow">abc17fb047910b14516b5ac5316d4321</model>
+        <model_id>abc17fb047910b14516b5ac5316d4321</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_abc17fb047910b14516b5ac5316d4321</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-05 19:28:32</sys_created_on>
+        <sys_id>f8a8126d47158f14516b5ac5316d433c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 19:28:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f8a8126d47158f14516b5ac5316d433c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Medicine Approval Flow">abc17fb047910b14516b5ac5316d4321</model>
+        <model_id>abc17fb047910b14516b5ac5316d4321</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_abc17fb047910b14516b5ac5316d4321</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>true</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-05 19:28:32</sys_created_on>
+        <sys_id>fca8126d47158f14516b5ac5316d4361</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 19:28:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=fca8126d47158f14516b5ac5316d4361"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=abc17fb047910b14516b5ac5316d4321"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=abc17fb047910b14516b5ac5316d4321"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=abc17fb047910b14516b5ac5316d4321^sys_idNOT IN46a852a547158f14516b5ac5316d4372"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Medicine Approval Flow">abc17fb047910b14516b5ac5316d4321</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-05 19:28:37</sys_created_on>
+        <sys_id>46a852a547158f14516b5ac5316d4372</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 19:34:44</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/91Z227jNhD9FUFPLeACuthxnLddO4sGSBPU9rYPQVagJNImlqa8FKWsG+TfS+p+oR1f5EWSJ8O8zZmjmTND6eFZJ8CFRL/SxwH1MccB1Xs6phwyCsh8s4ZiysunQjG3AtQHPGAb/QoBEsKejliwmsPVmgAOi8GA+ZDpV6Zh9PQYkAjONuGNLw4TR1Cwqh2rZ0vE2Lfrv8U/H4fitM0/tUFviYnPINWvHh57+howcQqXNp4LvLeYfk9N1BdjafjiAgAfAsOzTduyDMO67Jvuhe2alm8D6CKxS8WFAixX0CLHbpvb5USVCPiTQ+pDv2CpTSaDwL+npBxYCudSn1bgZ4j/E5b7hjyMQQSFhx5MZ4u/TsZeOowmgIMZZ5HHIwZzcgLswTDlxocIRISPq2Ppgvt14m+yhQOX5LsDEq3oXUqLXhyQPywxEoUCBFxLVyV2YVxGyWwZPE1zkF8wTWjJnCSBB0jxD3DOsBtxCedZfwKUhw4PHOD7ToXzK10eLHkJfEgmpT0xjhcLyBxM1xEP9ZeeHm7CMQFhWKIWdDk/Imk09SHb7SQOp97KfR7Da/7J4zjOQ/ulV+YMi6jY4BSPtZ05CZEF5bc4FPgennWUs5W5gPLQmUZUC6jmRUzQxDURHlp+upagkiGFblZgkfmBZpBAj1diCn0Nq//+wmGI6aKCvjCejLStk00VQsrFaUYfu5SNNulxw5+GfHSgHaaJkAuRZQylcpiG7SLTGBoDgHzbMDyroh1teFtx80aQ1DQkHzyLfnSjHmUi7Aqc5tPJHDKqibRX2Mf1nMmJeVGJ2EnQzI6gWS9tLbUPEtMiotPhST2wd7nW0OA8544VYeDHQOzwcx8P19Q95RSR4EkI9xFSigIGFyyIqN+UNHmmhsVvbUVHIuoC7/tus+UK7bfsQf7+1gS1pD0PZUA3Z5FSG5nuCPahIRTUFuLpDkYj1wMWQsOLIbTMhpSWwJRoP5aEvhIxsSrktsmpMuhjVa4cIKQnAGyJ6sEAT5fTLKaVYprOvVfZfFpC6gjwzCFSGFvquSDYh/lct9LRMh2XYtG9fKDLkTcwh0NvKG5wQj5QH7rA7FsDMBpe2JeDhny0wO0CzhVcVQXlNh36JTc6ESYJti3C8jWdegO3u/eVIiHkXNbRw9uLZD1IDVQKvXyyWiJnAdPkU9FuyoXaDIqynbwz6KzdCPiy1WgI05/FeM20bFTvAvqHAk6Xd0gqrjT7ULMFylvrgxpBEtdZP8PFEvYvByNkq+UMjVRyVsLbDvzj9EV7RlG8NR5VDdK+WRsrk39rR3NEHjYirNrq7OjFuiLF7JwU63yk2Cf3f3kab71NHwP2XdfDpP05vigGFDoBUoo+Rlr2Hhb6mrvR+BIKeolo+oUpTdrtsgyl3XurKophLeuiuit4kuam25NAExMa+yWOn6fqNULh3O8BoD8Eg4G9pZEfNd8DqCC+4sHHqYEHR1esCtadhfCwc5tnKkthJfnqwbRnkevUa3WlO81rZa17zevTq9iutxgKFO+xPs2zt9iNepRw5CRpX0vO7AvjLgXcqn/NbwGh5zD4I4LJVb8he9Ni4lT185AHRhbc8jHaMCrql3PRwMsVlFQVLtmm3aUTJQu7NC6lcR+Ju3xP359PjXiEiXiiTsp0GEQscXl6Pb6fTpx/P83Hf15Pnen1bD69Gc+vJ0dmRMbaFwyJDBAardwkfVWZ8vg/nYVoBrghAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=abc17fb047910b14516b5ac5316d4321^sys_idNOT IN504cd2a947158f14516b5ac5316d432f,74f9fa6947598f14516b5ac5316d4323"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Medicine Approval Flow">abc17fb047910b14516b5ac5316d4321</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-05 19:44:20</sys_created_on>
+        <sys_id>504cd2a947158f14516b5ac5316d432f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 19:45:08</sys_updated_on>
+        <ui_id>6f2d4849-ffa2-452c-8bb1-8507b437e105</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YTW/bOBD9K4HOjpeyLFnOLYiRoovdFkiyvcSBQJGjmAtackSxrVfwf+9IpD5qp66zcYCmyMUwZ8jh4+N7Junb0hHcOXNgHHg+fkwSj7gjl4QQhCGbEsrCIPDHnjNwUroE7ElXqzz7TGWUA1VZigls6CqDX7lQK0nXn7oIWwjJc0ids9u7gbOiOVYpIHfOyq3UoTAkjUFi13OL4+SqwfFDgMV6VSVUkYv03rb/smWum2CW8wrWaODA1wJSDognoVLBwFnSlNMiy9dtBEvzj6nsAguRFmbBS/pVif9wPjcgVccEcInMstE2I8uUCSczWlBEolmh85a4TDBQhhwOCdWyuOjHTIePq0LgIushBY1lMzqTepl+MIw4bYHexmiFIGBVrbSCbteRXC+yL1cNykuR1qTYpMwYlW2LFkhdrIsKT+locfMYqyBhifWjJe4KRqJqa0RdEyEuh/cSG8NEZl8QixL36ZCyaj1D5JsOLzE+q8OfaC6qxf2NZXDwwE7X31Qt/knFg4b3lY6CURxMSchPeULi03Ho+aeUATmFwPXB5wHzXc/ZDBy1VheSKtURhTsUPehqmYY2S1BkOK6GsFysinOE+RksF5uBdRFxkxFMpyMSu4R4hIQ+I6EHsTcJJh7l4SMiTQRIflwTHYBix0SXFsaP4FkL1c2o7vS9jerxJx9M4uhWCgl5TV7CyZ9jpZfxzNPVbij4ieTZXrFB7+D4N9N5+jKKPwBEo/g/DYptwW+D+z969970/vvrfRLukxojnaRyYCiMntDL8gI3vwAeuUOmc6Sp2GyOoP4DIDXqv2owbWO0eucZ0/VeCL4l+JnNnLyfdYon+xVvdHGI4L3Rm9x/Sbkzf5+2kmknJa6RJFR3X/Bzx2CfO2dze6eAuTOYO1XHqJJXnclB0mryNlVHy3KzMRGdU1vF7TW78Qv88VZ1V8UWwLU04e8iUW0BGz+G6w5gpnHdTMPJzFCzS1bzOGlwGmrEzolzbTvUlf64Ef2Txz/ayTN+TefO898sUXPRrfyAtn6xF8vx3xrjvfqDntjayzzLUi4qsKpnUvMEAHWert/dlqUq0Fxs6MZ8OoLYHU/GUxZPie8GsU+Z77kBH3ueu9nc7XroOaWeZr4DFt8eeegZ9TMyrAm7vw7soL4Buz8cbNKab3ysQ/CV3fqe677XYrSY7b1esU5bhs3OWopFOTxoUMWuV67axNOUfwCaRvk3Fs4WOqv1uvnY06YetvW0cZ94wBjRP6rxN4X/Mgq/+wah8LYX/hUAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=504cd2a947158f14516b5ac5316d432f"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Medicine Approval Flow">abc17fb047910b14516b5ac5316d4321</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>b471b158-2ec4-48fe-b0ae-59996122d5fb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-05 21:54:05</sys_created_on>
+        <sys_id>74f9fa6947598f14516b5ac5316d4323</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 21:54:05</sys_updated_on>
+        <ui_id>f0836142-ba75-444c-b4de-79856c5d2472</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VWbWvbMBD+K0GfTZCbNO3ybaQUBn2BtvRLGUa25URMsT1JTpqG/ved3uwscdNkmJGxT8Z3J92ju+c56WWNWIrGCGdDjEl4fnmB8WCA8Wg0SEgYx4NREuP4/AsKUE7mFCJlIVSkViUF04LwqrYRmYApZbLkZPXsPKSnit4b2JMZ46mgORq/fA9QSQTspqhA4/WW61A4nMSUQ+gj5O49WTwtEM1nDDkKlvj/G7d04o2FSDWUQYDoq6J5SgFDRrikAZqTPCWqEKvaIihJ73PeGGYsV7Ab0sGvkr1BvsGZjssonCqh1lf/Rq5E1pxdEUUelagSVQkXasFKqMe6PmZdyJaaO/j4PWji33Q82Y5P6eaC8B3qndKMVFxN/ixneGzOM53THvC+VKyArqOB7guJuT9+wat5fmd7iWqEzy1ks56rDzhXSSg2LXVDdYdcu7LHWbF88N24ZrnB5Zy8SAiv/4hSgsWV0nVZoyyNMkZ5GrGcs1xngrZp+lBO55AhmpOyZPk0KkWxYGZXOMu8P+Xw0894sdS1YNO8TxJ98j4Qi/SvwX5lzM9EMF2FW9gGFgc64QyWunyRTAQrVbRk6ZSqJruPSgu1JPxHm98xLvKNMsdD7wGSKznhRMqm2EDT6Gela2BL76oXmUaZJQbFVzjBgrpCaQ4Y2SYXe2V7viVR2+gNvuzOj6MnxwEQfBXuNSN78eojVG502J6biN/Hx7V29O6sw9O7sxFyibsZIW0S35XgUQrclZam2r+jrOOJb2vzCfuHey+tUdjwDJocCSqhpHKD/SHGeFcBYWDNx8ngACxeBrfktfdQg2lF6JQAJKVTM5k2ZfCttjoNDDvTwPB0NeCb1XoD+Z51fAGdiho+E8Ll/tcbbmiWFHnKNMZNHXRwCxyAwNN/sgmhDZZ/QW7bbto28M+iDiWAT1cEnV8Ep8Lwg+b9fpIN44ZPdru/yHCT3DP8yWXfAuN4bX7bnjdm2dbzBv+fz5vTHNwAiHFgSGRbKItKmFIuooRX0jgEyaXdq8Mx//0XS/ooOjUQAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=74f9fa6947598f14516b5ac5316d4323"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=abc17fb047910b14516b5ac5316d4321"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=abc17fb047910b14516b5ac5316d4321^sys_idNOT IN425ddee547558f14516b5ac5316d43f1,9dccdaa547558f14516b5ac5316d431d"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ca5ddee547558f14516b5ac5316d43f0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Medicine Approval Flow">abc17fb047910b14516b5ac5316d4321</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>b471b158-2ec4-48fe-b0ae-59996122d5fb</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-05 19:49:06</sys_created_on>
+        <sys_id>425ddee547558f14516b5ac5316d43f1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 19:49:06</sys_updated_on>
+        <ui_id>89250888-4d59-4155-8e01-df43d1b468c6</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/41STWvjMBD9LzobYztL2ORWWgqF7Rba0stSzFgaJ6KypNVHUm/If99RrDihp56sefP13vMcmInBxuBfzY33cqPZ+s97waROGL0PTAq2ZvVK9Ku6WvFFs1w0VdX8/FF3y0VXN2IBKJasYBoGpEoZcPAU7kDFFNNTSG8VjG8XhG+lEg7zMguOegM6tj58SX13uYIOFZU+5O1fyITRptAhN06cgV+553lG6ZNINFXB8DOgFkjre1AeCzaAFhCMG9k6uEiAQxBPWo1zxVbqMMkb4NPLf7SxrqpU2CMJ4ln7HLbZlwnu7yDAC43mIbrZJiM5+skKgT1EFW6vsangyQZp9NQSoFPnbqPioH9PTrB5wNVviJ5IoE1CE/Wso3/Zmv3zmeW91CdTclIZDmqOIAQnuxgSnwNDhQMNagewVupNa53ZyVMzcRnKjaKg7JXZ09J0aiXwRLwkX6G8J/zuBL+Bk0nFI42h5mPB/OhvFXh/0UImtn9jYjIpyxrayYbUwp204YYW7DDTPb6nq5xmz55y6YnCa8IezjefEiNdkOTX0N64j0T+gh3/A6WAuMw9AwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ddccdaa547558f14516b5ac5316d431c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Medicine Approval Flow">abc17fb047910b14516b5ac5316d4321</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-05 19:46:35</sys_created_on>
+        <sys_id>9dccdaa547558f14516b5ac5316d431d</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 21:54:05</sys_updated_on>
+        <ui_id>b471b158-2ec4-48fe-b0ae-59996122d5fb</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYJnWdDTsX0LHAQo0DZAE+TSBsKKpGKilKiSVBxV8L93qYdtJC7qoDn2Zg53lzPDodUR1di6seZOXRojHiuy+vbgEVE5DH93RDCyIktIizQMUhpH8zgKgmiRhPk8zsOIxcCTOfFIBSXHSqoqJqxQFUJPIBuHdd28iFiySJazooBolqQRnS3yPJwt0uAiT+ILjrN9qGutsCczFizf7b43QRCzAeUM5zFhagnt/TuPpRshmeaj9Bo0KrFck1X3YutcKyTkXGLp+siLE/bYtnaQsVpUj+P609h6O4FKM0clCjzCny2vGFJeFSAN90gJFQOrdEtWVjcIaA7sppLtvmIjKovTiKt9NuIXd5OCwFUWHHVRPuzul9no8QAXV2ABqTTUNnospRslKDeDI4wX0Ei7PsaGgpu6V9m3WMjl1K1kU1ZfBjPIfsB0pYg0Bknw2il13Echxe1Gbb9OLK9F1bsybkpFQe5XYNG7vLGOT0e45CUOykq8cHQ0c7cu+mbkUvqPEhd+IdUWD3X594E64j4aC/414lc9fA9aOBWfcQw2YxZMZqgW9aStP5zsPGJas5ZgzEEjmpv9bBzDQfGoLRvscS39oEs8+ImPMnbe+PKKAIpwScPTcYP4RLSyHjg8v9cv582hP4PFq9B/GLL8Z35vyX/4l/yPyFkPIE3/5/+f8+9o5mAEzfpvBY5zf0Hv+AAeXICHQ/dmU2GQ253DPk5fKLfRYqIEPYa2Sv9wqg7Y7jdROTHV6wYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=abc17fb047910b14516b5ac5316d4321"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=abc17fb047910b14516b5ac5316d4321"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_abc17fb047910b14516b5ac5316d4321</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-05 19:28:32</sys_created_on>
+        <sys_id>3ca8126d47158f14516b5ac5316d436f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 19:28:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_abc17fb047910b14516b5ac5316d4321</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-05 19:28:32</sys_created_on>
+        <sys_id>f0a8126d47158f14516b5ac5316d435e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 19:28:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_abc17fb047910b14516b5ac5316d4321"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_abc17fb047910b14516b5ac5316d4321"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=abc17fb047910b14516b5ac5316d4321"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=abc17fb047910b14516b5ac5316d4321"/>
+</record_update>

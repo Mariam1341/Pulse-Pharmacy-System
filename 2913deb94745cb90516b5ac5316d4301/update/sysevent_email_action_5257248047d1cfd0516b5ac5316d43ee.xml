@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="SLA" name="SLA">be9d02137f232200ee2e108c3ffa915b</category>
+        <collection>task_sla</collection>
+        <condition/>
+        <content_type>multipart/mixed</content_type>
+        <default_digest>false</default_digest>
+        <default_interval/>
+        <description>Send an email to the pharmay admin</description>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digest_type>single</digest_type>
+        <digestable>false</digestable>
+        <enable_dynamic_translation>false</enable_dynamic_translation>
+        <event_name>sla.warning.breach.parm</event_name>
+        <event_parm_1>true</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>event</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message><![CDATA[SLA breach warning for ${task.number}]]></message>
+        <message_html><![CDATA[<p>&nbsp;</p>
+<style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .container { max-width: 600px; margin: 0 auto; border: 1px solid #ccc; border-radius: 8px; overflow: hidden; }
+        .header { background-color: #E60000; color: white; padding: 20px; text-align: center; }
+        .content { padding: 20px; }
+        .breach { background-color: #f2dede; border-left: 5px solid #a94442; color: #a94442; padding: 15px; margin: 15px 0; }
+        .footer { background-color: #f4f4f4; padding: 10px; font-size: 12px; text-align: center; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th { background-color: #f4f4f4; text-align: left; padding: 8px; }
+        td { border-bottom: 1px solid #ddd; padding: 8px; }
+    </style>
+<div class="container">
+<div class="header">
+<h1>Pulse Pharmacy</h1>
+<p>SLA Breach - Immediate Action Required</p>
+</div>
+<div class="content">
+<h2>]]>🔴<![CDATA[ URGENT: SLA has been breached!</h2>
+<p>The service level agreement (SLA) for the following ${current.task.table.label} has reached 100% and has been breached.</p>
+<div class="breach"><strong>Severity:</strong> Critical. Immediate escalation required.</div>
+<table style="width: 100%;">
+<tbody>
+<tr>
+<th style="width: 48.4776%;">Task Number</th>
+<td style="width: 51.5061%;">${task.number}</td>
+</tr>
+<tr>
+<th style="width: 48.4776%;">SLA Name</th>
+<td style="width: 51.5061%;">${sla.name}</td>
+</tr>
+<tr>
+<th style="width: 48.4776%;">Time Remaining (Original)</th>
+<td style="width: 51.5061%;">0 (Breached)</td>
+</tr>
+</tbody>
+</table>
+<p><a href="${current.task.getLink()}">Click here to view the task</a> and take immediate action.</p>
+</div>
+<div class="footer">&copy; 2025 Pulse Pharmacy &middot; Your Health, Our Beat</div>
+</div>]]></message_html>
+        <message_list>b140c70253020200601fa3fc9ec58774</message_list>
+        <message_text/>
+        <name>SLA breached Parm for pharmacy </name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields/>
+        <recipient_groups name="Pharmacy Admin">1bd92eb14749cb90516b5ac5316d4331</recipient_groups>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>false</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>🔴 SLA Breach: ${task.number} has exceeded the response SLA - Immediate action required</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-31 19:22:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5257248047d1cfd0516b5ac5316d43ee</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>SLA breached Parm for pharmacy </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sysevent_email_action_5257248047d1cfd0516b5ac5316d43ee</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-07 07:31:04</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>5257248047d1cfd0516b5ac5316d43ee</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-31 19:25:53</sys_created_on>
+        <sys_id>5d1864844791cfd0516b5ac5316d43d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-31 19:25:53</sys_updated_on>
+        <table>sysevent_email_action</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item">
+    <sp_rectangle_menu_item action="DELETE">
+        <active>true</active>
+        <color>default</color>
+        <condition/>
+        <display_1/>
+        <display_2/>
+        <display_date/>
+        <filter/>
+        <glyph>empty</glyph>
+        <hint/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <label>Request Medicine</label>
+        <order>100</order>
+        <record_script/>
+        <sc_cat_item display_value="SingleMedicineRequest">3bbd07064755c354516b5ac5316d4379</sc_cat_item>
+        <sc_category/>
+        <short_description/>
+        <sp_page display_value="sc_cat_item">9f12251147132100ba13a5554ee490f4</sp_page>
+        <sp_rectangle_menu display_value="Pulse Pharmacy Menu">f0ce907f470d0fd0516b5ac5316d4324</sp_rectangle_menu>
+        <sp_rectangle_menu_item/>
+        <sys_class_name>sp_rectangle_menu_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-31 00:47:03</sys_created_on>
+        <sys_id>a657e073478d0fd0516b5ac5316d4316</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Request Medicine</sys_name>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sp_rectangle_menu_item_a657e073478d0fd0516b5ac5316d4316</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-08 13:15:19</sys_updated_on>
+        <table/>
+        <type>sc_cat_item</type>
+        <url/>
+        <url_target/>
+    </sp_rectangle_menu_item>
+    <sys_translated_text action="DELETE" query="documentkey=a657e073478d0fd0516b5ac5316d4316"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</application>
+        <file_path/>
+        <instance_id>72baa3bf93706614d9f6ddd548373c01</instance_id>
+        <instance_name>dev329537</instance_name>
+        <name>sp_rectangle_menu_item_a657e073478d0fd0516b5ac5316d4316</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item"><sp_rectangle_menu_item action="INSERT_OR_UPDATE"><active>true</active><color>default</color><condition/><display_1/><display_2/><display_date/><filter/><glyph>empty</glyph><hint/><kb_article/><kb_category/><kb_topic/><label>Request Medicine</label><order>100</order><record_script/><sc_cat_item display_value="SingleMedicineRequest">3bbd07064755c354516b5ac5316d4379</sc_cat_item><sc_category/><short_description/><sp_page display_value="sc_cat_item">9f12251147132100ba13a5554ee490f4</sp_page><sp_rectangle_menu display_value="Pulse Pharmacy Menu">f0ce907f470d0fd0516b5ac5316d4324</sp_rectangle_menu><sp_rectangle_menu_item/><sys_class_name>sp_rectangle_menu_item</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-31 00:47:03</sys_created_on><sys_id>a657e073478d0fd0516b5ac5316d4316</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Request Medicine</sys_name><sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package><sys_policy/><sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope><sys_update_name>sp_rectangle_menu_item_a657e073478d0fd0516b5ac5316d4316</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-08 13:15:19</sys_updated_on><table/><type>sc_cat_item</type><url/><url_target/></sp_rectangle_menu_item><sys_translated_text action="delete_multiple" query="documentkey=a657e073478d0fd0516b5ac5316d4316"/></record_update>]]></payload>
+        <payload_hash>53596444</payload_hash>
+        <record_name>Request Medicine</record_name>
+        <reverted_from/>
+        <source>2513deb94745cb90516b5ac5316d436e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-08 13:15:19</sys_created_on>
+        <sys_id>43ff5c2647198754516b5ac5316d4337</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19ea75f95af0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-08 13:15:19</sys_updated_on>
+        <type>Menu Item</type>
+        <update_guid>03ff5c26e5198754dd907745e92e2536</update_guid>
+        <update_guid_history>03ff5c26e5198754dd907745e92e2536:53596444,c40868b39c8d0fd0d1d641d2c87425b4:-715860555</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Request Medicine">5fc8206a47598754516b5ac5316d4336</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-08 13:53:51</sys_created_on>
+        <sys_db_object display_value="" name="sp_rectangle_menu_item">sp_rectangle_menu_item</sys_db_object>
+        <sys_id>95beb1d805144ab186ee6cf568ec1c51</sys_id>
+        <sys_metadata>a657e073478d0fd0516b5ac5316d4316</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request Medicine</sys_name>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_scope_delete display_value="">1f0a401f3f154f8685d0015f93a89904</sys_scope_delete>
+        <sys_update_name>sp_rectangle_menu_item_a657e073478d0fd0516b5ac5316d4316</sys_update_name>
+        <sys_update_version display_value="sp_rectangle_menu_item_a657e073478d0fd0516b5ac5316d4316">43ff5c2647198754516b5ac5316d4337</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-08 13:53:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

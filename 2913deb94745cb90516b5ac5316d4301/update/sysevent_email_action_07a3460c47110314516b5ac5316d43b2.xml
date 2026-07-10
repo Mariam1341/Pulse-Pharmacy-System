@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>true</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <collection>sc_req_item</collection>
+        <condition/>
+        <content_type>text/html</content_type>
+        <default_digest>false</default_digest>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digest_type>single</digest_type>
+        <digestable>false</digestable>
+        <enable_dynamic_translation>false</enable_dynamic_translation>
+        <event_name>activate.life.cycle.migration</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>engine</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p>&nbsp;</p>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    body { margin: 0; padding: 0; background-color: #F8FAFC; font-family: 'Inter', sans-serif; }
+    .container { max-width: 580px; margin: 40px auto; background: #FFFFFF; border-radius: 16px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); overflow: hidden; border: 1px solid #E2E8F0; }
+    .header { background: #E60000; padding: 24px 32px; text-align: center; }
+    .header h1 { margin: 0; font-size: 24px; font-weight: 700; color: #FFFFFF; }
+    .header p { margin: 8px 0 0; font-size: 14px; color: #FFD6D6; }
+    .content { padding: 32px; }
+    .alert-badge { background: #FEE2E2; border-left: 4px solid #E60000; padding: 16px; border-radius: 8px; margin: 20px 0; color: #7F1D1D; font-weight: 500; }
+    .order-details { background: #F8FAFC; border-radius: 12px; padding: 20px; margin: 24px 0; border: 1px solid #E2E8F0; }
+    .order-details table { width: 100%; border-collapse: collapse; }
+    .order-details td { padding: 10px 0; border-bottom: 1px solid #E2E8F0; }
+    .order-details td.label { font-weight: 600; color: #334155; width: 35%; }
+    .order-details td.value { color: #0F172A; font-weight: 500; }
+    .btn { display: inline-block; background-color: #E60000; color: white; padding: 12px 28px; border-radius: 40px; text-decoration: none; font-weight: 600; margin: 16px 0 8px; }
+    .footer { background: #F1F5F9; padding: 20px 32px; text-align: center; font-size: 12px; color: #64748B; border-top: 1px solid #E2E8F0; }
+    .footer a { color: #E60000; text-decoration: none; }
+    hr { border: none; height: 1px; background: #E2E8F0; margin: 24px 0; }
+</style>
+<div class="container">
+<div class="header">
+<h1>❤️ Pulse Pharmacy</h1>
+<p>Admin Notification</p>
+</div>
+<div class="content">
+<div class="alert-badge">]]>🆕<![CDATA[ <strong>New customer request</strong> &ndash; Action required</div>
+<p style="font-size: 16px; color: #334155;">A new medicine request has been submitted and requires your review.</p>
+<div class="order-details">
+<h3 style="margin-top: 0;">]]>📋<![CDATA[ Request Details</h3>
+<table>
+<tbody>
+<tr>
+<td class="label">]]>👤<![CDATA[ Customer</td>
+<td class="value">${opened_by.name}</td>
+</tr>
+<tr>
+<td class="label">]]>📅<![CDATA[ Requested On</td>
+<td class="value">${sys_created_on}</td>
+</tr>
+<tr>
+<td class="label">]]>📦<![CDATA[ Order Number</td>
+<td class="value">${number}</td>
+</tr>
+<tr>
+<td class="label">]]>💊<![CDATA[ Medicine</td>
+<td class="value"><strong>${variables.medicine_name.getDisplayValue()}</strong></td>
+</tr>
+<tr>
+<td class="label">]]>🔢<![CDATA[ Quantity</td>
+<td class="value">${variables.quantity_needed}</td>
+</tr>
+<tr>
+<td class="label">]]>📅<![CDATA[ Preferred Pickup</td>
+<td class="value">${variables.preferred_pickup_date}</td>
+</tr>
+<tr>
+<td class="label">]]>📝<![CDATA[ Customer Notes</td>
+<td class="value">${variables.customer_notes}</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="text-align: center;"><a class="btn" href="${URI_REF}" target="_blank" rel="noopener">Review Request &rarr;</a></div>
+<hr>
+<p style="font-size: 12px; color: #64748b; text-align: center;">Pulse Pharmacy &ndash; 15 El-Tahrir St, Cairo</p>
+</div>
+<div class="footer">&copy; 2025 Pulse Pharmacy &middot; Your Health, Our Beat</div>
+</div>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>New Request Admin</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields/>
+        <recipient_groups name="Pharmacy Admin">1bd92eb14749cb90516b5ac5316d4331</recipient_groups>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>New medicine request from ${opened_by.name}</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 02:06:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>07a3460c47110314516b5ac5316d43b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Request Admin</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sysevent_email_action_07a3460c47110314516b5ac5316d43b2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-01 02:06:04</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

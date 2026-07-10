@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <advanced_placeholder_dimensions>false</advanced_placeholder_dimensions>
+        <async_load>false</async_load>
+        <async_load_device_type>desktop,tablet,mobile</async_load_device_type>
+        <async_load_trigger>viewport</async_load_trigger>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>2</order>
+        <placeholder_dimensions>{&#13;	"mobile": {&#13;		"height": "250px",&#13;		"width": "100%"&#13;	},&#13;	"desktop": {&#13;		"height": "250px",&#13;		"width": "100%"&#13;	},&#13;	"tablet": {&#13;		"height": "250px",&#13;		"width": "100%"&#13;	}&#13;}</placeholder_dimensions>
+        <placeholder_dimensions_script><![CDATA[function evaluateConfig(options) { return {	"mobile": {		"height": "250px",		"width": "100%"	},	"desktop": {		"height": "250px",		"width": "100%"	},	"tablet": {		"height": "250px",		"width": "100%"	}}; }]]></placeholder_dimensions_script>
+        <placeholder_template>&lt;!-- 
+	AngularJS template with configurable options.
+	Use the `options` object to control dynamic behavior.
+	Example: Display an element when max row count is 10:
+	&lt;div ng-if="options.maxRowCount === 10"&gt;&lt;/div&gt;
+	The `skeleton-container` class is used for loading placeholders.
+--&gt;
+	&lt;div class="skeleton-container"&gt;
+	&lt;!-- Header Skeleton --&gt;
+	&lt;div class="skeleton-box skeleton-header"&gt;&lt;/div&gt;
+	&lt;!-- Body Skeleton --&gt;
+	&lt;div class="skeleton-box skeleton-line"&gt;&lt;/div&gt;
+	&lt;div class="skeleton-box skeleton-line small"&gt;&lt;/div&gt;
+	&lt;div class="skeleton-box skeleton-line medium"&gt;&lt;/div&gt;
+&lt;/div&gt;</placeholder_template>
+        <preserve_placeholder_size>false</preserve_placeholder_size>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">039ec42d47114f14516b5ac5316d43e9</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-05 09:25:48</sys_created_on>
+        <sys_id>e7aec82d47114f14516b5ac5316d4325</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sp_instance_e7aec82d47114f14516b5ac5316d4325</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 10:44:38</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<!-- Google Fonts & Font Awesome -->\r\n<p><link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap\" rel=\"stylesheet\"></p>\r\n<p> </p>\r\n<p><link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css\" rel=\"stylesheet\"></p>\r\n<style>\r\n        * { margin: 0; padding: 0; box-sizing: border-box; }\r\n        body { font-family: 'Inter', sans-serif; background-color: #F8FAFC; color: #0F172A; line-height: 1.5; }\r\n        .portal-container { max-width: 1280px; margin: 0 auto; padding: 20px; }\r\n\r\n         /* Carousel / Featured Tips */\r\n        .carousel-section { background: #F1F5F9; border-radius: 32px; padding: 2rem; margin-bottom: 50px; text-align: center; }\r\n        .carousel-content { background: white; border-radius: 28px; padding: 2rem; max-width: 700px; margin: 1rem auto; box-shadow: 0 8px 20px rgba(0,0,0,0.05); }\r\n        .carousel-content i { font-size: 2rem; color: #E60000; margin-bottom: 1rem; }\r\n        .carousel-content p { font-size: 1rem; color: #334155; margin-bottom: 1rem; }\r\n        .carousel-dots { display: flex; justify-content: center; gap: 10px; margin-top: 1rem; }\r\n        .dot { width: 10px; height: 10px; background: #CBD5E1; border-radius: 50%; cursor: pointer; }\r\n        .dot.active { background: #E60000; width: 24px; border-radius: 10px; }\r\n </style>\r\n<!-- ========== CAROUSEL / FEATURED TIPS (OOB: Carousel Widget) ========== -->\r\n<div class=\"carousel-section\">\r\n<div class=\"carousel-content\">\r\n<p><strong>\"Staying hydrated boosts your energy and mental clarity. Drink at least 8 glasses of water daily!\"</strong></p>\r\n</div>\r\n<div class=\"carousel-dots\">&nbsp;</div>\r\n</div>",
+		"displayValue": "<!-- Google Fonts & Font Awesome -->\n<p><link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap\" rel=\"stylesheet\"></p>\n<p> </p>\n<p><link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css\" rel=\"stylesheet\"></p>\n<style>\n        * { margin: 0; padding: 0; box-sizing: border-box; }\n        body { font-family: 'Inter', sans-serif; background-color: #F8FAFC; color: #0F172A; line-height: 1.5; }\n        .portal-container { max-width: 1280px; margin: 0 auto; padding: 20px; }\n\n         /* Carousel / Featured Tips */\n        .carousel-section { background: #F1F5F9; border-radius: 32px; padding: 2rem; margin-bottom: 50px; text-align: center; }\n        .carousel-content { background: white; border-radius: 28px; padding: 2rem; max-width: 700px; margin: 1rem auto; box-shadow: 0 8px 20px rgba(0,0,0,0.05); }\n        .carousel-content i { font-size: 2rem; color: #E60000; margin-bottom: 1rem; }\n        .carousel-content p { font-size: 1rem; color: #334155; margin-bottom: 1rem; }\n        .carousel-dots { display: flex; justify-content: center; gap: 10px; margin-top: 1rem; }\n        .dot { width: 10px; height: 10px; background: #CBD5E1; border-radius: 50%; cursor: pointer; }\n        .dot.active { background: #E60000; width: 24px; border-radius: 10px; }\n </style>\n<!-- ========== CAROUSEL / FEATURED TIPS (OOB: Carousel Widget) ========== -->\n<div class=\"carousel-section\">\n<div class=\"carousel-content\">\n<p><strong>\"Staying hydrated boosts your energy and mental clarity. Drink at least 8 glasses of water daily!\"</strong></p>\n</div>\n<div class=\"carousel-dots\">&nbsp;</div>\n</div>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=e7aec82d47114f14516b5ac5316d4325"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</application>
+        <file_path/>
+        <instance_id>72baa3bf93706614d9f6ddd548373c01</instance_id>
+        <instance_name>dev329537</instance_name>
+        <name>sp_instance_e7aec82d47114f14516b5ac5316d4325</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced_placeholder_dimensions&gt;false&lt;/advanced_placeholder_dimensions&gt;&lt;async_load&gt;false&lt;/async_load&gt;&lt;async_load_device_type&gt;desktop,tablet,mobile&lt;/async_load_device_type&gt;&lt;async_load_trigger&gt;viewport&lt;/async_load_trigger&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;2&lt;/order&gt;&lt;placeholder_dimensions&gt;{&amp;#13;	"mobile": {&amp;#13;		"height": "250px",&amp;#13;		"width": "100%"&amp;#13;	},&amp;#13;	"desktop": {&amp;#13;		"height": "250px",&amp;#13;		"width": "100%"&amp;#13;	},&amp;#13;	"tablet": {&amp;#13;		"height": "250px",&amp;#13;		"width": "100%"&amp;#13;	}&amp;#13;}&lt;/placeholder_dimensions&gt;&lt;placeholder_dimensions_script&gt;&lt;![CDATA[function evaluateConfig(options) { return {	"mobile": {		"height": "250px",		"width": "100%"	},	"desktop": {		"height": "250px",		"width": "100%"	},	"tablet": {		"height": "250px",		"width": "100%"	}}; }]]&gt;&lt;/placeholder_dimensions_script&gt;&lt;placeholder_template&gt;&amp;lt;!-- 
+	AngularJS template with configurable options.
+	Use the `options` object to control dynamic behavior.
+	Example: Display an element when max row count is 10:
+	&amp;lt;div ng-if="options.maxRowCount === 10"&amp;gt;&amp;lt;/div&amp;gt;
+	The `skeleton-container` class is used for loading placeholders.
+--&amp;gt;
+	&amp;lt;div class="skeleton-container"&amp;gt;
+	&amp;lt;!-- Header Skeleton --&amp;gt;
+	&amp;lt;div class="skeleton-box skeleton-header"&amp;gt;&amp;lt;/div&amp;gt;
+	&amp;lt;!-- Body Skeleton --&amp;gt;
+	&amp;lt;div class="skeleton-box skeleton-line"&amp;gt;&amp;lt;/div&amp;gt;
+	&amp;lt;div class="skeleton-box skeleton-line small"&amp;gt;&amp;lt;/div&amp;gt;
+	&amp;lt;div class="skeleton-box skeleton-line medium"&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;&lt;/placeholder_template&gt;&lt;preserve_placeholder_size&gt;false&lt;/preserve_placeholder_size&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;039ec42d47114f14516b5ac5316d43e9&lt;/sp_column&gt;&lt;sp_widget display_value="HTML"&gt;8679ef89cb21120000f8d856634c9c4f&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-05 09:25:48&lt;/sys_created_on&gt;&lt;sys_id&gt;e7aec82d47114f14516b5ac5316d4325&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0"&gt;2913deb94745cb90516b5ac5316d4301&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Smart Pharmacy Management System"&gt;2913deb94745cb90516b5ac5316d4301&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_e7aec82d47114f14516b5ac5316d4325&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-05 10:44:38&lt;/sys_updated_on&gt;&lt;title/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"html": {
+		"value": "&lt;!-- Google Fonts &amp; Font Awesome --&gt;\r\n&lt;p&gt;&lt;link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;amp;display=swap\" rel=\"stylesheet\"&gt;&lt;/p&gt;\r\n&lt;p&gt; &lt;/p&gt;\r\n&lt;p&gt;&lt;link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css\" rel=\"stylesheet\"&gt;&lt;/p&gt;\r\n&lt;style&gt;\r\n        * { margin: 0; padding: 0; box-sizing: border-box; }\r\n        body { font-family: 'Inter', sans-serif; background-color: #F8FAFC; color: #0F172A; line-height: 1.5; }\r\n        .portal-container { max-width: 1280px; margin: 0 auto; padding: 20px; }\r\n\r\n         /* Carousel / Featured Tips */\r\n        .carousel-section { background: #F1F5F9; border-radius: 32px; padding: 2rem; margin-bottom: 50px; text-align: center; }\r\n        .carousel-content { background: white; border-radius: 28px; padding: 2rem; max-width: 700px; margin: 1rem auto; box-shadow: 0 8px 20px rgba(0,0,0,0.05); }\r\n        .carousel-content i { font-size: 2rem; color: #E60000; margin-bottom: 1rem; }\r\n        .carousel-content p { font-size: 1rem; color: #334155; margin-bottom: 1rem; }\r\n        .carousel-dots { display: flex; justify-content: center; gap: 10px; margin-top: 1rem; }\r\n        .dot { width: 10px; height: 10px; background: #CBD5E1; border-radius: 50%; cursor: pointer; }\r\n        .dot.active { background: #E60000; width: 24px; border-radius: 10px; }\r\n &lt;/style&gt;\r\n&lt;!-- ========== CAROUSEL / FEATURED TIPS (OOB: Carousel Widget) ========== --&gt;\r\n&lt;div class=\"carousel-section\"&gt;\r\n&lt;div class=\"carousel-content\"&gt;\r\n&lt;p&gt;&lt;strong&gt;\"Staying hydrated boosts your energy and mental clarity. Drink at least 8 glasses of water daily!\"&lt;/strong&gt;&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;div class=\"carousel-dots\"&gt;&amp;nbsp;&lt;/div&gt;\r\n&lt;/div&gt;",
+		"displayValue": "&lt;!-- Google Fonts &amp; Font Awesome --&gt;\n&lt;p&gt;&lt;link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;amp;display=swap\" rel=\"stylesheet\"&gt;&lt;/p&gt;\n&lt;p&gt; &lt;/p&gt;\n&lt;p&gt;&lt;link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css\" rel=\"stylesheet\"&gt;&lt;/p&gt;\n&lt;style&gt;\n        * { margin: 0; padding: 0; box-sizing: border-box; }\n        body { font-family: 'Inter', sans-serif; background-color: #F8FAFC; color: #0F172A; line-height: 1.5; }\n        .portal-container { max-width: 1280px; margin: 0 auto; padding: 20px; }\n\n         /* Carousel / Featured Tips */\n        .carousel-section { background: #F1F5F9; border-radius: 32px; padding: 2rem; margin-bottom: 50px; text-align: center; }\n        .carousel-content { background: white; border-radius: 28px; padding: 2rem; max-width: 700px; margin: 1rem auto; box-shadow: 0 8px 20px rgba(0,0,0,0.05); }\n        .carousel-content i { font-size: 2rem; color: #E60000; margin-bottom: 1rem; }\n        .carousel-content p { font-size: 1rem; color: #334155; margin-bottom: 1rem; }\n        .carousel-dots { display: flex; justify-content: center; gap: 10px; margin-top: 1rem; }\n        .dot { width: 10px; height: 10px; background: #CBD5E1; border-radius: 50%; cursor: pointer; }\n        .dot.active { background: #E60000; width: 24px; border-radius: 10px; }\n &lt;/style&gt;\n&lt;!-- ========== CAROUSEL / FEATURED TIPS (OOB: Carousel Widget) ========== --&gt;\n&lt;div class=\"carousel-section\"&gt;\n&lt;div class=\"carousel-content\"&gt;\n&lt;p&gt;&lt;strong&gt;\"Staying hydrated boosts your energy and mental clarity. Drink at least 8 glasses of water daily!\"&lt;/strong&gt;&lt;/p&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-dots\"&gt;&amp;nbsp;&lt;/div&gt;\n&lt;/div&gt;"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=e7aec82d47114f14516b5ac5316d4325"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1537125021</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>2513deb94745cb90516b5ac5316d436e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-05 10:44:38</sys_created_on>
+        <sys_id>d2b0642947d14f14516b5ac5316d4341</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e97628af80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 10:44:38</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>dab06429bbd14f141c7c584a19ae0333</update_guid>
+        <update_guid_history>dab06429bbd14f141c7c584a19ae0333:1537125021,8f2f4c2def114f142166e3619b19365d:2018541630,67aec82dd2114f14b8888d7494c10e28:-1444339298</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">9f76c3d247594754516b5ac5316d432c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-08 06:44:18</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>02f5720a68044d7a80462162adbce064</sys_id>
+        <sys_metadata>e7aec82d47114f14516b5ac5316d4325</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_scope_delete display_value="">1f0a401f3f154f8685d0015f93a89904</sys_scope_delete>
+        <sys_update_name>sp_instance_e7aec82d47114f14516b5ac5316d4325</sys_update_name>
+        <sys_update_version display_value="sp_instance_e7aec82d47114f14516b5ac5316d4325">d2b0642947d14f14516b5ac5316d4341</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-08 06:44:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="email_client=true,hasWorkflow=true,live_feed=true,all_tables.query_hints=true" audit="true" db_object_id="b21fe242187632108bb255f46a373aff" extends="task" label="Incident" max_length="40" name="incident" text_index="true" type="collection">
+        <element label="medicine" max_length="32" name="x_1971078_smart_0_medicine" reference="x_1971078_smart_0_medicine_inventory" type="reference"/>
+        <element label="medicine" max_length="32" name="x_1971078_smart_0_u_medicine" reference="x_1971078_smart_0_medicine_inventory" type="reference"/>
+    </element>
+</database>

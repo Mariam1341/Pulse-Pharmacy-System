@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="INSERT_OR_UPDATE">
+        <child display_value="Copy of Homepage Search">4f86a6c9471d4b14516b5ac5316d43f0</child>
+        <cloned>2026-06-04 07:12:21</cloned>
+        <last_validated>2026-06-04 07:12:21</last_validated>
+        <parent display_value="Homepage Search">200fbd96cb20020000f8d856634c9ca1</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;other&lt;/category&gt;&lt;client_script/&gt;&lt;controller_as/&gt;&lt;css&gt;.sp-tagline-color {
+	color: $sp-tagline-color;
+}
+
+@media (forced-colors: active) {
+  .sp-search-heading {
+    background-color: Canvas;
+  }
+}
+
+#homepage-search {
+  .aisearch {
+    --classicsponlydonotuse--rem-multipy: 1.6;
+  }
+  .aisearch-container {
+	  height: 36px;
+  }
+}
+  &lt;/css&gt;&lt;data_table&gt;sp_instance_ais&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list&gt;title,short_description,search_application,search_results_configuration,disable_all_suggestions,placeholder,ai_search_source_filter&lt;/field_list&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link() {
+      var geckoRegex = /Gecko\/\d+/; // Remove forced-colors css for Gecko engine (Firefox) as they already handle it
+      if (geckoRegex.test(navigator.userAgent)) {
+        $('.sp-search-heading').removeClass('sp-search-heading');
+      }
+}]]&gt;&lt;/link&gt;&lt;name&gt;Homepage Search&lt;/name&gt;&lt;option_schema&gt;[{"name":"typeahead_search","default_value":"{title: 'How can we help?', size: 'lg', color: 'default'}","section":"Presentation","label":"Typeahead Search","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[var aisEnabled = $sp.isAISearchEnabled();
+
+if (aisEnabled) {
+    options['utterancePlacement'] = 'body';
+    options['placement'] = 'dynamic-landing';
+	data.typeAheadSearch = $sp.getWidget('typeahead-search', options);
+} else
+	data.typeAheadSearch = $sp.getWidget('typeahead-search', options.typeahead_search);]]&gt;&lt;/script&gt;&lt;servicenow&gt;true&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2015-06-11 23:02:03&lt;/sys_created_on&gt;&lt;sys_id&gt;200fbd96cb20020000f8d856634c9ca1&lt;/sys_id&gt;&lt;sys_mod_count&gt;159&lt;/sys_mod_count&gt;&lt;sys_name&gt;Homepage Search&lt;/sys_name&gt;&lt;sys_package display_value="Service Portal - Core" source="com.glide.service-portal"&gt;0490b60a18b632108bb255f46a373a3b&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_200fbd96cb20020000f8d856634c9ca1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-04-30 11:32:47&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div id="homepage-search" class="hidden-xs wrapper-xl"&gt;
+  &lt;div class="wrapper-xl"&gt;
+  	&lt;h2 class="text-center text-4x m-b-lg sp-tagline-color sp-search-heading" ng-bind="options.title"&gt;&lt;/h2&gt;
+  	&lt;div ng-if="options.short_description" class="text-center h4 m-b-lg sp-tagline-color sp-search-heading" ng-bind="options.short_description"&gt;&lt;/div&gt;
+  	&lt;sp-widget widget="data.typeAheadSearch"&gt;&lt;/sp-widget&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-04 07:12:21</sys_created_on>
+        <sys_id>4b86a6c9471d4b14516b5ac5316d43f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>4f86a6c9471d4b14516b5ac5316d43f0</sys_name>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_4b86a6c9471d4b14516b5ac5316d43f6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-04 07:12:21</sys_updated_on>
+    </sp_rel_widget_clone>
+</record_update>

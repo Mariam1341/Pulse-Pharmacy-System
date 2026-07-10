@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <advanced_placeholder_dimensions>false</advanced_placeholder_dimensions>
+        <async_load>false</async_load>
+        <async_load_device_type>desktop,tablet,mobile</async_load_device_type>
+        <async_load_trigger>viewport</async_load_trigger>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <placeholder_dimensions>{&#13;	"mobile": {&#13;		"height": "250px",&#13;		"width": "100%"&#13;	},&#13;	"desktop": {&#13;		"height": "250px",&#13;		"width": "100%"&#13;	},&#13;	"tablet": {&#13;		"height": "250px",&#13;		"width": "100%"&#13;	}&#13;}</placeholder_dimensions>
+        <placeholder_dimensions_script><![CDATA[function evaluateConfig(options) { return {	"mobile": {		"height": "250px",		"width": "100%"	},	"desktop": {		"height": "250px",		"width": "100%"	},	"tablet": {		"height": "250px",		"width": "100%"	}}; }]]></placeholder_dimensions_script>
+        <placeholder_template>&lt;!-- 
+	AngularJS template with configurable options.
+	Use the `options` object to control dynamic behavior.
+	Example: Display an element when max row count is 10:
+	&lt;div ng-if="options.maxRowCount === 10"&gt;&lt;/div&gt;
+	The `skeleton-container` class is used for loading placeholders.
+--&gt;
+	&lt;div class="skeleton-container"&gt;
+	&lt;!-- Header Skeleton --&gt;
+	&lt;div class="skeleton-box skeleton-header"&gt;&lt;/div&gt;
+	&lt;!-- Body Skeleton --&gt;
+	&lt;div class="skeleton-box skeleton-line"&gt;&lt;/div&gt;
+	&lt;div class="skeleton-box skeleton-line small"&gt;&lt;/div&gt;
+	&lt;div class="skeleton-box skeleton-line medium"&gt;&lt;/div&gt;
+&lt;/div&gt;</placeholder_template>
+        <preserve_placeholder_size>false</preserve_placeholder_size>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">b423af9547990f14516b5ac5316d43f6</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-05 06:15:45</sys_created_on>
+        <sys_id>7b2323d547990f14516b5ac5316d43dd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sp_instance_7b2323d547990f14516b5ac5316d43dd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 06:24:11</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<div class=\"steps-section\">\r\n<h2 class=\"section-title\">How It Works</h2>\r\n<div class=\"title-decoration\">&nbsp;</div>\r\n<div class=\"steps-grid\">\r\n<div class=\"step-item\">\r\n<div class=\"step-number\">1</div>\r\n<h3>Select Medicine</h3>\r\n<p>Browse or search for your medicine</p>\r\n</div>\r\n<div class=\"step-item\">\r\n<div class=\"step-number\">2</div>\r\n<h3>Place Order</h3>\r\n<p>Fill the form and get approval</p>\r\n</div>\r\n<div class=\"step-item\">\r\n<div class=\"step-number\">3</div>\r\n<h3>Pickup</h3>\r\n<p>Collect from pharmacy</p>\r\n</div>\r\n</div>\r\n</div>\r\n<style>\r\n.steps-section {\r\n  background: #FFFFFF;\r\n  border-radius: 32px;\r\n  padding: 3rem 2rem;\r\n  margin-bottom: 50px;\r\n  border: 1px solid #E2E8F0;\r\n}\r\n.section-title {\r\n  font-size: 28px;\r\n  font-weight: 700;\r\n  margin: 2rem 0 1rem;\r\n  text-align: center;\r\n  color: #0F172A;\r\n}\r\n.title-decoration {\r\n  width: 70px;\r\n  height: 4px;\r\n  background: #E60000;\r\n  margin: 0.5rem auto 2rem auto;\r\n  border-radius: 4px;\r\n}\r\n.steps-grid {\r\n  display: flex;\r\n  gap: 2rem;\r\n  justify-content: center;\r\n  flex-wrap: wrap;\r\n  margin-top: 2rem;\r\n}\r\n.step-item {\r\n  text-align: center;\r\n  flex: 1;\r\n  min-width: 200px;\r\n}\r\n.step-number {\r\n  background: #E60000;\r\n  color: white;\r\n  width: 50px;\r\n  height: 50px;\r\n  border-radius: 50%;\r\n  display: inline-flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-size: 28px;\r\n  font-weight: bold;\r\n  margin-bottom: 1rem;\r\n}\r\n.step-item h3 {\r\n  font-size: 20px;\r\n  margin-bottom: 0.5rem;\r\n}\r\n.step-item p {\r\n  color: #64748B;\r\n  font-size: 14px;\r\n}\r\n@media (max-width: 768px) {\r\n  .steps-grid {\r\n    gap: 1rem;\r\n  }\r\n}\r\n</style>",
+		"displayValue": "<div class=\"steps-section\">\n<h2 class=\"section-title\">How It Works</h2>\n<div class=\"title-decoration\">&nbsp;</div>\n<div class=\"steps-grid\">\n<div class=\"step-item\">\n<div class=\"step-number\">1</div>\n<h3>Select Medicine</h3>\n<p>Browse or search for your medicine</p>\n</div>\n<div class=\"step-item\">\n<div class=\"step-number\">2</div>\n<h3>Place Order</h3>\n<p>Fill the form and get approval</p>\n</div>\n<div class=\"step-item\">\n<div class=\"step-number\">3</div>\n<h3>Pickup</h3>\n<p>Collect from pharmacy</p>\n</div>\n</div>\n</div>\n<style>\n.steps-section {\n  background: #FFFFFF;\n  border-radius: 32px;\n  padding: 3rem 2rem;\n  margin-bottom: 50px;\n  border: 1px solid #E2E8F0;\n}\n.section-title {\n  font-size: 28px;\n  font-weight: 700;\n  margin: 2rem 0 1rem;\n  text-align: center;\n  color: #0F172A;\n}\n.title-decoration {\n  width: 70px;\n  height: 4px;\n  background: #E60000;\n  margin: 0.5rem auto 2rem auto;\n  border-radius: 4px;\n}\n.steps-grid {\n  display: flex;\n  gap: 2rem;\n  justify-content: center;\n  flex-wrap: wrap;\n  margin-top: 2rem;\n}\n.step-item {\n  text-align: center;\n  flex: 1;\n  min-width: 200px;\n}\n.step-number {\n  background: #E60000;\n  color: white;\n  width: 50px;\n  height: 50px;\n  border-radius: 50%;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 28px;\n  font-weight: bold;\n  margin-bottom: 1rem;\n}\n.step-item h3 {\n  font-size: 20px;\n  margin-bottom: 0.5rem;\n}\n.step-item p {\n  color: #64748B;\n  font-size: 14px;\n}\n@media (max-width: 768px) {\n  .steps-grid {\n    gap: 1rem;\n  }\n}\n</style>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=7b2323d547990f14516b5ac5316d43dd"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</application>
+        <file_path/>
+        <instance_id>72baa3bf93706614d9f6ddd548373c01</instance_id>
+        <instance_name>dev329537</instance_name>
+        <name>sp_instance_7b2323d547990f14516b5ac5316d43dd</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced_placeholder_dimensions&gt;false&lt;/advanced_placeholder_dimensions&gt;&lt;async_load&gt;false&lt;/async_load&gt;&lt;async_load_device_type&gt;desktop,tablet,mobile&lt;/async_load_device_type&gt;&lt;async_load_trigger&gt;viewport&lt;/async_load_trigger&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;placeholder_dimensions&gt;{&amp;#13;	"mobile": {&amp;#13;		"height": "250px",&amp;#13;		"width": "100%"&amp;#13;	},&amp;#13;	"desktop": {&amp;#13;		"height": "250px",&amp;#13;		"width": "100%"&amp;#13;	},&amp;#13;	"tablet": {&amp;#13;		"height": "250px",&amp;#13;		"width": "100%"&amp;#13;	}&amp;#13;}&lt;/placeholder_dimensions&gt;&lt;placeholder_dimensions_script&gt;&lt;![CDATA[function evaluateConfig(options) { return {	"mobile": {		"height": "250px",		"width": "100%"	},	"desktop": {		"height": "250px",		"width": "100%"	},	"tablet": {		"height": "250px",		"width": "100%"	}}; }]]&gt;&lt;/placeholder_dimensions_script&gt;&lt;placeholder_template&gt;&amp;lt;!-- 
+	AngularJS template with configurable options.
+	Use the `options` object to control dynamic behavior.
+	Example: Display an element when max row count is 10:
+	&amp;lt;div ng-if="options.maxRowCount === 10"&amp;gt;&amp;lt;/div&amp;gt;
+	The `skeleton-container` class is used for loading placeholders.
+--&amp;gt;
+	&amp;lt;div class="skeleton-container"&amp;gt;
+	&amp;lt;!-- Header Skeleton --&amp;gt;
+	&amp;lt;div class="skeleton-box skeleton-header"&amp;gt;&amp;lt;/div&amp;gt;
+	&amp;lt;!-- Body Skeleton --&amp;gt;
+	&amp;lt;div class="skeleton-box skeleton-line"&amp;gt;&amp;lt;/div&amp;gt;
+	&amp;lt;div class="skeleton-box skeleton-line small"&amp;gt;&amp;lt;/div&amp;gt;
+	&amp;lt;div class="skeleton-box skeleton-line medium"&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;&lt;/placeholder_template&gt;&lt;preserve_placeholder_size&gt;false&lt;/preserve_placeholder_size&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;b423af9547990f14516b5ac5316d43f6&lt;/sp_column&gt;&lt;sp_widget display_value="HTML"&gt;8679ef89cb21120000f8d856634c9c4f&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-05 06:15:45&lt;/sys_created_on&gt;&lt;sys_id&gt;7b2323d547990f14516b5ac5316d43dd&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0"&gt;2913deb94745cb90516b5ac5316d4301&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Smart Pharmacy Management System"&gt;2913deb94745cb90516b5ac5316d4301&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_7b2323d547990f14516b5ac5316d43dd&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-05 06:24:11&lt;/sys_updated_on&gt;&lt;title/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"html": {
+		"value": "&lt;div class=\"steps-section\"&gt;\r\n&lt;h2 class=\"section-title\"&gt;How It Works&lt;/h2&gt;\r\n&lt;div class=\"title-decoration\"&gt;&amp;nbsp;&lt;/div&gt;\r\n&lt;div class=\"steps-grid\"&gt;\r\n&lt;div class=\"step-item\"&gt;\r\n&lt;div class=\"step-number\"&gt;1&lt;/div&gt;\r\n&lt;h3&gt;Select Medicine&lt;/h3&gt;\r\n&lt;p&gt;Browse or search for your medicine&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;div class=\"step-item\"&gt;\r\n&lt;div class=\"step-number\"&gt;2&lt;/div&gt;\r\n&lt;h3&gt;Place Order&lt;/h3&gt;\r\n&lt;p&gt;Fill the form and get approval&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;div class=\"step-item\"&gt;\r\n&lt;div class=\"step-number\"&gt;3&lt;/div&gt;\r\n&lt;h3&gt;Pickup&lt;/h3&gt;\r\n&lt;p&gt;Collect from pharmacy&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;style&gt;\r\n.steps-section {\r\n  background: #FFFFFF;\r\n  border-radius: 32px;\r\n  padding: 3rem 2rem;\r\n  margin-bottom: 50px;\r\n  border: 1px solid #E2E8F0;\r\n}\r\n.section-title {\r\n  font-size: 28px;\r\n  font-weight: 700;\r\n  margin: 2rem 0 1rem;\r\n  text-align: center;\r\n  color: #0F172A;\r\n}\r\n.title-decoration {\r\n  width: 70px;\r\n  height: 4px;\r\n  background: #E60000;\r\n  margin: 0.5rem auto 2rem auto;\r\n  border-radius: 4px;\r\n}\r\n.steps-grid {\r\n  display: flex;\r\n  gap: 2rem;\r\n  justify-content: center;\r\n  flex-wrap: wrap;\r\n  margin-top: 2rem;\r\n}\r\n.step-item {\r\n  text-align: center;\r\n  flex: 1;\r\n  min-width: 200px;\r\n}\r\n.step-number {\r\n  background: #E60000;\r\n  color: white;\r\n  width: 50px;\r\n  height: 50px;\r\n  border-radius: 50%;\r\n  display: inline-flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-size: 28px;\r\n  font-weight: bold;\r\n  margin-bottom: 1rem;\r\n}\r\n.step-item h3 {\r\n  font-size: 20px;\r\n  margin-bottom: 0.5rem;\r\n}\r\n.step-item p {\r\n  color: #64748B;\r\n  font-size: 14px;\r\n}\r\n@media (max-width: 768px) {\r\n  .steps-grid {\r\n    gap: 1rem;\r\n  }\r\n}\r\n&lt;/style&gt;",
+		"displayValue": "&lt;div class=\"steps-section\"&gt;\n&lt;h2 class=\"section-title\"&gt;How It Works&lt;/h2&gt;\n&lt;div class=\"title-decoration\"&gt;&amp;nbsp;&lt;/div&gt;\n&lt;div class=\"steps-grid\"&gt;\n&lt;div class=\"step-item\"&gt;\n&lt;div class=\"step-number\"&gt;1&lt;/div&gt;\n&lt;h3&gt;Select Medicine&lt;/h3&gt;\n&lt;p&gt;Browse or search for your medicine&lt;/p&gt;\n&lt;/div&gt;\n&lt;div class=\"step-item\"&gt;\n&lt;div class=\"step-number\"&gt;2&lt;/div&gt;\n&lt;h3&gt;Place Order&lt;/h3&gt;\n&lt;p&gt;Fill the form and get approval&lt;/p&gt;\n&lt;/div&gt;\n&lt;div class=\"step-item\"&gt;\n&lt;div class=\"step-number\"&gt;3&lt;/div&gt;\n&lt;h3&gt;Pickup&lt;/h3&gt;\n&lt;p&gt;Collect from pharmacy&lt;/p&gt;\n&lt;/div&gt;\n&lt;/div&gt;\n&lt;/div&gt;\n&lt;style&gt;\n.steps-section {\n  background: #FFFFFF;\n  border-radius: 32px;\n  padding: 3rem 2rem;\n  margin-bottom: 50px;\n  border: 1px solid #E2E8F0;\n}\n.section-title {\n  font-size: 28px;\n  font-weight: 700;\n  margin: 2rem 0 1rem;\n  text-align: center;\n  color: #0F172A;\n}\n.title-decoration {\n  width: 70px;\n  height: 4px;\n  background: #E60000;\n  margin: 0.5rem auto 2rem auto;\n  border-radius: 4px;\n}\n.steps-grid {\n  display: flex;\n  gap: 2rem;\n  justify-content: center;\n  flex-wrap: wrap;\n  margin-top: 2rem;\n}\n.step-item {\n  text-align: center;\n  flex: 1;\n  min-width: 200px;\n}\n.step-number {\n  background: #E60000;\n  color: white;\n  width: 50px;\n  height: 50px;\n  border-radius: 50%;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 28px;\n  font-weight: bold;\n  margin-bottom: 1rem;\n}\n.step-item h3 {\n  font-size: 20px;\n  margin-bottom: 0.5rem;\n}\n.step-item p {\n  color: #64748B;\n  font-size: 14px;\n}\n@media (max-width: 768px) {\n  .steps-grid {\n    gap: 1rem;\n  }\n}\n&lt;/style&gt;"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=7b2323d547990f14516b5ac5316d43dd"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>744552150</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>2513deb94745cb90516b5ac5316d436e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-05 06:24:11</sys_created_on>
+        <sys_id>1315a7d947990f14516b5ac5316d43c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e96741ad80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 06:24:11</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>df15a7d94e990f14db33440b04bd7dc4</update_guid>
+        <update_guid_history>df15a7d94e990f14db33440b04bd7dc4:744552150,a474af59e3990f1483abcadb461b9848:-373645066,f72323d539990f1489987e6bc6d45be0:1541288224</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">08f9df4b479d0f54516b5ac5316d4303</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-10 16:04:44</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>03005b27ae73466c8016dc25c7278504</sys_id>
+        <sys_metadata>7b2323d547990f14516b5ac5316d43dd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_scope_delete display_value="">1f0a401f3f154f8685d0015f93a89904</sys_scope_delete>
+        <sys_update_name>sp_instance_7b2323d547990f14516b5ac5316d43dd</sys_update_name>
+        <sys_update_version display_value="sp_instance_7b2323d547990f14516b5ac5316d43dd">1315a7d947990f14516b5ac5316d43c6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-10 16:04:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

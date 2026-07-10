@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="DELETE">
+        <action_insert>false</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <collection>sc_request</collection>
+        <condition/>
+        <content_type>text/html</content_type>
+        <default_digest>false</default_digest>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digest_type>single</digest_type>
+        <digestable>false</digestable>
+        <enable_dynamic_translation>false</enable_dynamic_translation>
+        <event_name>x_1971078_smart_0.pulse.all.approvals.co</event_name>
+        <event_parm_1>true</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>event</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p>&nbsp;</p>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F8FAFC;
+            font-family: 'Inter', sans-serif;
+        }
+        .container {
+            max-width: 580px;
+            margin: 40px auto;
+            background: #FFFFFF;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid #E2E8F0;
+        }
+        .header {
+            background: #E60000;
+            padding: 24px 32px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+        .header p {
+            margin: 8px 0 0;
+            font-size: 14px;
+            color: #FFD6D6;
+        }
+        .content {
+            padding: 32px;
+        }
+        .greeting {
+            font-size: 20px;
+            font-weight: 600;
+            color: #0F172A;
+            margin-bottom: 16px;
+        }
+        .order-details {
+            background: #F8FAFC;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 24px 0;
+            border: 1px solid #E2E8F0;
+        }
+        .order-details table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .order-details th {
+            text-align: left;
+            padding: 10px 8px;
+            background: #F1F5F9;
+            font-weight: 600;
+            color: #334155;
+        }
+        .order-details td {
+            padding: 12px 8px;
+            border-bottom: 1px solid #E2E8F0;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #E60000;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 16px 0 8px;
+        }
+        .footer {
+            background: #F1F5F9;
+            padding: 20px 32px;
+            text-align: center;
+            font-size: 12px;
+            color: #64748B;
+            border-top: 1px solid #E2E8F0;
+        }
+        .footer a {
+            color: #E60000;
+            text-decoration: none;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background: #E2E8F0;
+            margin: 24px 0;
+        }
+    </style>
+<div class="container">
+<div class="header">
+<h1>Pulse Pharmacy</h1>
+<p>Your Health, Our Beat</p>
+</div>
+<div class="content">
+<div class="greeting">Dear ${opened_by.name},</div>
+<p>Your order <strong>${number}</strong> has been processed. Here is the status of each medicine:</p>
+<div class="order-details">${mail_script:Get Medicines List From REQ}</div>
+<p>You will be notified when your medicines are ready for pickup.</p>
+<div style="text-align: center;"><a class="btn" href="/pp?id=my_requests">Track My Orders</a></div>
+<hr>
+<p style="font-size: 12px; color: #64748b; text-align: center;">Pulse Pharmacy &ndash; 15 El-Tahrir St, Cairo<br>]]>📞<![CDATA[ 123-456-789</p>
+</div>
+<div class="footer">&copy; 2025 Pulse Pharmacy &middot; Your Health, Our Beat &middot; <a href="#">Privacy Policy</a></div>
+</div>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name> Order Ready for Preparation </name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields/>
+        <recipient_groups>1bd92eb14749cb90516b5ac5316d4331,fa582752470d03d0516b5ac5316d43b2</recipient_groups>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>New order ${number} – Ready for preparation</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-06 05:29:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0622acf94719cf14516b5ac5316d4394</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name> Order Ready for Preparation </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sysevent_email_action_0622acf94719cf14516b5ac5316d4394</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-06 06:15:35</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+    <sys_es_latest_script action="DELETE">
+        <id>0622acf94719cf14516b5ac5316d4394</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-06 05:29:23</sys_created_on>
+        <sys_id>4622acf94719cf14516b5ac5316d4399</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-06 05:29:23</sys_updated_on>
+        <table>sysevent_email_action</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</application>
+        <file_path/>
+        <instance_id>72baa3bf93706614d9f6ddd548373c01</instance_id>
+        <instance_name>dev329537</instance_name>
+        <name>sysevent_email_action_0622acf94719cf14516b5ac5316d4394</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sysevent_email_action"&gt;&lt;sysevent_email_action action="INSERT_OR_UPDATE"&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced_condition/&gt;&lt;affected_field_on_event/&gt;&lt;category display_value="Uncategorized" name="Uncategorized"&gt;c97d83137f4432005f58108c3ffa917a&lt;/category&gt;&lt;collection&gt;sc_request&lt;/collection&gt;&lt;condition/&gt;&lt;content_type&gt;text/html&lt;/content_type&gt;&lt;default_digest&gt;false&lt;/default_digest&gt;&lt;default_interval/&gt;&lt;description/&gt;&lt;digest_from/&gt;&lt;digest_html/&gt;&lt;digest_reply_to/&gt;&lt;digest_separator_html&gt;&lt;![CDATA[&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;]]&gt;&lt;/digest_separator_html&gt;&lt;digest_separator_text&gt;&lt;![CDATA[\n--------------------------------------------------------------------------------\n]]&gt;&lt;/digest_separator_text&gt;&lt;digest_subject/&gt;&lt;digest_template/&gt;&lt;digest_text/&gt;&lt;digest_type&gt;single&lt;/digest_type&gt;&lt;digestable&gt;false&lt;/digestable&gt;&lt;enable_dynamic_translation&gt;false&lt;/enable_dynamic_translation&gt;&lt;event_name&gt;x_1971078_smart_0.pulse.all.approvals.co&lt;/event_name&gt;&lt;event_parm_1&gt;true&lt;/event_parm_1&gt;&lt;event_parm_2&gt;false&lt;/event_parm_2&gt;&lt;exclude_delegates&gt;false&lt;/exclude_delegates&gt;&lt;force_delivery&gt;false&lt;/force_delivery&gt;&lt;from/&gt;&lt;generation_type&gt;event&lt;/generation_type&gt;&lt;importance/&gt;&lt;include_attachments&gt;false&lt;/include_attachments&gt;&lt;item&gt;event.parm1&lt;/item&gt;&lt;item_table/&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;message/&gt;&lt;message_html&gt;&lt;![CDATA[&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;style&gt;
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F8FAFC;
+            font-family: 'Inter', sans-serif;
+        }
+        .container {
+            max-width: 580px;
+            margin: 40px auto;
+            background: #FFFFFF;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid #E2E8F0;
+        }
+        .header {
+            background: #E60000;
+            padding: 24px 32px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+        .header p {
+            margin: 8px 0 0;
+            font-size: 14px;
+            color: #FFD6D6;
+        }
+        .content {
+            padding: 32px;
+        }
+        .greeting {
+            font-size: 20px;
+            font-weight: 600;
+            color: #0F172A;
+            margin-bottom: 16px;
+        }
+        .order-details {
+            background: #F8FAFC;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 24px 0;
+            border: 1px solid #E2E8F0;
+        }
+        .order-details table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .order-details th {
+            text-align: left;
+            padding: 10px 8px;
+            background: #F1F5F9;
+            font-weight: 600;
+            color: #334155;
+        }
+        .order-details td {
+            padding: 12px 8px;
+            border-bottom: 1px solid #E2E8F0;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #E60000;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 16px 0 8px;
+        }
+        .footer {
+            background: #F1F5F9;
+            padding: 20px 32px;
+            text-align: center;
+            font-size: 12px;
+            color: #64748B;
+            border-top: 1px solid #E2E8F0;
+        }
+        .footer a {
+            color: #E60000;
+            text-decoration: none;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background: #E2E8F0;
+            margin: 24px 0;
+        }
+    &lt;/style&gt;
+&lt;div class="container"&gt;
+&lt;div class="header"&gt;
+&lt;h1&gt;Pulse Pharmacy&lt;/h1&gt;
+&lt;p&gt;Your Health, Our Beat&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="content"&gt;
+&lt;div class="greeting"&gt;Dear ${opened_by.name},&lt;/div&gt;
+&lt;p&gt;Your order &lt;strong&gt;${number}&lt;/strong&gt; has been processed. Here is the status of each medicine:&lt;/p&gt;
+&lt;div class="order-details"&gt;${mail_script:Get Medicines List From REQ}&lt;/div&gt;
+&lt;p&gt;You will be notified when your medicines are ready for pickup.&lt;/p&gt;
+&lt;div style="text-align: center;"&gt;&lt;a class="btn" href="/pp?id=my_requests"&gt;Track My Orders&lt;/a&gt;&lt;/div&gt;
+&lt;hr&gt;
+&lt;p style="font-size: 12px; color: #64748b; text-align: center;"&gt;Pulse Pharmacy &amp;ndash; 15 El-Tahrir St, Cairo&lt;br&gt;]]&gt;📞&lt;![CDATA[ 123-456-789&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="footer"&gt;&amp;copy; 2025 Pulse Pharmacy &amp;middot; Your Health, Our Beat &amp;middot; &lt;a href="#"&gt;Privacy Policy&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/message_html&gt;&lt;message_list/&gt;&lt;message_text/&gt;&lt;name&gt; Order Ready for Preparation &lt;/name&gt;&lt;omit_watermark&gt;false&lt;/omit_watermark&gt;&lt;order&gt;100&lt;/order&gt;&lt;push_message_only&gt;false&lt;/push_message_only&gt;&lt;recipient_fields/&gt;&lt;recipient_groups&gt;1bd92eb14749cb90516b5ac5316d4331,fa582752470d03d0516b5ac5316d43b2&lt;/recipient_groups&gt;&lt;recipient_users/&gt;&lt;reply_to/&gt;&lt;send_self&gt;true&lt;/send_self&gt;&lt;sms_alternate/&gt;&lt;style/&gt;&lt;subject&gt;New order ${number} – Ready for preparation&lt;/subject&gt;&lt;subscribable&gt;false&lt;/subscribable&gt;&lt;sys_class_name&gt;sysevent_email_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-06 05:29:23&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;0622acf94719cf14516b5ac5316d4394&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt; Order Ready for Preparation &lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0"&gt;2913deb94745cb90516b5ac5316d4301&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Smart Pharmacy Management System"&gt;2913deb94745cb90516b5ac5316d4301&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_email_action_0622acf94719cf14516b5ac5316d4394&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-06 06:15:35&lt;/sys_updated_on&gt;&lt;sys_version&gt;2&lt;/sys_version&gt;&lt;template display_value="Unsubscribe and Preferences"&gt;7ed0481f3b0b2200c869c2c703efc487&lt;/template&gt;&lt;type&gt;email&lt;/type&gt;&lt;weight&gt;0&lt;/weight&gt;&lt;/sysevent_email_action&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;0622acf94719cf14516b5ac5316d4394&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-06 05:29:23&lt;/sys_created_on&gt;&lt;sys_id&gt;4622acf94719cf14516b5ac5316d4399&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-06 05:29:23&lt;/sys_updated_on&gt;&lt;table&gt;sysevent_email_action&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-761287581</payload_hash>
+        <record_name> Order Ready for Preparation </record_name>
+        <reverted_from/>
+        <source>2513deb94745cb90516b5ac5316d436e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-06 06:15:35</sys_created_on>
+        <sys_id>87bc28754799cf14516b5ac5316d43da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e9b92966e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-06 06:15:35</sys_updated_on>
+        <type>Notification</type>
+        <update_guid>47bc28752e99cf1456afdd53616c58d9</update_guid>
+        <update_guid_history>47bc28752e99cf1456afdd53616c58d9:-761287581,2b9be4f16299cf1439eab8e5e3c6db17:-1486958550,022aacfd1059cf14973536054673c44f:1635506759,a549e47dd159cf14cc1fd494a56a3d10:2090780520,c622acf93719cf146bf15245b197e697:-2133066753</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-10 04:36:04</sys_created_on>
+        <sys_db_object display_value="" name="sysevent_email_action">sysevent_email_action</sys_db_object>
+        <sys_id>21def65793504a00b2046d3c22a40000</sys_id>
+        <sys_metadata>0622acf94719cf14516b5ac5316d4394</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name> Order Ready for Preparation </sys_name>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_parent display_value="Sc Request">b64f2646187632108bb255f46a373afa</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_scope_delete display_value="">1f0a401f3f154f8685d0015f93a89904</sys_scope_delete>
+        <sys_update_name>sysevent_email_action_0622acf94719cf14516b5ac5316d4394</sys_update_name>
+        <sys_update_version display_value="sysevent_email_action_0622acf94719cf14516b5ac5316d4394">87bc28754799cf14516b5ac5316d43da</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-10 04:36:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

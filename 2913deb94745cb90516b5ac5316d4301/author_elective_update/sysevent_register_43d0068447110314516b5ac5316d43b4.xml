@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="DELETE">
+        <caller_access/>
+        <derived_priority>100</derived_priority>
+        <description/>
+        <event_name>x_1971078_smart_0.sc_req_item.inserted</event_name>
+        <fired_by/>
+        <priority>100</priority>
+        <queue/>
+        <suffix>sc_req_item.inserted</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 01:55:07</sys_created_on>
+        <sys_id>43d0068447110314516b5ac5316d43b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1971078_smart_0.sc_req_item.inserted</sys_name>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sysevent_register_43d0068447110314516b5ac5316d43b4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-01 01:55:07</sys_updated_on>
+        <table>sc_req_item</table>
+    </sysevent_register>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</application>
+        <file_path/>
+        <instance_id>72baa3bf93706614d9f6ddd548373c01</instance_id>
+        <instance_name>dev329537</instance_name>
+        <name>sysevent_register_43d0068447110314516b5ac5316d43b4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register"><sysevent_register action="INSERT_OR_UPDATE"><caller_access/><derived_priority>100</derived_priority><description/><event_name>x_1971078_smart_0.sc_req_item.inserted</event_name><fired_by/><priority>100</priority><queue/><suffix>sc_req_item.inserted</suffix><sys_class_name>sysevent_register</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-01 01:55:07</sys_created_on><sys_id>43d0068447110314516b5ac5316d43b4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1971078_smart_0.sc_req_item.inserted</sys_name><sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package><sys_policy/><sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope><sys_update_name>sysevent_register_43d0068447110314516b5ac5316d43b4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-01 01:55:07</sys_updated_on><table>sc_req_item</table></sysevent_register></record_update>]]></payload>
+        <payload_hash>-1126901972</payload_hash>
+        <record_name>x_1971078_smart_0.sc_req_item.inserted</record_name>
+        <reverted_from/>
+        <source>2513deb94745cb90516b5ac5316d436e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 01:55:07</sys_created_on>
+        <sys_id>7a21ce8447110314516b5ac5316d43a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e80e4527d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-01 01:55:07</sys_updated_on>
+        <type>Event Registration</type>
+        <update_guid>3a21ce84e3110314a2c46f585f1990a2</update_guid>
+        <update_guid_history>3a21ce84e3110314a2c46f585f1990a2:-1126901972</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 01:58:46</sys_created_on>
+        <sys_db_object display_value="" name="sysevent_register">sysevent_register</sys_db_object>
+        <sys_id>b0cc1df606f34790949ed1852aaab684</sys_id>
+        <sys_metadata>43d0068447110314516b5ac5316d43b4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1971078_smart_0.sc_req_item.inserted</sys_name>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_parent display_value="Sc Req Item">877fe60a187632108bb255f46a373ac7</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_scope_delete display_value="">1f0a401f3f154f8685d0015f93a89904</sys_scope_delete>
+        <sys_update_name>sysevent_register_43d0068447110314516b5ac5316d43b4</sys_update_name>
+        <sys_update_version display_value="sysevent_register_43d0068447110314516b5ac5316d43b4">7a21ce8447110314516b5ac5316d43a3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-01 01:58:46</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

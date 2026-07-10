@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>labelCacheCleanUpExecuted=true</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>check_all_approvals</internal_name>
+        <label_cache>[{"name":"eadc5884-9d6b-4f87-9b6c-991d8f5a2e75.Records","label":"1➛Requested Item Records","reference":"sc_req_item","reference_display":"Requested Item Records","type":"records","base_type":"records","parent_table_name":null,"column_name":null,"choices":null,"usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.req_sys_id","label":"Input➛req_sys_id","reference":null,"reference_display":null,"type":"string","base_type":"string","parent_table_name":null,"column_name":null,"choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"eadc5884-9d6b-4f87-9b6c-991d8f5a2e75":["conditions"]},"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":"","uiUniqueId":"e2892dca-f1ab-42a4-af79-77260cb08b0f"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Check All Approvals</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-05 22:49:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>da964ba547d98f14516b5ac5316d43a9</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Check All Approvals</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sys_hub_flow_da964ba547d98f14516b5ac5316d43a9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-06 00:48:10</sys_updated_on>
+        <type>subflow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>12eb93e5479d8f14516b5ac5316d430d</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=da964ba547d98f14516b5ac5316d43a9"/>
+    <sys_variable_value action="delete_multiple" query="document_key=da964ba547d98f14516b5ac5316d43a9"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_da964ba547d98f14516b5ac5316d43a9^id=da964ba547d98f14516b5ac5316d43a9"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=da964ba547d98f14516b5ac5316d43a9"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=da964ba547d98f14516b5ac5316d43a9^sys_idNOT IN1a964ba547d98f14516b5ac5316d43ad"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>da964ba547d98f14516b5ac5316d43a9</id>
+        <name>Check All Approvals</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-05 22:49:21</sys_created_on>
+        <sys_id>1a964ba547d98f14516b5ac5316d43ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 22:49:21</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=1a964ba547d98f14516b5ac5316d43ad"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=da964ba547d98f14516b5ac5316d43a9^sys_idNOT IN4ffe8729471d8f14516b5ac5316d43fe"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiUniqueId=e2892dca-f1ab-42a4-af79-77260cb08b0f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>req_sys_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>req_sys_id</label>
+        <mandatory>true</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Check All Approvals">da964ba547d98f14516b5ac5316d43a9</model>
+        <model_id>da964ba547d98f14516b5ac5316d43a9</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_da964ba547d98f14516b5ac5316d43a9</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-05 23:25:59</sys_created_on>
+        <sys_id>4ffe8729471d8f14516b5ac5316d43fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 23:25:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4ffe8729471d8f14516b5ac5316d43fe"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=da964ba547d98f14516b5ac5316d43a9^sys_idNOT IN17fe4b69471d8f14516b5ac5316d4358,d3fe4b69471d8f14516b5ac5316d435f"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiUniqueId=83c28020-6fa3-41cb-a81d-5ebbc8bc8603</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>all_decided</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>all_decided</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Check All Approvals">da964ba547d98f14516b5ac5316d43a9</model>
+        <model_id>da964ba547d98f14516b5ac5316d43a9</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_da964ba547d98f14516b5ac5316d43a9</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-05 23:26:00</sys_created_on>
+        <sys_id>17fe4b69471d8f14516b5ac5316d4358</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 23:26:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=17fe4b69471d8f14516b5ac5316d4358"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiUniqueId=4b5c382c-5cdf-4797-965c-d5a1a6fcb1d5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>medicines_list</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>medicines_list</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Check All Approvals">da964ba547d98f14516b5ac5316d43a9</model>
+        <model_id>da964ba547d98f14516b5ac5316d43a9</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_da964ba547d98f14516b5ac5316d43a9</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-05 23:26:00</sys_created_on>
+        <sys_id>d3fe4b69471d8f14516b5ac5316d435f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 23:26:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d3fe4b69471d8f14516b5ac5316d435f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=da964ba547d98f14516b5ac5316d43a9"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=da964ba547d98f14516b5ac5316d43a9"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=da964ba547d98f14516b5ac5316d43a9^sys_idNOT IN051f0f69471d8f14516b5ac5316d43b8"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Check All Approvals">da964ba547d98f14516b5ac5316d43a9</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-05 23:26:24</sys_created_on>
+        <sys_id>051f0f69471d8f14516b5ac5316d43b8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 23:27:45</sys_updated_on>
+        <ui_id>eadc5884-9d6b-4f87-9b6c-991d8f5a2e75</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VWTW/iMBD9K8hnhEyhtMttRVWpUj+ktuqlu7Kc2AFrTZLaDpQi/vuOPxJYSCmscmC1pygzY8+bmfdsvy6RYGiIcNLHmHbPLy8w7vUwHgx6Me1GUW8QRzg6/4baKKVTDpE6U4aYRc7BNKOyqGxUx2BiQueSLl6Ch7ZM1voAezwRkimeouHrzzbKqYLdDFdouNxyHQpH0ohLCH2C3K1nj6cGovsMIUcm4vL/NiwdlcZMMQul10b83fCUccCQUKl5G01pyqjJ1KKyKE7ZQyrXholIDeyGbPC7Fh+Qr3dm4xIOVcXc+6pfElrkzckVNfTJqCI2hQqhHqyGfiyrMqtG1vQ8wMer9jr+w8bT7XjGNxd0V9BvxhNaSDP6u5zdY3Oe2Zy+wIfciAymjnp2LjSSZfmZLKbpvZ8lqhC+1JDNe64+4Vyhodk8twO1EwrjSp4m2fyxnMa1SB2u4JRZTGX1R41RIiqM7csSJYwkgktGRCpFajPB2Cx9uORTyECmNM9FOia5ymbC7Qq1TDtjCT+dRGZz2wsxTjs0tpV3gFi0cw32K2d+oUrYLtzBNrC4bRNOYGnIR3SsRG7IXLAxN+vsZRTLzJzKX3X+wDhSDsqVh1ZtpBd6JKnW62YDTclbYXvgWx+6R9yg3BKH4jtUMOOhUZYDTrbxxV7Znm9J1A96gy+758fRJ8cBEMouPFhGtqLFZ6jC0eFn7iL+PD6uraN17x0lvRs7Qi5xM0dIncR3JXiUAnelZan27yjreOL73nzB/v7eS2vQXfMMhkwU19BSvcH+LsZ4VwHdtjcfJ4MDsJQyuKPvrccKTC3CoAQgKR+7k2lTBjeVNWig35gG+qergXJYtTdQObOGL6BTUcNXQrjc/3rDa5rFWcqExbipA8XfCq5NB1ARwX4UsAlbLnUR2dI64CXes1rtquWotcdJ6oCqSkmNNsuqK7V8lW7bbus2KJ9aDcoKn66wGr9cTkU1B90h+0nWj9Z88tttvLVjYuktDJ/uyuLRy4Kz1o33N0l9h6qk/nOAtYUyEN791r2l3LKttxT+P99Sp3lLACAhgSHEj1BnhXKtnJFYFto5FE2136vBO+Xnb6d04pmiEAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=051f0f69471d8f14516b5ac5316d43b8"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=da964ba547d98f14516b5ac5316d43a9"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=da964ba547d98f14516b5ac5316d43a9^sys_idNOT IN9b5b1f65479d8f14516b5ac5316d435a"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1b5b1f65479d8f14516b5ac5316d4359</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Check All Approvals">da964ba547d98f14516b5ac5316d43a9</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-06 00:20:05</sys_created_on>
+        <sys_id>9b5b1f65479d8f14516b5ac5316d435a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-06 00:23:38</sys_updated_on>
+        <ui_id>597cabd4-73a6-40f4-9785-c048b048b751</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51TTW+jMBD9Lz4TBCShkFvVqlKl3a2UVr2sqmiwh8RaY7O2Scqi/PcdB0KrnlZ7gnnz9d5jGJjpfNt592JunZN7zTY/3yImdcDofWBSsA1LS1GXaVLyZZYvsyTJilVa5csqzcQSUOQsYhoapErpsXEUHkF1IR4GBMHXRbFalCKvFqu6uFmUVc4XZZmKol5DhjfreIvcWOHOZ2oV0rUK+tf/n8APUgmLk5gWLHHzaNlm+JL6V3EKKlRU+jip+yLW920I7UhhAr5NPdsZpUcgkSURw3ePWiCtr0E5jFgDWoA3tmcbbzsCLKl+0qqfKw5SexrHQu27k39oY5okobBGEsRxTM7hbvJxhOt78PBMo7nv7FTKD0ZydKMVAmvolL/7jI0FT62XRo8tHip17Taqa/SP0Qk2D7h+NkI6RySwDUID9UlH/Xwwp+2V5YPUF1OmpDIc1ByB91ZWnQ98BoYKGxq0a6Btpd7vWmuO8tJMXJp4ryiIa2VOtDSccgw8EI/JV4gfCL+/wK9gZVDxncZQ8zlirnd3Cpz70EIm7n53gcmobNKwG20ILdzK1t/SgiNOdM9v4erH2bOnXDqi8BKwx+s/FRI9XZDkn6GTsb8C+Q/s/BeY7DCKnQMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=da964ba547d98f14516b5ac5316d43a9"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=da964ba547d98f14516b5ac5316d43a9^sys_idNOT IN84eb13e5479d8f14516b5ac5316d4353"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiUniqueId=54f78f97-9427-46e5-9d48-878e67a4de35</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>temp_medicines_list</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>temp_medicines_list</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Check All Approvals">da964ba547d98f14516b5ac5316d43a9</model>
+        <model_id>da964ba547d98f14516b5ac5316d43a9</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_da964ba547d98f14516b5ac5316d43a9</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-06 00:22:19</sys_created_on>
+        <sys_id>84eb13e5479d8f14516b5ac5316d4353</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-06 00:22:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>req_sys_id</element>
+        <help/>
+        <hint/>
+        <label>req_sys_id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_da964ba547d98f14516b5ac5316d43a9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-05 23:26:00</sys_created_on>
+        <sys_id>1bfe0b69471d8f14516b5ac5316d43ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 23:26:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_da964ba547d98f14516b5ac5316d43a9"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>all_decided</element>
+        <help/>
+        <hint/>
+        <label>all_decided</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_da964ba547d98f14516b5ac5316d43a9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-05 23:26:00</sys_created_on>
+        <sys_id>53fe4b69471d8f14516b5ac5316d435e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 23:26:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>medicines_list</element>
+        <help/>
+        <hint/>
+        <label>medicines_list</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_da964ba547d98f14516b5ac5316d43a9</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-05 23:26:00</sys_created_on>
+        <sys_id>5bfe4b69471d8f14516b5ac5316d4362</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 23:26:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_da964ba547d98f14516b5ac5316d43a9"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=da964ba547d98f14516b5ac5316d43a9"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=da964ba547d98f14516b5ac5316d43a9"/>
+</record_update>

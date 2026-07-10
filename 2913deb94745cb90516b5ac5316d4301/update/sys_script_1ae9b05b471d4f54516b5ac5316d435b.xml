@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1971078_smart_0_medicine_inventory</collection>
+        <condition>current.quantity &lt;= current.reorder_level</condition>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_1971078_smart_0_medicine_inventory">quantityLT_OR_EQUALS_FIELDreorder_level^EQ<item endquery="false" field="quantity" goto="false" newquery="false" operator="LT_OR_EQUALS_FIELD" or="false" value="reorder_level"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Create Incident on Low Stock</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous) {
+
+    var check = new GlideRecord('incident');
+    check.addQuery('u_medicine', current.getUniqueValue());
+    check.addQuery('category', 'Low Stock');
+    check.addQuery('state', 'NOT IN', '3,6,7'); // 3=Resolved, 6=Closed, 7=Cancelled
+    check.query();
+    if (check.next()) return;
+
+    var impact, urgency,priority;
+    if (current.quantity == 0) {
+        impact = 1;
+        urgency = 1;
+		priority = 1;
+    } else {
+        impact = 2;
+        urgency = 2;
+		priority = 2;
+
+    }
+
+    var inc = new GlideRecord('incident');
+    inc.initialize();
+    inc.caller_id = gs.getUserID();
+    inc.short_description = "Low Stock Alert: " + current.medicine_name;
+    inc.description = "Medicine: " + current.medicine_name + "\n" +
+                      "Current Quantity: " + current.quantity + "\n" +
+                      "Reorder Level: " + current.reorder_level;
+    inc.category = "low stock";
+    inc.x_1971078_smart_0_u_medicine = current.getUniqueValue();
+    inc.impact = impact;
+    inc.urgency = urgency;
+	inc.priority = priority;
+    inc.assignment_group = '1bd92eb14749cb90516b5ac5316d4331';
+
+    inc.insert();
+
+    current.update();
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-10 23:15:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1ae9b05b471d4f54516b5ac5316d435b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Create Incident on Low Stock</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sys_script_1ae9b05b471d4f54516b5ac5316d435b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-11 09:39:55</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=1ae9b05b471d4f54516b5ac5316d435b"/>
+</record_update>

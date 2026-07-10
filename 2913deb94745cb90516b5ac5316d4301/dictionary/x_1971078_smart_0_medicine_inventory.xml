@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ad94d6bd4745cb90516b5ac5316d4315" label="Medicine Inventory" max_length="40" name="x_1971078_smart_0_medicine_inventory" type="collection">
+        <element default="0" label="Quantity" mandatory="true" max_length="255" name="quantity" type="integer"/>
+        <element label="Unit Price" max_length="20" name="unit_price" type="currency"/>
+        <element default="50" label="Reorder Quantity" max_length="255" name="reorder_quantity" type="integer"/>
+        <element label="Expiration Date" max_length="255" name="expiration_date" type="glide_date"/>
+        <element choice="3" default="active" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Active" sequence="0" value="active"/>
+                <element inactive_on_update="false" label="Near Expiry" sequence="1" value="near expiry"/>
+                <element inactive_on_update="false" label="Expired" sequence="2" value="expired"/>
+            </choice>
+        </element>
+        <element default="10" label="Reorder Level" max_length="255" name="reorder_level" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Medicine Number" max_length="40" name="number" type="string"/>
+        <element label="Batch Number" max_length="40" name="batch_number" type="string"/>
+        <element display="true" label="Medicine Name" mandatory="true" max_length="100" name="medicine_name" type="string"/>
+        <element choice="3" default="antibiotic" label="Category" max_length="40" name="category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Vitamin" sequence="2" value="vitamin"/>
+                <element inactive_on_update="false" label="Antidiabetic" sequence="4" value="antidiabetic"/>
+                <element inactive_on_update="false" label="Antihypertensive" sequence="3" value="antihypertensive"/>
+                <element inactive_on_update="false" label="Antibiotic" sequence="0" value="antibiotic"/>
+                <element inactive_on_update="false" label="Analgesic" sequence="1" value="analgesic"/>
+            </choice>
+        </element>
+        <element label="Storage Location" max_length="100" name="storage_location" type="string"/>
+    </element>
+</database>

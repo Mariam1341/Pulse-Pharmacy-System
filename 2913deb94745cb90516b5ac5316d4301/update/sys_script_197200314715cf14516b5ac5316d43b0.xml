@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>sc_req_item</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Update REQ State Based on RITMs</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+    var reqSysId = current.request.toString();
+    if (!reqSysId) return;
+
+    // جلب كل الـ RITMs تحت هذا الـ REQ
+    var allRITMs = new GlideRecord('sc_req_item');
+    allRITMs.addQuery('request', reqSysId);
+    allRITMs.query();
+
+    var stats = {
+        total: 0,
+        requested: 0,
+        approved: 0,
+        rejected: 0,
+        readyForPickup: 0,
+        completed: 0
+    };
+
+    while (allRITMs.next()) {
+        stats.total++;
+        var stage = allRITMs.stage.toString();
+        var approval = allRITMs.approval_state.toString();
+        
+        if (stage == 'complete') stats.completed++;
+        else if (stage == 'ready_for_pickup') stats.readyForPickup++;
+        
+        if (approval == 'approved') stats.approved++;
+        else if (approval == 'rejected' || approval == 'not_required') stats.rejected++;
+        else if (approval == 'requested') stats.requested++;
+    }
+
+    var newReqState = '';
+    var newReqStage = ''; // لو حابة تستخدمي حقل مخصص
+
+    // 1. كل حاجة اكتملت
+    if (stats.completed == stats.total) {
+        newReqState = 'closed_complete';
+        newReqStage = 'Completed';
+    }
+    // 2. كل حاجة مرفوضة
+    else if (stats.rejected == stats.total) {
+        newReqState = 'closed_incomplete';
+        newReqStage = 'Rejected';
+    }
+    // 3. فيه حاجات جاهزة وخلاص (كل الـ approved بقت ready_for_pickup)
+    else if (stats.readyForPickup == stats.approved && stats.approved > 0) {
+        newReqState = 'in_progress';
+        newReqStage = 'Ready for Pickup';
+    }
+    // 4. فيه حاجات اتعملها approve بس لسه مش جاهزة
+    else if (stats.approved > 0 && stats.requested == 0) {
+        newReqState = 'in_progress';
+        newReqStage = 'Partially Approved';
+    }
+    // 5. فيه approvals و requesteds
+    else if (stats.approved > 0 && stats.requested > 0) {
+        newReqState = 'in_progress';
+        newReqStage = 'Partial Approval – Pending';
+    }
+    // 6. لسه في انتظار الموافقات
+    else if (stats.requested > 0) {
+        newReqState = 'pending_approval';
+        newReqStage = 'Under Review';
+    }
+    // 7. (افتراضي) لو مفيش أي من دول
+    else {
+        newReqState = 'new';
+        newReqStage = 'New';
+    }
+
+    // تحديث الـ REQ
+    var req = new GlideRecord('sc_request');
+    if (req.get(reqSysId)) {
+        req.state = newReqState;
+        req.stage = newReqStage; // تأكدي من وجود الحقل ده، وإلا استخدمي description مؤقتاً
+        req.update();
+    }
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-06 03:23:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>197200314715cf14516b5ac5316d43b0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Update REQ State Based on RITMs</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sys_script_197200314715cf14516b5ac5316d43b0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-06 04:42:04</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=197200314715cf14516b5ac5316d43b0"/>
+</record_update>

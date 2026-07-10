@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>/* Pulse Pharmacy Header Styles */&#13;
+.pulse-header {&#13;
+  background-color: #E60000;&#13;
+  border-bottom: 1px solid #B30000;&#13;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);&#13;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;&#13;
+}&#13;
+&#13;
+.pulse-header .navbar-brand {&#13;
+  display: flex;&#13;
+  align-items: center;&#13;
+  gap: 8px;&#13;
+  padding: 15px 15px;&#13;
+  color: white;&#13;
+  font-size: 20px;&#13;
+  font-weight: 700;&#13;
+  letter-spacing: -0.3px;&#13;
+}&#13;
+&#13;
+.pulse-header .navbar-brand .brand-icon {&#13;
+  font-size: 24px;&#13;
+}&#13;
+&#13;
+.pulse-header .navbar-brand .brand-name {&#13;
+  font-weight: 700;&#13;
+}&#13;
+&#13;
+.pulse-header .navbar-brand .brand-tagline {&#13;
+  font-size: 12px;&#13;
+  font-weight: 400;&#13;
+  opacity: 0.85;&#13;
+  margin-left: 6px;&#13;
+}&#13;
+&#13;
+.pulse-header .nav &gt; li &gt; a {&#13;
+  color: white;&#13;
+  font-weight: 500;&#13;
+  transition: all 0.2s ease;&#13;
+}&#13;
+&#13;
+.pulse-header .nav &gt; li &gt; a:hover,&#13;
+.pulse-header .nav &gt; li &gt; a:focus {&#13;
+  background-color: rgba(255,255,255,0.15);&#13;
+  color: white;&#13;
+}&#13;
+&#13;
+.pulse-header .nav .dropdown-menu &gt; li &gt; a:hover {&#13;
+  background-color: #E60000;&#13;
+  color: white;&#13;
+}&#13;
+&#13;
+.pulse-header .navbar-toggle {&#13;
+  border-color: rgba(255,255,255,0.5);&#13;
+}&#13;
+&#13;
+.pulse-header .navbar-toggle .icon-bar {&#13;
+  background-color: white;&#13;
+}&#13;
+&#13;
+.pulse-header .navbar-collapse {&#13;
+  border-top-color: rgba(255,255,255,0.2);&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>pharmacy header</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 22:07:24</sys_created_on>
+        <sys_id>03e51ad047d98314516b5ac5316d432b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>pharmacy header</sys_name>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sp_widget_03e51ad047d98314516b5ac5316d432b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-01 22:07:24</sys_updated_on>
+        <template><![CDATA[<div class="pulse-header">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#pulse-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/pp">
+        <span class="brand-icon">❤️</span>
+        <span class="brand-name">Pulse Pharmacy</span>
+        <span class="brand-tagline">Your Health, Our Beat</span>
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="pulse-navbar">
+      <ul class="nav navbar-nav" ng-if="::data.menuItems.length">
+        <li ng-repeat="item in ::data.menuItems" ng-class="{'active': c.itemIsActive(item)}">
+          <a href="{{::item.link}}">{{::item.label}}</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li ng-if="::data.user.isLoggedIn">
+          <a href="javascript:void(0)" ng-click="c.logout()">
+            <i class="fa fa-sign-out"></i> Logout
+          </a>
+        </li>
+        <li ng-if="::!data.user.isLoggedIn">
+          <a href="/pp?id=login">
+            <i class="fa fa-sign-in"></i> Login
+          </a>
+        </li>
+        <li ng-if="::data.user.isLoggedIn" class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            <i class="fa fa-user-circle"></i> {{::data.user.name}} <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="/pp?id=profile">My Profile</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="javascript:void(0)" ng-click="c.logout()">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

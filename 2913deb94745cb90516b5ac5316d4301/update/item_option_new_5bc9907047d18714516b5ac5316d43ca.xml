@@ -61,8 +61,9 @@
         <record/>
         <record_producer_table/>
         <reference>x_1971078_smart_0_medicine_inventory</reference>
-        <reference_qual>status!=expired^EQ</reference_qual>
-        <reference_qual_condition table="x_1971078_smart_0_medicine_inventory">status!=expired^EQ<item display_value="Expired" endquery="false" field="status" goto="false" newquery="false" operator="!=" or="false" value="expired"/>
+        <reference_qual>status!=expired^quantity&gt;0^EQ</reference_qual>
+        <reference_qual_condition table="x_1971078_smart_0_medicine_inventory">status!=expired^quantity&gt;0^EQ<item display_value="Expired" endquery="false" field="status" goto="false" newquery="false" operator="!=" or="false" value="expired"/>
+            <item endquery="false" field="quantity" goto="false" newquery="false" operator="&gt;" or="false" value="0"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </reference_qual_condition>
         <rich_text/>
@@ -84,14 +85,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-03 02:20:04</sys_created_on>
         <sys_id>5bc9907047d18714516b5ac5316d43ca</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Medicine Name </sys_name>
         <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
         <sys_policy/>
         <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
         <sys_update_name>item_option_new_5bc9907047d18714516b5ac5316d43ca</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-03 02:32:30</sys_updated_on>
+        <sys_updated_on>2026-06-10 03:19:16</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>

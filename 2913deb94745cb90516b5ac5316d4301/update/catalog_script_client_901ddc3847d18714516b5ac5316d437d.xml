@@ -48,16 +48,19 @@
 			g_form.clearValue('check_availability');
 			if (res === 'true') {				
 				g_form.setValue('check_availability', 'Yes');
+				
+				var unitPriceString  = g_form.getValue('unit_price').replace(/[^0-9.-]/g, '');
+				var unitPrice = parseFloat(unitPriceString);
+				var totalPrice = qty * unitPrice;
+				g_form.setValue('total_price', totalPrice.toString() + ' EGP');
+
 			} else {
 				g_form.showFieldMsg('quantity_needed', 'The requested quantity is currently unavailable in our stock.', 'error');
 				g_form.setValue('check_availability', 'No');
 			}
 		});
 
-		var unitPriceString  = g_form.getValue('unit_price').replace(/[^0-9.-]/g, '');
-		var unitPrice = parseFloat(unitPriceString);
-		var totalPrice = qty * unitPrice;
-		g_form.setValue('total_price', totalPrice.toString() + ' EGP');
+		
 
     }
 	
@@ -94,7 +97,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>901ddc3847d18714516b5ac5316d437d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>check Avaibilty and get subtotal price</sys_name>
         <sys_overrides/>
         <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
@@ -102,7 +105,7 @@
         <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
         <sys_update_name>catalog_script_client_901ddc3847d18714516b5ac5316d437d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-03 03:43:13</sys_updated_on>
+        <sys_updated_on>2026-06-10 03:23:07</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>
