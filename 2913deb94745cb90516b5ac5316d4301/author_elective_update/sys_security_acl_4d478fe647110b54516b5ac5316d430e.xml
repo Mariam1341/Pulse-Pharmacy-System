@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description/>
+        <local_or_existing>Existing</local_or_existing>
+        <name>sc_task</name>
+        <operation display_value="read">read</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-09 01:28:38</sys_created_on>
+        <sys_id>4d478fe647110b54516b5ac5316d430e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sc_task</sys_name>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sys_security_acl_4d478fe647110b54516b5ac5316d430e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-09 01:28:38</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</application>
+        <file_path/>
+        <instance_id>72baa3bf93706614d9f6ddd548373c01</instance_id>
+        <instance_name>dev329537</instance_name>
+        <name>sys_security_acl_4d478fe647110b54516b5ac5316d430e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description/><local_or_existing>Existing</local_or_existing><name>sc_task</name><operation display_value="read">read</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-09 01:28:38</sys_created_on><sys_id>4d478fe647110b54516b5ac5316d430e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sc_task</sys_name><sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package><sys_policy/><sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope><sys_update_name>sys_security_acl_4d478fe647110b54516b5ac5316d430e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-09 01:28:38</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-336212605</payload_hash>
+        <record_name>sc_task</record_name>
+        <reverted_from/>
+        <source>2513deb94745cb90516b5ac5316d436e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-09 01:28:38</sys_created_on>
+        <sys_id>3cd7836a47110b54516b5ac5316d43bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19ea9fef30f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-09 01:28:38</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>f8d7836a7c110b5446e1a882f9d713bc</update_guid>
+        <update_guid_history>f8d7836a7c110b5446e1a882f9d713bc:-336212605</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-09 01:53:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>3b7255982d51476891850aa82f1e7479</sys_id>
+        <sys_metadata>4d478fe647110b54516b5ac5316d430e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sc_task</sys_name>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_parent display_value="sc_task">317f660a187632108bb255f46a373a30</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_scope_delete display_value="">1f0a401f3f154f8685d0015f93a89904</sys_scope_delete>
+        <sys_update_name>sys_security_acl_4d478fe647110b54516b5ac5316d430e</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_4d478fe647110b54516b5ac5316d430e">3cd7836a47110b54516b5ac5316d43bd</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-09 01:53:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

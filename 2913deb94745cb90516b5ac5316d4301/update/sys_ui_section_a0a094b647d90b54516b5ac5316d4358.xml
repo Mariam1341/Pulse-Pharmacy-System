@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Problem &amp; Work Notes" section_id="a0a094b647d90b54516b5ac5316d4358" sys_domain="global" table="incident" version="3" view="internal_problem">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-09 13:47:46</sys_created_on>
+            <sys_id>0801f9be47594b54516b5ac5316d432b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Problem &amp; Work Notes" display_value="Problem &amp; Work Notes" name="incident" sys_domain="global" view="f53844b247990b54516b5ac5316d43fc">a0a094b647d90b54516b5ac5316d4358</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-09 13:47:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-09 13:47:46</sys_created_on>
+            <sys_id>8401f9be47594b54516b5ac5316d432c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Problem &amp; Work Notes" display_value="Problem &amp; Work Notes" name="incident" sys_domain="global" view="f53844b247990b54516b5ac5316d43fc">a0a094b647d90b54516b5ac5316d4358</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-09 13:47:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>close_notes</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-09 13:47:46</sys_created_on>
+            <sys_id>0401f9be47594b54516b5ac5316d432d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Problem &amp; Work Notes" display_value="Problem &amp; Work Notes" name="incident" sys_domain="global" view="f53844b247990b54516b5ac5316d43fc">a0a094b647d90b54516b5ac5316d4358</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-09 13:47:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>work_notes</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-09 13:47:46</sys_created_on>
+            <sys_id>8001f9be47594b54516b5ac5316d432e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Problem &amp; Work Notes" display_value="Problem &amp; Work Notes" name="incident" sys_domain="global" view="f53844b247990b54516b5ac5316d43fc">a0a094b647d90b54516b5ac5316d4358</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-09 13:47:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Problem &amp; Work Notes</caption>
+            <header>false</header>
+            <name>incident</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-09 06:46:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a0a094b647d90b54516b5ac5316d4358</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>incident</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+            <sys_update_name>sys_ui_section_a0a094b647d90b54516b5ac5316d4358</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-09 06:46:44</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="internal problem" name="internal_problem">f53844b247990b54516b5ac5316d43fc</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

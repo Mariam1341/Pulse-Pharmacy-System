@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="DELETE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Home - Container 1</name>
+        <order>1</order>
+        <semantic_tag/>
+        <sp_page display_value="pp_home">ffff72cb4705c7d0516b5ac5316d430a</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-03 21:41:48</sys_created_on>
+        <sys_id>21f368c947590b14516b5ac5316d43be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Home - Container 1</sys_name>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sp_container_21f368c947590b14516b5ac5316d43be</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-03 21:41:48</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</application>
+        <file_path/>
+        <instance_id>72baa3bf93706614d9f6ddd548373c01</instance_id>
+        <instance_name>dev329537</instance_name>
+        <name>sp_container_21f368c947590b14516b5ac5316d43be</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Home - Container 1</name><order>1</order><semantic_tag/><sp_page display_value="pp_home">ffff72cb4705c7d0516b5ac5316d430a</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-06-03 21:41:48</sys_created_on><sys_id>21f368c947590b14516b5ac5316d43be</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Home - Container 1</sys_name><sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package><sys_policy/><sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope><sys_update_name>sp_container_21f368c947590b14516b5ac5316d43be</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-03 21:41:48</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+        <payload_hash>2037409810</payload_hash>
+        <record_name>Home - Container 1</record_name>
+        <reverted_from/>
+        <source>2513deb94745cb90516b5ac5316d436e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-03 21:41:48</sys_created_on>
+        <sys_id>25f368c947590b14516b5ac5316d43c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e8f6f7d2b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-03 21:41:48</sys_updated_on>
+        <type>Container</type>
+        <update_guid>e1f368c9dd590b14b404111a71c9acc0</update_guid>
+        <update_guid_history>e1f368c9dd590b14b404111a71c9acc0:2037409810</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Home - Container 1">9fc95b4b479d0f54516b5ac5316d43a9</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-10 16:04:08</sys_created_on>
+        <sys_db_object display_value="" name="sp_container">sp_container</sys_db_object>
+        <sys_id>147b1d02d9584272b42ae5c5c91d0d04</sys_id>
+        <sys_metadata>21f368c947590b14516b5ac5316d43be</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Home - Container 1</sys_name>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_scope_delete display_value="">1f0a401f3f154f8685d0015f93a89904</sys_scope_delete>
+        <sys_update_name>sp_container_21f368c947590b14516b5ac5316d43be</sys_update_name>
+        <sys_update_version display_value="sp_container_21f368c947590b14516b5ac5316d43be">25f368c947590b14516b5ac5316d43c1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-10 16:04:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

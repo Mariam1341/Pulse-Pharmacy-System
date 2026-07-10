@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table">
+    <sys_db_view_table action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <left_join>false</left_join>
+        <order>0</order>
+        <sys_class_name>sys_db_view_table</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 02:55:17</sys_created_on>
+        <sys_id>b9ae02c447910314516b5ac5316d43d6</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>sc_req_item</sys_name>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sys_db_view_table_b9ae02c447910314516b5ac5316d43d6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-01 03:49:54</sys_updated_on>
+        <table>sc_req_item</table>
+        <variable_prefix>rtim</variable_prefix>
+        <view display_value="x_1971078_smart_0_ritm_with_medicine_variable">921e0e4447910314516b5ac5316d4347</view>
+        <where_clause/>
+    </sys_db_view_table>
+</record_update>

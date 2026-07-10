@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced_placeholder_dimensions>false</advanced_placeholder_dimensions>
+        <async_load>false</async_load>
+        <async_load_device_type>desktop,tablet,mobile</async_load_device_type>
+        <async_load_trigger>viewport</async_load_trigger>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <placeholder_dimensions>{&#13;	"mobile": {&#13;		"height": "250px",&#13;		"width": "100%"&#13;	},&#13;	"desktop": {&#13;		"height": "250px",&#13;		"width": "100%"&#13;	},&#13;	"tablet": {&#13;		"height": "250px",&#13;		"width": "100%"&#13;	}&#13;}</placeholder_dimensions>
+        <placeholder_dimensions_script><![CDATA[function evaluateConfig(options) { return {	"mobile": {		"height": "250px",		"width": "100%"	},	"desktop": {		"height": "250px",		"width": "100%"	},	"tablet": {		"height": "250px",		"width": "100%"	}}; }]]></placeholder_dimensions_script>
+        <placeholder_template>&lt;!-- 
+	AngularJS template with configurable options.
+	Use the `options` object to control dynamic behavior.
+	Example: Display an element when max row count is 10:
+	&lt;div ng-if="options.maxRowCount === 10"&gt;&lt;/div&gt;
+	The `skeleton-container` class is used for loading placeholders.
+--&gt;
+	&lt;div class="skeleton-container"&gt;
+	&lt;!-- Header Skeleton --&gt;
+	&lt;div class="skeleton-box skeleton-header"&gt;&lt;/div&gt;
+	&lt;!-- Body Skeleton --&gt;
+	&lt;div class="skeleton-box skeleton-line"&gt;&lt;/div&gt;
+	&lt;div class="skeleton-box skeleton-line small"&gt;&lt;/div&gt;
+	&lt;div class="skeleton-box skeleton-line medium"&gt;&lt;/div&gt;
+&lt;/div&gt;</placeholder_template>
+        <preserve_placeholder_size>false</preserve_placeholder_size>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">039ec42d47114f14516b5ac5316d43e9</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-05 09:25:46</sys_created_on>
+        <sys_id>cfae882d47114f14516b5ac5316d43ac</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sp_instance_cfae882d47114f14516b5ac5316d43ac</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-10 16:07:17</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<div class=\"health-tips-grid\">\r\n<div class=\"tips-header\">\r\n<h2>✨ Health Tips for You</h2>\r\n<p>Simple daily habits for a better life</p>\r\n</div>\r\n<div class=\"tips-container\">\r\n<div class=\"tip-card\">\r\n<div class=\"tip-emoji\">]]>💧<![CDATA[</div>\r\n<p class=\"tip-text\">Staying hydrated boosts your energy and mental clarity. Drink at least 8 glasses of water daily!</p>\r\n</div>\r\n<div class=\"tip-card\">\r\n<div class=\"tip-emoji\">]]>🍎<![CDATA[</div>\r\n<p class=\"tip-text\">A balanced diet rich in fruits and vegetables strengthens your immune system naturally.</p>\r\n</div>\r\n<div class=\"tip-card\">\r\n<div class=\"tip-emoji\">]]>😴<![CDATA[</div>\r\n<p class=\"tip-text\">Quality sleep (7&ndash;8 hours) improves memory, mood, and overall health. Prioritize rest!</p>\r\n</div>\r\n</div>\r\n</div>\r\n<style>\r\n.health-tips-grid {\r\n  background: linear-gradient(135deg, #FFFFFF, #FFF5F5);\r\n  border-radius: 32px;\r\n  padding: 40px 30px;\r\n  margin: 48px 0;\r\n  box-shadow: 0 8px 20px rgba(0,0,0,0.05);\r\n  border: 1px solid #FEE2E2;\r\n}\r\n\r\n.tips-header {\r\n  text-align: center;\r\n  margin-bottom: 32px;\r\n}\r\n\r\n.tips-header h2 {\r\n  font-size: 28px;\r\n  font-weight: 700;\r\n  color: #0F172A;\r\n  margin-bottom: 8px;\r\n}\r\n\r\n.tips-header p {\r\n  font-size: 16px;\r\n  color: #64748B;\r\n}\r\n\r\n.tips-container {\r\n  display: grid;\r\n  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));\r\n  gap: 24px;\r\n  justify-items: stretch;\r\n}\r\n\r\n.tip-card {\r\n  background: white;\r\n  border-radius: 20px;\r\n  padding: 24px 20px;\r\n  text-align: center;\r\n  border: 1px solid #E2E8F0;\r\n  transition: all 0.2s ease;\r\n}\r\n\r\n.tip-card:hover {\r\n  transform: translateY(-4px);\r\n  box-shadow: 0 12px 24px rgba(0,0,0,0.08);\r\n  border-color: #E60000;\r\n}\r\n\r\n.tip-emoji {\r\n  font-size: 48px;\r\n  margin-bottom: 16px;\r\n  color: #E60000;\r\n}\r\n\r\n.tip-text {\r\n  font-size: 15px;\r\n  line-height: 1.5;\r\n  color: #1E293B;\r\n  margin: 0;\r\n}\r\n\r\n@media (max-width: 768px) {\r\n  .health-tips-grid {\r\n    padding: 32px 20px;\r\n  }\r\n  .tips-header h2 {\r\n    font-size: 24px;\r\n  }\r\n  .tip-emoji {\r\n    font-size: 40px;\r\n  }\r\n  .tip-text {\r\n    font-size: 14px;\r\n  }\r\n}\r\n</style>",
+		"displayValue": "<div class=\"health-tips-grid\">\n<div class=\"tips-header\">\n<h2>✨ Health Tips for You</h2>\n<p>Simple daily habits for a better life</p>\n</div>\n<div class=\"tips-container\">\n<div class=\"tip-card\">\n<div class=\"tip-emoji\">]]>💧<![CDATA[</div>\n<p class=\"tip-text\">Staying hydrated boosts your energy and mental clarity. Drink at least 8 glasses of water daily!</p>\n</div>\n<div class=\"tip-card\">\n<div class=\"tip-emoji\">]]>🍎<![CDATA[</div>\n<p class=\"tip-text\">A balanced diet rich in fruits and vegetables strengthens your immune system naturally.</p>\n</div>\n<div class=\"tip-card\">\n<div class=\"tip-emoji\">]]>😴<![CDATA[</div>\n<p class=\"tip-text\">Quality sleep (7&ndash;8 hours) improves memory, mood, and overall health. Prioritize rest!</p>\n</div>\n</div>\n</div>\n<style>\n.health-tips-grid {\n  background: linear-gradient(135deg, #FFFFFF, #FFF5F5);\n  border-radius: 32px;\n  padding: 40px 30px;\n  margin: 48px 0;\n  box-shadow: 0 8px 20px rgba(0,0,0,0.05);\n  border: 1px solid #FEE2E2;\n}\n\n.tips-header {\n  text-align: center;\n  margin-bottom: 32px;\n}\n\n.tips-header h2 {\n  font-size: 28px;\n  font-weight: 700;\n  color: #0F172A;\n  margin-bottom: 8px;\n}\n\n.tips-header p {\n  font-size: 16px;\n  color: #64748B;\n}\n\n.tips-container {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));\n  gap: 24px;\n  justify-items: stretch;\n}\n\n.tip-card {\n  background: white;\n  border-radius: 20px;\n  padding: 24px 20px;\n  text-align: center;\n  border: 1px solid #E2E8F0;\n  transition: all 0.2s ease;\n}\n\n.tip-card:hover {\n  transform: translateY(-4px);\n  box-shadow: 0 12px 24px rgba(0,0,0,0.08);\n  border-color: #E60000;\n}\n\n.tip-emoji {\n  font-size: 48px;\n  margin-bottom: 16px;\n  color: #E60000;\n}\n\n.tip-text {\n  font-size: 15px;\n  line-height: 1.5;\n  color: #1E293B;\n  margin: 0;\n}\n\n@media (max-width: 768px) {\n  .health-tips-grid {\n    padding: 32px 20px;\n  }\n  .tips-header h2 {\n    font-size: 24px;\n  }\n  .tip-emoji {\n    font-size: 40px;\n  }\n  .tip-text {\n    font-size: 14px;\n  }\n}\n</style>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=cfae882d47114f14516b5ac5316d43ac"/>
+</record_update>

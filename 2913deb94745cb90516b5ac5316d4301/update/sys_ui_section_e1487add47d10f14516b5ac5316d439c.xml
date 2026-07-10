@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="e1487add47d10f14516b5ac5316d439c" sys_domain="global" table="incident" version="3" view="customer_pharmacy_complain_">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>category</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-05 03:36:11</sys_created_on>
+            <sys_id>92ae3a9d47150f14516b5ac5316d4304</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="654836dd47d10f14516b5ac5316d432a">e1487add47d10f14516b5ac5316d439c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-05 03:36:11</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-05 03:36:11</sys_created_on>
+            <sys_id>12ae3a9d47150f14516b5ac5316d4305</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="654836dd47d10f14516b5ac5316d432a">e1487add47d10f14516b5ac5316d439c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-05 03:36:11</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>incident</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-05 03:08:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e1487add47d10f14516b5ac5316d439c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>incident</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+            <sys_update_name>sys_ui_section_e1487add47d10f14516b5ac5316d439c</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-05 03:08:17</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="customer pharmacy complain " name="customer_pharmacy_complain_">654836dd47d10f14516b5ac5316d432a</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

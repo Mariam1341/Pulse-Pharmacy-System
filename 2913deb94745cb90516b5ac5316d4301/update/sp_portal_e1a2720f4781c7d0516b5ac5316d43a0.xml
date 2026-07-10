@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal">
+    <sp_portal action="INSERT_OR_UPDATE">
+        <alternate_portal/>
+        <communication_channels/>
+        <css_variables>--color-primary: #E60000;&#13;
+--color-primary-dark: #B30000;&#13;
+--color-primary-light: #FF3333;&#13;
+--color-bg-page: #F8FAFC;&#13;
+--color-bg-card: #FFFFFF;&#13;
+--color-bg-accent: #F1F5F9;&#13;
+--color-text-primary: #0F172A;&#13;
+--color-text-secondary: #334155;&#13;
+--color-text-muted: #64748B;&#13;
+--color-border: #E2E8F0;&#13;
+--color-success: #16A34A;&#13;
+--color-warning: #D97706;&#13;
+--color-danger: #DC2626;&#13;
+--border-radius: 8px;&#13;
+--shadow-card: 0 1px 3px rgba(0,0,0,0.07), 0 4px 16px rgba(0,0,0,0.05);&#13;
+--shadow-card-hover: 0 4px 12px rgba(0,0,0,0.12), 0 8px 24px rgba(0,0,0,0.07);&#13;
+--font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;</css_variables>
+        <dark_theme/>
+        <default>false</default>
+        <embeddable_macroponents/>
+        <enable_ais>false</enable_ais>
+        <enable_certificate_based_authentication>false</enable_certificate_based_authentication>
+        <enable_embeddables>false</enable_embeddables>
+        <enable_favorites>false</enable_favorites>
+        <hide_portal_name>false</hide_portal_name>
+        <homepage display_value="pp_home">ffff72cb4705c7d0516b5ac5316d430a</homepage>
+        <icon/>
+        <inactive>false</inactive>
+        <kb_knowledge_base/>
+        <kb_knowledge_page/>
+        <login_page/>
+        <logo>54d85d8b47d9cb54516b5ac5316d43c9</logo>
+        <logo_alt_text>Pulse Pharmacy</logo_alt_text>
+        <notfound_page display_value="404">3c2c9063cb11020000f8d856634c9c1f</notfound_page>
+        <quick_start_config/>
+        <rtl_enabled>false</rtl_enabled>
+        <sc_catalog/>
+        <sc_catalog_page/>
+        <sc_category_page/>
+        <search_application/>
+        <search_results_configuration/>
+        <sp_chat_queue/>
+        <sp_rectangle_menu display_value="Pulse Pharmacy Menu">f0ce907f470d0fd0516b5ac5316d4324</sp_rectangle_menu>
+        <sys_class_name>sp_portal</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-29 03:50:49</sys_created_on>
+        <sys_id>e1a2720f4781c7d0516b5ac5316d43a0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Pulse Pharmacy</sys_name>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sp_portal_e1a2720f4781c7d0516b5ac5316d43a0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-10 06:40:35</sys_updated_on>
+        <theme display_value="Pulse Pharmacy Theme">d5857a8347c1c7d0516b5ac5316d4362</theme>
+        <title>Pulse Pharmacy</title>
+        <ts_index_group/>
+        <url_suffix>pp</url_suffix>
+    </sp_portal>
+    <sys_translated_text action="delete_multiple" query="documentkey=e1a2720f4781c7d0516b5ac5316d43a0"/>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#e70000</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <encryption_context/>
+        <file_name>logo</file_name>
+        <hash>c5269f507e815eebbeee33719b41accdc33197c3b13aa97392764540041872a3</hash>
+        <image_height>100</image_height>
+        <image_width>100</image_width>
+        <size_bytes>3202</size_bytes>
+        <size_compressed>3225</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-10 06:40:35</sys_created_on>
+        <sys_id>54d85d8b47d9cb54516b5ac5316d43c9</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-10 06:40:35</sys_updated_on>
+        <table_name>ZZ_YYsp_portal</table_name>
+        <table_sys_id>e1a2720f4781c7d0516b5ac5316d43a0</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAA/w==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="logo" sys_id="54d85d8b47d9cb54516b5ac5316d43c9">54d85d8b47d9cb54516b5ac5316d43c9</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-10 06:40:35</sys_created_on>
+        <sys_id>18d85d8b47d9cb54516b5ac5316d43c9</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>4288</length>
+        <position>1</position>
+        <sys_attachment display_value="logo" sys_id="54d85d8b47d9cb54516b5ac5316d43c9">54d85d8b47d9cb54516b5ac5316d43c9</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-10 06:40:35</sys_created_on>
+        <sys_id>d8d85d8b47d9cb54516b5ac5316d43c9</sys_id>
+    </sys_attachment_doc>
+</record_update>

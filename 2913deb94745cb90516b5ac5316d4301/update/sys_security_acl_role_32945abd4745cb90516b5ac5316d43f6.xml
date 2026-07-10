@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 03:33:43</sys_created_on>
+        <sys_id>32945abd4745cb90516b5ac5316d43f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1971078_smart_0_medicine_inventory.x_1971078_smart_0.admin</sys_name>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_security_acl display_value="x_1971078_smart_0_medicine_inventory">f2945abd4745cb90516b5ac5316d43d2</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_32945abd4745cb90516b5ac5316d43f6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 03:33:43</sys_updated_on>
+        <sys_user_role display_value="x_1971078_smart_0.admin" name="x_1971078_smart_0.admin">f113deb94745cb90516b5ac5316d4389</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>true</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <collection>sc_req_item</collection>
+        <condition table="sc_req_item">stage=ready_for_pickup^EQ<item display_value="Ready for Pickup" endquery="false" field="stage" goto="false" newquery="false" operator="=" or="false" value="ready_for_pickup"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <content_type>text/html</content_type>
+        <default_digest>false</default_digest>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digest_type>single</digest_type>
+        <digestable>false</digestable>
+        <enable_dynamic_translation>false</enable_dynamic_translation>
+        <event_name>activate.life.cycle.migration</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>engine</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<table border="0" width="100%" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td align="center">
+<table style="background-color: #ffffff; border-radius: 24px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); overflow: hidden;" border="0" width="550" cellspacing="0" cellpadding="0"><!-- Header -->
+<tbody>
+<tr>
+<td style="background: #e60000; padding: 30px 20px; text-align: center;">
+<h1 style="margin: 0; font-size: 28px; color: #ffffff; letter-spacing: -0.5px;">&nbsp;Pulse Pharmacy</h1>
+<p style="margin: 6px 0 0; font-size: 14px; color: rgba(255,255,255,0.9);">Your Health, Our Beat</p>
+</td>
+</tr>
+<!-- Content -->
+<tr>
+<td style="padding: 28px 24px 24px;">
+<div style="font-size: 18px; font-weight: 600; color: #0f172a; margin-bottom: 12px;">Hello ${opened_by.first_name}!</div>
+<p style="font-size: 16px; color: #334155; margin: 0 0 16px;">]]>🎉<![CDATA[ Your medicine order is now <strong style="color: #e60000;">ready for pickup</strong> at our pharmacy.</p>
+<!-- Order Details Table -->
+<table style="background-color: rgb(248, 250, 252); border-radius: 20px; padding: 16px; margin-bottom: 20px; height: 76.9175px;" width="100%" cellspacing="0" cellpadding="0">
+<tbody>
+<tr style="height: 15.3835px;">
+<td style="padding: 10px 6px; border-bottom: 1px solid rgb(226, 232, 240); font-weight: 600; color: rgb(51, 65, 85); width: 40%; height: 15.3835px;">]]>📦<![CDATA[ Request Number</td>
+<td style="padding: 10px 6px; border-bottom: 1px solid rgb(226, 232, 240); color: rgb(15, 23, 42); font-weight: 500; height: 15.3835px;">${number}</td>
+</tr>
+<tr style="height: 15.3835px;">
+<td style="padding: 10px 6px; border-bottom: 1px solid rgb(226, 232, 240); font-weight: 600; color: rgb(51, 65, 85); height: 15.3835px;">]]>💊<![CDATA[ Medicine</td>
+<td style="padding: 10px 6px; border-bottom: 1px solid rgb(226, 232, 240); color: rgb(15, 23, 42); font-weight: 500; height: 15.3835px;">${variables}</td>
+</tr>
+<tr style="height: 15.3835px;">
+<td style="padding: 10px 6px; border-bottom: 1px solid rgb(226, 232, 240); font-weight: 600; color: rgb(51, 65, 85); height: 15.3835px;">]]>🔢<![CDATA[ Quantity</td>
+<td style="padding: 10px 6px; border-bottom: 1px solid rgb(226, 232, 240); color: rgb(15, 23, 42); font-weight: 500; height: 15.3835px;">${variables.quantity_needed}</td>
+</tr>
+<tr style="height: 15.3835px;">
+<td style="padding: 10px 6px; border-bottom: 1px solid rgb(226, 232, 240); font-weight: 600; color: rgb(51, 65, 85); height: 15.3835px;">]]>📅<![CDATA[ Preferred Pickup Date</td>
+<td style="padding: 10px 6px; border-bottom: 1px solid rgb(226, 232, 240); color: rgb(15, 23, 42); font-weight: 500; height: 15.3835px;">${variables.preferred_pickup_date}</td>
+</tr>
+<tr style="height: 15.3835px;">
+<td style="padding: 10px 6px; font-weight: 600; color: rgb(51, 65, 85); height: 15.3835px;">]]>🏪<![CDATA[ Pharmacy Location</td>
+<td style="padding: 10px 6px; color: rgb(15, 23, 42); font-weight: 500; height: 15.3835px;">Pulse Pharmacy, 15 El-Tahrir St, Cairo</td>
+</tr>
+</tbody>
+</table>
+<!-- Button -->
+<div style="text-align: center; margin: 24px 0 16px;"><a style="display: inline-block; background-color: #e60000; color: #ffffff; text-decoration: none; padding: 12px 28px; border-radius: 40px; font-weight: 600; font-size: 14px;" href="/pp?id=my_requests">]]>📋<![CDATA[ Track My Orders</a></div>
+<p style="font-size: 13px; color: #64748b; text-align: center; margin: 20px 0 0;">You can also view all your requests from the <a style="color: #e60000; text-decoration: none;" href="/pp">Pulse Pharmacy Portal</a>.</p>
+<hr style="margin: 24px 0 16px; border: none; height: 1px; background-color: #e2e8f0;">
+<p style="font-size: 12px; color: #64748b; text-align: center; margin: 0;">Please bring your ID when picking up the medicine.<br>If you cannot pick it up, please contact us at <strong>123-456-789</strong>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- Footer --></td>
+</tr>
+<tr>
+<td style="background-color: #fef2f2; text-align: center; padding: 16px; font-size: 12px; color: #64748b; border-top: 1px solid #fee2e2;">&copy; 2025 Pulse Pharmacy &middot; Your Health, Our Beat &middot; <a style="color: #e60000; text-decoration: none;" href="#">Privacy Policy</a></td>
+</tr>
+</tbody>
+</table>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>prepare order to pick up (pharamasist)</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields>opened_by</recipient_fields>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>❤️ Prepare order for pickup</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-10 04:22:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b8e7f44f4795cb54516b5ac5316d43f5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>prepare order to pick up (pharamasist)</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sysevent_email_action_b8e7f44f4795cb54516b5ac5316d43f5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-10 05:03:16</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <advanced_placeholder_dimensions>false</advanced_placeholder_dimensions>
+        <async_load>false</async_load>
+        <async_load_device_type>desktop,tablet,mobile</async_load_device_type>
+        <async_load_trigger>viewport</async_load_trigger>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <placeholder_dimensions>{&#13;	"mobile": {&#13;		"height": "250px",&#13;		"width": "100%"&#13;	},&#13;	"desktop": {&#13;		"height": "250px",&#13;		"width": "100%"&#13;	},&#13;	"tablet": {&#13;		"height": "250px",&#13;		"width": "100%"&#13;	}&#13;}</placeholder_dimensions>
+        <placeholder_dimensions_script><![CDATA[function evaluateConfig(options) { return {	"mobile": {		"height": "250px",		"width": "100%"	},	"desktop": {		"height": "250px",		"width": "100%"	},	"tablet": {		"height": "250px",		"width": "100%"	}}; }]]></placeholder_dimensions_script>
+        <placeholder_template>&lt;!-- 
+	AngularJS template with configurable options.
+	Use the `options` object to control dynamic behavior.
+	Example: Display an element when max row count is 10:
+	&lt;div ng-if="options.maxRowCount === 10"&gt;&lt;/div&gt;
+	The `skeleton-container` class is used for loading placeholders.
+--&gt;
+	&lt;div class="skeleton-container"&gt;
+	&lt;!-- Header Skeleton --&gt;
+	&lt;div class="skeleton-box skeleton-header"&gt;&lt;/div&gt;
+	&lt;!-- Body Skeleton --&gt;
+	&lt;div class="skeleton-box skeleton-line"&gt;&lt;/div&gt;
+	&lt;div class="skeleton-box skeleton-line small"&gt;&lt;/div&gt;
+	&lt;div class="skeleton-box skeleton-line medium"&gt;&lt;/div&gt;
+&lt;/div&gt;</placeholder_template>
+        <preserve_placeholder_size>false</preserve_placeholder_size>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">cb3c231d47d90f14516b5ac5316d4300</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-05 06:58:36</sys_created_on>
+        <sys_id>5ffceb5d47d90f14516b5ac5316d4397</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sp_instance_5ffceb5d47d90f14516b5ac5316d4397</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 10:26:04</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<p><link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css\" rel=\"stylesheet\"></p>\r\n<div class=\"pulse-carousel\">\r\n<div class=\"carousel-container\">\r\n<div class=\"carousel-slide active\">\r\n<div class=\"tip-icon\">]]>💧<![CDATA[</div>\r\n<p class=\"tip-text\">Staying hydrated boosts your energy and mental clarity. Drink at least 8 glasses of water daily!</p>\r\n</div>\r\n<div class=\"carousel-slide\">\r\n<div class=\"tip-icon\">]]>🍎<![CDATA[</div>\r\n<p class=\"tip-text\">A balanced diet rich in fruits and vegetables strengthens your immune system naturally.</p>\r\n</div>\r\n<div class=\"carousel-slide\">\r\n<div class=\"tip-icon\">]]>😴<![CDATA[</div>\r\n<p class=\"tip-text\">Quality sleep (7&ndash;8 hours) improves memory, mood, and overall health. Prioritize rest!</p>\r\n</div>\r\n<div class=\"carousel-slide\">\r\n<div class=\"tip-icon\">]]>💊<![CDATA[</div>\r\n<p class=\"tip-text\">Always follow prescription instructions. Never share your medication with others.</p>\r\n</div>\r\n</div>\r\n<button class=\"carousel-prev\"></button> <button class=\"carousel-next\"></button>\r\n<div class=\"carousel-dots\">&nbsp;</div>\r\n</div>\r\n<style>\r\n/* ===== تصميم الكاروسيل ===== */\r\n.pulse-carousel {\r\n  position: relative;\r\n  background: linear-gradient(135deg, #FFFFFF, #FFF5F5);\r\n  border-radius: 32px;\r\n  padding: 40px 30px;\r\n  margin: 48px 0;\r\n  text-align: center;\r\n  box-shadow: 0 8px 20px rgba(0,0,0,0.05);\r\n  border: 1px solid #FEE2E2;\r\n}\r\n\r\n.carousel-container {\r\n  position: relative;\r\n  min-height: 180px;\r\n}\r\n\r\n.carousel-slide {\r\n  display: none;\r\n  animation: fadeEffect 0.5s ease-in-out;\r\n}\r\n\r\n.carousel-slide.active {\r\n  display: block;\r\n}\r\n\r\n@keyframes fadeEffect {\r\n  from { opacity: 0; transform: translateY(10px); }\r\n  to { opacity: 1; transform: translateY(0); }\r\n}\r\n\r\n.tip-icon {\r\n  font-size: 48px;\r\n  margin-bottom: 16px;\r\n  color: #E60000; /* لون الإيموجي أحمر */\r\n}\r\n\r\n.tip-text {\r\n  font-size: 18px;\r\n  font-weight: 500;\r\n  color: #1E293B;\r\n  line-height: 1.5;\r\n  max-width: 700px;\r\n  margin: 0 auto;\r\n  padding: 0 20px;\r\n}\r\n\r\n/* أزرار التنقل */\r\n.carousel-prev, .carousel-next {\r\n  position: absolute;\r\n  top: 50%;\r\n  transform: translateY(-50%);\r\n  background-color: rgba(230, 0, 0, 0.7);\r\n  color: white;\r\n  border: none;\r\n  border-radius: 50%;\r\n  width: 40px;\r\n  height: 40px;\r\n  cursor: pointer;\r\n  transition: all 0.2s ease;\r\n  z-index: 5;\r\n}\r\n\r\n.carousel-prev:hover, .carousel-next:hover {\r\n  background-color: #E60000;\r\n  transform: translateY(-50%) scale(1.05);\r\n}\r\n\r\n.carousel-prev {\r\n  left: 15px;\r\n}\r\n\r\n.carousel-next {\r\n  right: 15px;\r\n}\r\n\r\n/* النقاط (dots) */\r\n.carousel-dots {\r\n  display: flex;\r\n  justify-content: center;\r\n  gap: 10px;\r\n  margin-top: 30px;\r\n}\r\n\r\n.dot {\r\n  width: 10px;\r\n  height: 10px;\r\n  background-color: #CBD5E1;\r\n  border-radius: 50%;\r\n  cursor: pointer;\r\n  transition: all 0.2s;\r\n}\r\n\r\n.dot.active {\r\n  background-color: #E60000;\r\n  width: 24px;\r\n  border-radius: 8px;\r\n}\r\n\r\n/* استجابة للشاشات الصغيرة */\r\n@media (max-width: 768px) {\r\n  .pulse-carousel {\r\n    padding: 30px 20px;\r\n  }\r\n  .tip-text {\r\n    font-size: 15px;\r\n  }\r\n  .carousel-prev, .carousel-next {\r\n    width: 32px;\r\n    height: 32px;\r\n  }\r\n}\r\n</style>",
+		"displayValue": "<p><link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css\" rel=\"stylesheet\"></p>\n<div class=\"pulse-carousel\">\n<div class=\"carousel-container\">\n<div class=\"carousel-slide active\">\n<div class=\"tip-icon\">]]>💧<![CDATA[</div>\n<p class=\"tip-text\">Staying hydrated boosts your energy and mental clarity. Drink at least 8 glasses of water daily!</p>\n</div>\n<div class=\"carousel-slide\">\n<div class=\"tip-icon\">]]>🍎<![CDATA[</div>\n<p class=\"tip-text\">A balanced diet rich in fruits and vegetables strengthens your immune system naturally.</p>\n</div>\n<div class=\"carousel-slide\">\n<div class=\"tip-icon\">]]>😴<![CDATA[</div>\n<p class=\"tip-text\">Quality sleep (7&ndash;8 hours) improves memory, mood, and overall health. Prioritize rest!</p>\n</div>\n<div class=\"carousel-slide\">\n<div class=\"tip-icon\">]]>💊<![CDATA[</div>\n<p class=\"tip-text\">Always follow prescription instructions. Never share your medication with others.</p>\n</div>\n</div>\n<button class=\"carousel-prev\"></button> <button class=\"carousel-next\"></button>\n<div class=\"carousel-dots\">&nbsp;</div>\n</div>\n<style>\n/* ===== تصميم الكاروسيل ===== */\n.pulse-carousel {\n  position: relative;\n  background: linear-gradient(135deg, #FFFFFF, #FFF5F5);\n  border-radius: 32px;\n  padding: 40px 30px;\n  margin: 48px 0;\n  text-align: center;\n  box-shadow: 0 8px 20px rgba(0,0,0,0.05);\n  border: 1px solid #FEE2E2;\n}\n\n.carousel-container {\n  position: relative;\n  min-height: 180px;\n}\n\n.carousel-slide {\n  display: none;\n  animation: fadeEffect 0.5s ease-in-out;\n}\n\n.carousel-slide.active {\n  display: block;\n}\n\n@keyframes fadeEffect {\n  from { opacity: 0; transform: translateY(10px); }\n  to { opacity: 1; transform: translateY(0); }\n}\n\n.tip-icon {\n  font-size: 48px;\n  margin-bottom: 16px;\n  color: #E60000; /* لون الإيموجي أحمر */\n}\n\n.tip-text {\n  font-size: 18px;\n  font-weight: 500;\n  color: #1E293B;\n  line-height: 1.5;\n  max-width: 700px;\n  margin: 0 auto;\n  padding: 0 20px;\n}\n\n/* أزرار التنقل */\n.carousel-prev, .carousel-next {\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  background-color: rgba(230, 0, 0, 0.7);\n  color: white;\n  border: none;\n  border-radius: 50%;\n  width: 40px;\n  height: 40px;\n  cursor: pointer;\n  transition: all 0.2s ease;\n  z-index: 5;\n}\n\n.carousel-prev:hover, .carousel-next:hover {\n  background-color: #E60000;\n  transform: translateY(-50%) scale(1.05);\n}\n\n.carousel-prev {\n  left: 15px;\n}\n\n.carousel-next {\n  right: 15px;\n}\n\n/* النقاط (dots) */\n.carousel-dots {\n  display: flex;\n  justify-content: center;\n  gap: 10px;\n  margin-top: 30px;\n}\n\n.dot {\n  width: 10px;\n  height: 10px;\n  background-color: #CBD5E1;\n  border-radius: 50%;\n  cursor: pointer;\n  transition: all 0.2s;\n}\n\n.dot.active {\n  background-color: #E60000;\n  width: 24px;\n  border-radius: 8px;\n}\n\n/* استجابة للشاشات الصغيرة */\n@media (max-width: 768px) {\n  .pulse-carousel {\n    padding: 30px 20px;\n  }\n  .tip-text {\n    font-size: 15px;\n  }\n  .carousel-prev, .carousel-next {\n    width: 32px;\n    height: 32px;\n  }\n}\n</style>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=5ffceb5d47d90f14516b5ac5316d4397"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</application>
+        <file_path/>
+        <instance_id>72baa3bf93706614d9f6ddd548373c01</instance_id>
+        <instance_name>dev329537</instance_name>
+        <name>sp_instance_5ffceb5d47d90f14516b5ac5316d4397</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced_placeholder_dimensions&gt;false&lt;/advanced_placeholder_dimensions&gt;&lt;async_load&gt;false&lt;/async_load&gt;&lt;async_load_device_type&gt;desktop,tablet,mobile&lt;/async_load_device_type&gt;&lt;async_load_trigger&gt;viewport&lt;/async_load_trigger&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;placeholder_dimensions&gt;{&amp;#13;	"mobile": {&amp;#13;		"height": "250px",&amp;#13;		"width": "100%"&amp;#13;	},&amp;#13;	"desktop": {&amp;#13;		"height": "250px",&amp;#13;		"width": "100%"&amp;#13;	},&amp;#13;	"tablet": {&amp;#13;		"height": "250px",&amp;#13;		"width": "100%"&amp;#13;	}&amp;#13;}&lt;/placeholder_dimensions&gt;&lt;placeholder_dimensions_script&gt;&lt;![CDATA[function evaluateConfig(options) { return {	"mobile": {		"height": "250px",		"width": "100%"	},	"desktop": {		"height": "250px",		"width": "100%"	},	"tablet": {		"height": "250px",		"width": "100%"	}}; }]]&gt;&lt;/placeholder_dimensions_script&gt;&lt;placeholder_template&gt;&amp;lt;!-- 
+	AngularJS template with configurable options.
+	Use the `options` object to control dynamic behavior.
+	Example: Display an element when max row count is 10:
+	&amp;lt;div ng-if="options.maxRowCount === 10"&amp;gt;&amp;lt;/div&amp;gt;
+	The `skeleton-container` class is used for loading placeholders.
+--&amp;gt;
+	&amp;lt;div class="skeleton-container"&amp;gt;
+	&amp;lt;!-- Header Skeleton --&amp;gt;
+	&amp;lt;div class="skeleton-box skeleton-header"&amp;gt;&amp;lt;/div&amp;gt;
+	&amp;lt;!-- Body Skeleton --&amp;gt;
+	&amp;lt;div class="skeleton-box skeleton-line"&amp;gt;&amp;lt;/div&amp;gt;
+	&amp;lt;div class="skeleton-box skeleton-line small"&amp;gt;&amp;lt;/div&amp;gt;
+	&amp;lt;div class="skeleton-box skeleton-line medium"&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;&lt;/placeholder_template&gt;&lt;preserve_placeholder_size&gt;false&lt;/preserve_placeholder_size&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;cb3c231d47d90f14516b5ac5316d4300&lt;/sp_column&gt;&lt;sp_widget display_value="HTML"&gt;8679ef89cb21120000f8d856634c9c4f&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-05 06:58:36&lt;/sys_created_on&gt;&lt;sys_id&gt;5ffceb5d47d90f14516b5ac5316d4397&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0"&gt;2913deb94745cb90516b5ac5316d4301&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Smart Pharmacy Management System"&gt;2913deb94745cb90516b5ac5316d4301&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_5ffceb5d47d90f14516b5ac5316d4397&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-05 10:26:04&lt;/sys_updated_on&gt;&lt;title/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"html": {
+		"value": "&lt;p&gt;&lt;link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css\" rel=\"stylesheet\"&gt;&lt;/p&gt;\r\n&lt;div class=\"pulse-carousel\"&gt;\r\n&lt;div class=\"carousel-container\"&gt;\r\n&lt;div class=\"carousel-slide active\"&gt;\r\n&lt;div class=\"tip-icon\"&gt;]]&gt;💧&lt;![CDATA[&lt;/div&gt;\r\n&lt;p class=\"tip-text\"&gt;Staying hydrated boosts your energy and mental clarity. Drink at least 8 glasses of water daily!&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;div class=\"carousel-slide\"&gt;\r\n&lt;div class=\"tip-icon\"&gt;]]&gt;🍎&lt;![CDATA[&lt;/div&gt;\r\n&lt;p class=\"tip-text\"&gt;A balanced diet rich in fruits and vegetables strengthens your immune system naturally.&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;div class=\"carousel-slide\"&gt;\r\n&lt;div class=\"tip-icon\"&gt;]]&gt;😴&lt;![CDATA[&lt;/div&gt;\r\n&lt;p class=\"tip-text\"&gt;Quality sleep (7&amp;ndash;8 hours) improves memory, mood, and overall health. Prioritize rest!&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;div class=\"carousel-slide\"&gt;\r\n&lt;div class=\"tip-icon\"&gt;]]&gt;💊&lt;![CDATA[&lt;/div&gt;\r\n&lt;p class=\"tip-text\"&gt;Always follow prescription instructions. Never share your medication with others.&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;button class=\"carousel-prev\"&gt;&lt;/button&gt; &lt;button class=\"carousel-next\"&gt;&lt;/button&gt;\r\n&lt;div class=\"carousel-dots\"&gt;&amp;nbsp;&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;style&gt;\r\n/* ===== تصميم الكاروسيل ===== */\r\n.pulse-carousel {\r\n  position: relative;\r\n  background: linear-gradient(135deg, #FFFFFF, #FFF5F5);\r\n  border-radius: 32px;\r\n  padding: 40px 30px;\r\n  margin: 48px 0;\r\n  text-align: center;\r\n  box-shadow: 0 8px 20px rgba(0,0,0,0.05);\r\n  border: 1px solid #FEE2E2;\r\n}\r\n\r\n.carousel-container {\r\n  position: relative;\r\n  min-height: 180px;\r\n}\r\n\r\n.carousel-slide {\r\n  display: none;\r\n  animation: fadeEffect 0.5s ease-in-out;\r\n}\r\n\r\n.carousel-slide.active {\r\n  display: block;\r\n}\r\n\r\n@keyframes fadeEffect {\r\n  from { opacity: 0; transform: translateY(10px); }\r\n  to { opacity: 1; transform: translateY(0); }\r\n}\r\n\r\n.tip-icon {\r\n  font-size: 48px;\r\n  margin-bottom: 16px;\r\n  color: #E60000; /* لون الإيموجي أحمر */\r\n}\r\n\r\n.tip-text {\r\n  font-size: 18px;\r\n  font-weight: 500;\r\n  color: #1E293B;\r\n  line-height: 1.5;\r\n  max-width: 700px;\r\n  margin: 0 auto;\r\n  padding: 0 20px;\r\n}\r\n\r\n/* أزرار التنقل */\r\n.carousel-prev, .carousel-next {\r\n  position: absolute;\r\n  top: 50%;\r\n  transform: translateY(-50%);\r\n  background-color: rgba(230, 0, 0, 0.7);\r\n  color: white;\r\n  border: none;\r\n  border-radius: 50%;\r\n  width: 40px;\r\n  height: 40px;\r\n  cursor: pointer;\r\n  transition: all 0.2s ease;\r\n  z-index: 5;\r\n}\r\n\r\n.carousel-prev:hover, .carousel-next:hover {\r\n  background-color: #E60000;\r\n  transform: translateY(-50%) scale(1.05);\r\n}\r\n\r\n.carousel-prev {\r\n  left: 15px;\r\n}\r\n\r\n.carousel-next {\r\n  right: 15px;\r\n}\r\n\r\n/* النقاط (dots) */\r\n.carousel-dots {\r\n  display: flex;\r\n  justify-content: center;\r\n  gap: 10px;\r\n  margin-top: 30px;\r\n}\r\n\r\n.dot {\r\n  width: 10px;\r\n  height: 10px;\r\n  background-color: #CBD5E1;\r\n  border-radius: 50%;\r\n  cursor: pointer;\r\n  transition: all 0.2s;\r\n}\r\n\r\n.dot.active {\r\n  background-color: #E60000;\r\n  width: 24px;\r\n  border-radius: 8px;\r\n}\r\n\r\n/* استجابة للشاشات الصغيرة */\r\n@media (max-width: 768px) {\r\n  .pulse-carousel {\r\n    padding: 30px 20px;\r\n  }\r\n  .tip-text {\r\n    font-size: 15px;\r\n  }\r\n  .carousel-prev, .carousel-next {\r\n    width: 32px;\r\n    height: 32px;\r\n  }\r\n}\r\n&lt;/style&gt;",
+		"displayValue": "&lt;p&gt;&lt;link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css\" rel=\"stylesheet\"&gt;&lt;/p&gt;\n&lt;div class=\"pulse-carousel\"&gt;\n&lt;div class=\"carousel-container\"&gt;\n&lt;div class=\"carousel-slide active\"&gt;\n&lt;div class=\"tip-icon\"&gt;]]&gt;💧&lt;![CDATA[&lt;/div&gt;\n&lt;p class=\"tip-text\"&gt;Staying hydrated boosts your energy and mental clarity. Drink at least 8 glasses of water daily!&lt;/p&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-slide\"&gt;\n&lt;div class=\"tip-icon\"&gt;]]&gt;🍎&lt;![CDATA[&lt;/div&gt;\n&lt;p class=\"tip-text\"&gt;A balanced diet rich in fruits and vegetables strengthens your immune system naturally.&lt;/p&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-slide\"&gt;\n&lt;div class=\"tip-icon\"&gt;]]&gt;😴&lt;![CDATA[&lt;/div&gt;\n&lt;p class=\"tip-text\"&gt;Quality sleep (7&amp;ndash;8 hours) improves memory, mood, and overall health. Prioritize rest!&lt;/p&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-slide\"&gt;\n&lt;div class=\"tip-icon\"&gt;]]&gt;💊&lt;![CDATA[&lt;/div&gt;\n&lt;p class=\"tip-text\"&gt;Always follow prescription instructions. Never share your medication with others.&lt;/p&gt;\n&lt;/div&gt;\n&lt;/div&gt;\n&lt;button class=\"carousel-prev\"&gt;&lt;/button&gt; &lt;button class=\"carousel-next\"&gt;&lt;/button&gt;\n&lt;div class=\"carousel-dots\"&gt;&amp;nbsp;&lt;/div&gt;\n&lt;/div&gt;\n&lt;style&gt;\n/* ===== تصميم الكاروسيل ===== */\n.pulse-carousel {\n  position: relative;\n  background: linear-gradient(135deg, #FFFFFF, #FFF5F5);\n  border-radius: 32px;\n  padding: 40px 30px;\n  margin: 48px 0;\n  text-align: center;\n  box-shadow: 0 8px 20px rgba(0,0,0,0.05);\n  border: 1px solid #FEE2E2;\n}\n\n.carousel-container {\n  position: relative;\n  min-height: 180px;\n}\n\n.carousel-slide {\n  display: none;\n  animation: fadeEffect 0.5s ease-in-out;\n}\n\n.carousel-slide.active {\n  display: block;\n}\n\n@keyframes fadeEffect {\n  from { opacity: 0; transform: translateY(10px); }\n  to { opacity: 1; transform: translateY(0); }\n}\n\n.tip-icon {\n  font-size: 48px;\n  margin-bottom: 16px;\n  color: #E60000; /* لون الإيموجي أحمر */\n}\n\n.tip-text {\n  font-size: 18px;\n  font-weight: 500;\n  color: #1E293B;\n  line-height: 1.5;\n  max-width: 700px;\n  margin: 0 auto;\n  padding: 0 20px;\n}\n\n/* أزرار التنقل */\n.carousel-prev, .carousel-next {\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  background-color: rgba(230, 0, 0, 0.7);\n  color: white;\n  border: none;\n  border-radius: 50%;\n  width: 40px;\n  height: 40px;\n  cursor: pointer;\n  transition: all 0.2s ease;\n  z-index: 5;\n}\n\n.carousel-prev:hover, .carousel-next:hover {\n  background-color: #E60000;\n  transform: translateY(-50%) scale(1.05);\n}\n\n.carousel-prev {\n  left: 15px;\n}\n\n.carousel-next {\n  right: 15px;\n}\n\n/* النقاط (dots) */\n.carousel-dots {\n  display: flex;\n  justify-content: center;\n  gap: 10px;\n  margin-top: 30px;\n}\n\n.dot {\n  width: 10px;\n  height: 10px;\n  background-color: #CBD5E1;\n  border-radius: 50%;\n  cursor: pointer;\n  transition: all 0.2s;\n}\n\n.dot.active {\n  background-color: #E60000;\n  width: 24px;\n  border-radius: 8px;\n}\n\n/* استجابة للشاشات الصغيرة */\n@media (max-width: 768px) {\n  .pulse-carousel {\n    padding: 30px 20px;\n  }\n  .tip-text {\n    font-size: 15px;\n  }\n  .carousel-prev, .carousel-next {\n    width: 32px;\n    height: 32px;\n  }\n}\n&lt;/style&gt;"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=5ffceb5d47d90f14516b5ac5316d4397"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>58953444</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>2513deb94745cb90516b5ac5316d436e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-05 10:26:04</sys_created_on>
+        <sys_id>5a7c50ad47914f14516b5ac5316d439d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e97518bdf0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 10:26:04</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>1a7c50adad914f1403e0cfd4f9d7589c</update_guid>
+        <update_guid_history>1a7c50adad914f1403e0cfd4f9d7589c:58953444,dfdd0ca992114f145941be45c637a8e3:-491053382,dbfceb5de3d90f14b21ccfde304f949a:-260017676</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">7216875247d94754516b5ac5316d4313</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-08 06:42:39</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>3027998b8bb041709f6fa8735c7ec024</sys_id>
+        <sys_metadata>5ffceb5d47d90f14516b5ac5316d4397</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_scope_delete display_value="">1f0a401f3f154f8685d0015f93a89904</sys_scope_delete>
+        <sys_update_name>sp_instance_5ffceb5d47d90f14516b5ac5316d4397</sys_update_name>
+        <sys_update_version display_value="sp_instance_5ffceb5d47d90f14516b5ac5316d4397">5a7c50ad47914f14516b5ac5316d439d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-08 06:42:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

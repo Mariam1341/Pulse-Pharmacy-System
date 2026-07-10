@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope, $interval, spUtil){
+  /* widget controller */
+
+  var c = this;
+
+  // ── 1. Dynamic Time-of-Day Greeting ─────────────────────────────────────────
+  function computeGreeting() {
+    var hour = new Date().getHours();
+    if (hour >= 5 && hour < 12)  return 'Good morning';
+    if (hour >= 12 && hour < 17) return 'Good afternoon';
+    if (hour >= 17 && hour < 21) return 'Good evening';
+    return 'Welcome back';
+  }
+
+  // ── 2. First Name Extraction ─────────────────────────────────────────────────
+  // c.firstName is populated by the server script below
+  // Fallback gracefully if user data unavailable
+  c.firstName = c.data.firstName || 'there';
+  c.greetingText = computeGreeting();
+
+  // ── 3. Greeting Subtext (context-aware) ─────────────────────────────────────
+  var subtexts = [
+    'Your health, managed digitally.',
+    'Manage your prescriptions and requests below.',
+    'All your pharmacy services, in one place.',
+    'How can Pulse Pharmacy help you today?'
+  ];
+  c.greetingSubtext = subtexts[new Date().getDay() % subtexts.length];
+
+  // ── 4. Live Clock ─────────────────────────────────────────────────────────────
+  var DAYS   = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  var MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+  function updateClock() {
+    var now   = new Date();
+    var h     = now.getHours();
+    var m     = now.getMinutes();
+    var ampm  = h >= 12 ? 'PM' : 'AM';
+    var h12   = h % 12 || 12;
+
+    c.currentTime = h12 + ':' + (m < 10 ? '0' : '') + m + ' ' + ampm;
+    c.currentDate = MONTHS[now.getMonth()] + ' ' + now.getDate() + ', ' + now.getFullYear();
+    c.dayOfWeek   = DAYS[now.getDay()];
+  }
+
+  updateClock();
+  var clockInterval = $interval(updateClock, 30000); // refresh every 30 seconds
+
+  // ── 5. Live RITM Stats ────────────────────────────────────────────────────────
+  // Populated by server script; set loading state
+  c.stats = {
+    loaded:  false,
+    pending: 0,
+    total:   0
+  };
+
+  if (c.data.stats) {
+    c.stats.pending = c.data.stats.pending || 0;
+    c.stats.total   = c.data.stats.total   || 0;
+    c.stats.loaded  = true;
+  }
+
+  // ── 6. Cleanup interval on scope destroy ─────────────────────────────────────
+  $scope.$on('$destroy', function() {
+    $interval.cancel(clockInterval);
+  });
+};/**
+ * PP Hero Header — Client Controller
+ * Handles: dynamic greeting, real-time clock, and live RITM stats
+ */
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>// ─── PP HERO HEADER WIDGET ───────────────────────────────────────────────────&#13;
+&#13;
+.pp-hero {&#13;
+  position: relative;&#13;
+  display: flex;&#13;
+  align-items: center;&#13;
+  justify-content: space-between;&#13;
+  padding: 36px 48px;&#13;
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 55%, #1a1230 100%);&#13;
+  border-radius: 0 0 12px 12px;&#13;
+  overflow: hidden;&#13;
+  min-height: 180px;&#13;
+  margin-bottom: 8px;&#13;
+&#13;
+  // ── Background Accents ─────────────────────────────────────&#13;
+  &amp;__bg-accent {&#13;
+    position: absolute;&#13;
+    inset: 0;&#13;
+    pointer-events: none;&#13;
+    z-index: 0;&#13;
+  }&#13;
+&#13;
+  &amp;__accent-circle {&#13;
+    position: absolute;&#13;
+    border-radius: 50%;&#13;
+    opacity: 0.06;&#13;
+    background: #E60000;&#13;
+&#13;
+    &amp;--1 {&#13;
+      width: 400px;&#13;
+      height: 400px;&#13;
+      top: -160px;&#13;
+      right: -80px;&#13;
+    }&#13;
+&#13;
+    &amp;--2 {&#13;
+      width: 200px;&#13;
+      height: 200px;&#13;
+      bottom: -100px;&#13;
+      right: 200px;&#13;
+      opacity: 0.04;&#13;
+    }&#13;
+  }&#13;
+&#13;
+  // ── Content (left side) ────────────────────────────────────&#13;
+  &amp;__content {&#13;
+    position: relative;&#13;
+    z-index: 1;&#13;
+    display: flex;&#13;
+    flex-direction: column;&#13;
+    gap: 16px;&#13;
+  }&#13;
+&#13;
+  // ── Brand Wordmark ─────────────────────────────────────────&#13;
+  &amp;__brand {&#13;
+    display: flex;&#13;
+    align-items: center;&#13;
+    gap: 10px;&#13;
+  }&#13;
+&#13;
+  &amp;__brand-icon {&#13;
+    display: flex;&#13;
+    align-items: center;&#13;
+    filter: drop-shadow(0 2px 4px rgba(230, 0, 0, 0.4));&#13;
+  }&#13;
+&#13;
+  &amp;__brand-name {&#13;
+    font-size: 16px;&#13;
+    font-weight: 700;&#13;
+    color: #FFFFFF;&#13;
+    letter-spacing: -0.2px;&#13;
+    font-family: 'Inter', sans-serif;&#13;
+  }&#13;
+&#13;
+  &amp;__brand-badge {&#13;
+    display: inline-flex;&#13;
+    align-items: center;&#13;
+    padding: 2px 8px;&#13;
+    background: rgba(230, 0, 0, 0.18);&#13;
+    border: 1px solid rgba(230, 0, 0, 0.35);&#13;
+    border-radius: 100px;&#13;
+    font-size: 10px;&#13;
+    font-weight: 600;&#13;
+    color: #FF6666;&#13;
+    letter-spacing: 0.4px;&#13;
+    text-transform: uppercase;&#13;
+  }&#13;
+&#13;
+  // ── Dynamic Greeting ───────────────────────────────────────&#13;
+  &amp;__greeting-text {&#13;
+    margin: 0;&#13;
+    font-size: 28px;&#13;
+    font-weight: 700;&#13;
+    color: #FFFFFF;&#13;
+    letter-spacing: -0.5px;&#13;
+    line-height: 1.2;&#13;
+    font-family: 'Inter', sans-serif;&#13;
+  }&#13;
+&#13;
+  &amp;__greeting-name {&#13;
+    color: #FF6666;&#13;
+    position: relative;&#13;
+&#13;
+    &amp;::after {&#13;
+      content: '';&#13;
+      position: absolute;&#13;
+      bottom: -2px;&#13;
+      left: 0;&#13;
+      right: 0;&#13;
+      height: 2px;&#13;
+      background: linear-gradient(90deg, #E60000, transparent);&#13;
+      border-radius: 2px;&#13;
+    }&#13;
+  }&#13;
+&#13;
+  &amp;__greeting-sub {&#13;
+    margin: 4px 0 0;&#13;
+    font-size: 14px;&#13;
+    font-weight: 400;&#13;
+    color: #94A3B8;&#13;
+    letter-spacing: 0.1px;&#13;
+  }&#13;
+&#13;
+  // ── Stats Pills ────────────────────────────────────────────&#13;
+  &amp;__stats {&#13;
+    display: flex;&#13;
+    gap: 10px;&#13;
+    flex-wrap: wrap;&#13;
+    margin-top: 4px;&#13;
+  }&#13;
+&#13;
+  &amp;__stat-pill {&#13;
+    display: inline-flex;&#13;
+    align-items: center;&#13;
+    gap: 6px;&#13;
+    padding: 6px 14px;&#13;
+    background: rgba(255, 255, 255, 0.07);&#13;
+    border: 1px solid rgba(255, 255, 255, 0.12);&#13;
+    border-radius: 100px;&#13;
+    font-size: 13px;&#13;
+    color: #CBD5E1;&#13;
+    transition: background 0.2s ease;&#13;
+    backdrop-filter: blur(4px);&#13;
+&#13;
+    &amp;--alert {&#13;
+      background: rgba(230, 0, 0, 0.15);&#13;
+      border-color: rgba(230, 0, 0, 0.3);&#13;
+      color: #FCA5A5;&#13;
+&#13;
+      .pp-hero__stat-icon { color: #E60000; }&#13;
+    }&#13;
+  }&#13;
+&#13;
+  &amp;__stat-icon {&#13;
+    display: flex;&#13;
+    align-items: center;&#13;
+    color: #64748B;&#13;
+  }&#13;
+&#13;
+  &amp;__stat-value {&#13;
+    font-weight: 700;&#13;
+    font-size: 14px;&#13;
+    color: #FFFFFF;&#13;
+  }&#13;
+&#13;
+  &amp;__stat-label {&#13;
+    font-size: 12px;&#13;
+    font-weight: 400;&#13;
+  }&#13;
+&#13;
+  // ── Clock (right side) ─────────────────────────────────────&#13;
+  &amp;__clock {&#13;
+    position: relative;&#13;
+    z-index: 1;&#13;
+    text-align: right;&#13;
+    display: flex;&#13;
+    flex-direction: column;&#13;
+    align-items: flex-end;&#13;
+    gap: 4px;&#13;
+    flex-shrink: 0;&#13;
+  }&#13;
+&#13;
+  &amp;__clock-time {&#13;
+    font-size: 42px;&#13;
+    font-weight: 200;&#13;
+    color: #FFFFFF;&#13;
+    letter-spacing: -1px;&#13;
+    font-family: 'Inter', sans-serif;&#13;
+    line-height: 1;&#13;
+  }&#13;
+&#13;
+  &amp;__clock-date {&#13;
+    font-size: 13px;&#13;
+    font-weight: 400;&#13;
+    color: #94A3B8;&#13;
+    letter-spacing: 0.5px;&#13;
+  }&#13;
+&#13;
+  &amp;__clock-divider {&#13;
+    width: 40px;&#13;
+    height: 1px;&#13;
+    background: linear-gradient(90deg, transparent, rgba(230, 0, 0, 0.5));&#13;
+    margin: 4px 0;&#13;
+  }&#13;
+&#13;
+  &amp;__clock-day {&#13;
+    font-size: 11px;&#13;
+    font-weight: 600;&#13;
+    color: #64748B;&#13;
+    text-transform: uppercase;&#13;
+    letter-spacing: 1px;&#13;
+  }&#13;
+&#13;
+  &amp;__clock-label {&#13;
+    font-size: 11px;&#13;
+    font-weight: 600;&#13;
+    color: #E60000;&#13;
+    text-transform: uppercase;&#13;
+    letter-spacing: 1.5px;&#13;
+  }&#13;
+&#13;
+  // ── Responsive ─────────────────────────────────────────────&#13;
+  @media (max-width: 768px) {&#13;
+    flex-direction: column;&#13;
+    align-items: flex-start;&#13;
+    padding: 28px 24px;&#13;
+    gap: 20px;&#13;
+&#13;
+    &amp;__clock {&#13;
+      text-align: left;&#13;
+      align-items: flex-start;&#13;
+&#13;
+      &amp;-time { font-size: 28px; }&#13;
+    }&#13;
+&#13;
+    &amp;__greeting-text { font-size: 22px; }&#13;
+  }&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>pp-hero-header</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Hero Header</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[/**
+ * PP Hero Header — Server Script
+ * Fetches: logged-in user's first name + RITM stats for pill display
+ */
+(function() {
+  'use strict';
+
+  data.firstName = '';
+  data.stats     = { pending: 0, total: 0 };
+
+  // ── 1. Resolve current user ──────────────────────────────────────────────────
+  var userId = gs.getUserID();
+  if (!userId) return; // anonymous user — gracefully exit
+
+  var userGr = new GlideRecord('sys_user');
+  if (userGr.get(userId)) {
+    // Use first name; fall back to full name, then username
+    data.firstName = userGr.first_name.toString()
+      || userGr.name.toString().split(' ')[0]
+      || userGr.user_name.toString();
+  }
+
+  // ── 2. Count this user's RITMs for the pharmacy catalog item ─────────────────
+  // "Pending" = any stage that is not Completed or Rejected
+  var CATALOG_ITEM_NAME = 'MedicineRequest'; // partial name match
+
+  var totalGr = new GlideAggregate('sc_req_item');
+  totalGr.addQuery('opened_by', userId);
+  totalGr.addQuery('cat_item.name', 'CONTAINS', CATALOG_ITEM_NAME);
+  totalGr.addAggregate('COUNT');
+  totalGr.query();
+  if (totalGr.next()) {
+    data.stats.total = parseInt(totalGr.getAggregate('COUNT'), 10) || 0;
+  }
+
+  var pendingGr = new GlideAggregate('sc_req_item');
+  pendingGr.addQuery('opened_by', userId);
+  pendingGr.addQuery('cat_item.name', 'CONTAINS', CATALOG_ITEM_NAME);
+  pendingGr.addQuery('stage', 'NOT IN', 'complete,rejected');
+  pendingGr.addAggregate('COUNT');
+  pendingGr.query();
+  if (pendingGr.next()) {
+    data.stats.pending = parseInt(pendingGr.getAggregate('COUNT'), 10) || 0;
+  }
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-29 04:48:33</sys_created_on>
+        <sys_id>c8abcf874785c7d0516b5ac5316d43f7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Hero Header</sys_name>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sp_widget_c8abcf874785c7d0516b5ac5316d43f7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-29 04:50:41</sys_updated_on>
+        <template><![CDATA[<div class="pp-hero">
+
+  <!-- Background geometric accent -->
+  <div class="pp-hero__bg-accent" aria-hidden="true">
+    <div class="pp-hero__accent-circle pp-hero__accent-circle--1"></div>
+    <div class="pp-hero__accent-circle pp-hero__accent-circle--2"></div>
+  </div>
+
+  <!-- Left: Brand + Greeting -->
+  <div class="pp-hero__content">
+
+    <!-- Brand wordmark -->
+    <div class="pp-hero__brand">
+      <div class="pp-hero__brand-icon" aria-hidden="true">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="28" height="28" rx="6" fill="#E60000"/>
+          <path d="M9 7h6a5 5 0 0 1 0 10H9V7z" fill="white" opacity="0.95"/>
+          <rect x="9" y="19" width="4" height="4" rx="1" fill="white" opacity="0.7"/>
+        </svg>
+      </div>
+      <span class="pp-hero__brand-name">Pulse Pharmacy</span>
+      <span class="pp-hero__brand-badge">Patient Portal</span>
+    </div>
+
+    <!-- Dynamic greeting -->
+    <div class="pp-hero__greeting">
+      <h1 class="pp-hero__greeting-text">
+        {{c.greetingText}}, <span class="pp-hero__greeting-name">{{c.firstName}}</span>
+      </h1>
+      <p class="pp-hero__greeting-sub">{{c.greetingSubtext}}</p>
+    </div>
+
+    <!-- Quick stat pills -->
+    <div class="pp-hero__stats" ng-if="c.stats.loaded">
+      <div class="pp-hero__stat-pill" ng-class="{'pp-hero__stat-pill--alert': c.stats.pending > 0}">
+        <span class="pp-hero__stat-icon" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1L1 4v6l6 3 6-3V4L7 1z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="pp-hero__stat-value">{{c.stats.pending}}</span>
+        <span class="pp-hero__stat-label">Pending Request<span ng-if="c.stats.pending !== 1">s</span></span>
+      </div>
+      <div class="pp-hero__stat-pill">
+        <span class="pp-hero__stat-icon" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.4"/><path d="M7 4v3l2 2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </span>
+        <span class="pp-hero__stat-value">{{c.stats.total}}</span>
+        <span class="pp-hero__stat-label">Total Requests</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Right: Time & Date Display -->
+  <div class="pp-hero__clock" aria-live="polite" aria-label="Current time">
+    <div class="pp-hero__clock-time">{{c.currentTime}}</div>
+    <div class="pp-hero__clock-date">{{c.currentDate}}</div>
+    <div class="pp-hero__clock-divider" aria-hidden="true"></div>
+    <div class="pp-hero__clock-label">{{c.dayOfWeek}}</div>
+  </div>
+
+</div>]]></template>
+    </sp_widget>
+</record_update>

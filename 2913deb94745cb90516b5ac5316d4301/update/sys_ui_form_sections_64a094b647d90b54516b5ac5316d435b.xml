@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="64a094b647d90b54516b5ac5316d435b" sys_domain="global" table="incident" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-09 06:46:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e0a094b647d90b54516b5ac5316d436d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="incident" name="incident" sys_domain="global" view="f53844b247990b54516b5ac5316d43fc">64a094b647d90b54516b5ac5316d435b</sys_ui_form>
+            <sys_ui_section caption="Basic Information" display_value="Basic Information" name="incident" sys_domain="global" view="f53844b247990b54516b5ac5316d43fc">f93848b247990b54516b5ac5316d4307</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-09 06:46:44</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-09 06:46:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6ca094b647d90b54516b5ac5316d436e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="incident" name="incident" sys_domain="global" view="f53844b247990b54516b5ac5316d43fc">64a094b647d90b54516b5ac5316d435b</sys_ui_form>
+            <sys_ui_section caption="Problem &amp; Work Notes" display_value="Problem &amp; Work Notes" name="incident" sys_domain="global" view="f53844b247990b54516b5ac5316d43fc">a0a094b647d90b54516b5ac5316d4358</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-09 06:46:44</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-09 06:46:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e8a094b647d90b54516b5ac5316d4375</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="incident" name="incident" sys_domain="global" view="f53844b247990b54516b5ac5316d43fc">64a094b647d90b54516b5ac5316d435b</sys_ui_form>
+            <sys_ui_section caption="Disposal Action" display_value="Disposal Action" name="incident" sys_domain="global" view="f53844b247990b54516b5ac5316d43fc">28a094b647d90b54516b5ac5316d4359</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-09 06:46:44</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>incident</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-09 06:46:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>64a094b647d90b54516b5ac5316d435b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>incident</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+            <sys_update_name>sys_ui_form_sections_64a094b647d90b54516b5ac5316d435b</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-09 06:46:44</sys_updated_on>
+            <sys_user/>
+            <view display_value="internal problem" name="internal_problem">f53844b247990b54516b5ac5316d43fc</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

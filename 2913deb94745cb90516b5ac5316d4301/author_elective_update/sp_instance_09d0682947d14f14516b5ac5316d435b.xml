@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <advanced_placeholder_dimensions>false</advanced_placeholder_dimensions>
+        <async_load>false</async_load>
+        <async_load_device_type>desktop,tablet,mobile</async_load_device_type>
+        <async_load_trigger>viewport</async_load_trigger>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <placeholder_dimensions>{&#13;	"mobile": {&#13;		"height": "250px",&#13;		"width": "100%"&#13;	},&#13;	"desktop": {&#13;		"height": "250px",&#13;		"width": "100%"&#13;	},&#13;	"tablet": {&#13;		"height": "250px",&#13;		"width": "100%"&#13;	}&#13;}</placeholder_dimensions>
+        <placeholder_dimensions_script><![CDATA[function evaluateConfig(options) { return {	"mobile": {		"height": "250px",		"width": "100%"	},	"desktop": {		"height": "250px",		"width": "100%"	},	"tablet": {		"height": "250px",		"width": "100%"	}}; }]]></placeholder_dimensions_script>
+        <placeholder_template>&lt;!-- 
+	AngularJS template with configurable options.
+	Use the `options` object to control dynamic behavior.
+	Example: Display an element when max row count is 10:
+	&lt;div ng-if="options.maxRowCount === 10"&gt;&lt;/div&gt;
+	The `skeleton-container` class is used for loading placeholders.
+--&gt;
+	&lt;div class="skeleton-container"&gt;
+	&lt;!-- Header Skeleton --&gt;
+	&lt;div class="skeleton-box skeleton-header"&gt;&lt;/div&gt;
+	&lt;!-- Body Skeleton --&gt;
+	&lt;div class="skeleton-box skeleton-line"&gt;&lt;/div&gt;
+	&lt;div class="skeleton-box skeleton-line small"&gt;&lt;/div&gt;
+	&lt;div class="skeleton-box skeleton-line medium"&gt;&lt;/div&gt;
+&lt;/div&gt;</placeholder_template>
+        <preserve_placeholder_size>false</preserve_placeholder_size>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">db3d7d9b47cd0bd0516b5ac5316d430b</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-05 10:45:05</sys_created_on>
+        <sys_id>09d0682947d14f14516b5ac5316d435b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sp_instance_09d0682947d14f14516b5ac5316d435b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-08 15:44:13</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<footer class=\"pulse-footer\">\r\n<div class=\"footer-container\">\r\n<div class=\"footer-brand\">\r\n<h3>❤️ Pulse Pharmacy</h3>\r\n<p>Your Health, Our Beat</p>\r\n</div>\r\n<div class=\"footer-links\"><a href=\"/pp\">Home</a> <a href=\"/pp?id=sc_cat_item&amp;sys_id=66570a20479d0714516b5ac5316d434d\">Request Medicine</a> <a href=\"/pp?id=my_requests\">My Requests</a> <a href=\"/pp?id=form&amp;table=incident&amp;sys_id=-1&amp;view=sp&amp;sysparm_view_forced=true\">Report a Problem</a></div>\r\n<div class=\"footer-contact\">\r\n<p>]]>📍<![CDATA[ 15 El-Tahrir St, Cairo, Egypt</p>\r\n<p>]]>📞<![CDATA[ 123-456-789</p>\r\n<p>✉️ care@pulse-pharmacy.com</p>\r\n</div>\r\n</div>\r\n<div class=\"footer-copyright\">\r\n<p>&copy; 2025 Pulse Pharmacy. All rights reserved.</p>\r\n</div>\r\n</footer>\r\n<style>\r\n.pulse-footer {\r\n  background-color: #0F172A;\r\n  color: #94A3B8;\r\n  padding: 40px 20px 20px;\r\n  margin-top: 60px;\r\n  border-radius: 24px 24px 0 0;\r\n  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;\r\n}\r\n\r\n.footer-container {\r\n  max-width: 1200px;\r\n  margin: 0 auto;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: space-between;\r\n  gap: 30px;\r\n  padding-bottom: 30px;\r\n  border-bottom: 1px solid #1E293B;\r\n}\r\n\r\n.footer-brand h3 {\r\n  font-size: 20px;\r\n  font-weight: 700;\r\n  color: white;\r\n  margin-bottom: 8px;\r\n  letter-spacing: -0.3px;\r\n}\r\n\r\n.footer-brand p {\r\n  font-size: 13px;\r\n  color: #94A3B8;\r\n}\r\n\r\n.footer-links {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  gap: 24px;\r\n  align-items: center;\r\n}\r\n\r\n.footer-links a {\r\n  color: #CBD5E1;\r\n  text-decoration: none;\r\n  font-size: 14px;\r\n  font-weight: 500;\r\n  transition: color 0.2s ease;\r\n}\r\n\r\n.footer-links a:hover {\r\n  color: #E60000;\r\n}\r\n\r\n.footer-contact p {\r\n  margin: 4px 0;\r\n  font-size: 13px;\r\n  color: #94A3B8;\r\n}\r\n\r\n.footer-copyright {\r\n  text-align: center;\r\n  padding-top: 20px;\r\n  font-size: 12px;\r\n  color: #64748B;\r\n}\r\n\r\n@media (max-width: 768px) {\r\n  .footer-container {\r\n    flex-direction: column;\r\n    text-align: center;\r\n    gap: 20px;\r\n  }\r\n  .footer-links {\r\n    justify-content: center;\r\n  }\r\n  .footer-contact {\r\n    text-align: center;\r\n  }\r\n}\r\n</style>",
+		"displayValue": "<footer class=\"pulse-footer\">\n<div class=\"footer-container\">\n<div class=\"footer-brand\">\n<h3>❤️ Pulse Pharmacy</h3>\n<p>Your Health, Our Beat</p>\n</div>\n<div class=\"footer-links\"><a href=\"/pp\">Home</a> <a href=\"/pp?id=sc_cat_item&amp;sys_id=66570a20479d0714516b5ac5316d434d\">Request Medicine</a> <a href=\"/pp?id=my_requests\">My Requests</a> <a href=\"/pp?id=form&amp;table=incident&amp;sys_id=-1&amp;view=sp&amp;sysparm_view_forced=true\">Report a Problem</a></div>\n<div class=\"footer-contact\">\n<p>]]>📍<![CDATA[ 15 El-Tahrir St, Cairo, Egypt</p>\n<p>]]>📞<![CDATA[ 123-456-789</p>\n<p>✉️ care@pulse-pharmacy.com</p>\n</div>\n</div>\n<div class=\"footer-copyright\">\n<p>&copy; 2025 Pulse Pharmacy. All rights reserved.</p>\n</div>\n</footer>\n<style>\n.pulse-footer {\n  background-color: #0F172A;\n  color: #94A3B8;\n  padding: 40px 20px 20px;\n  margin-top: 60px;\n  border-radius: 24px 24px 0 0;\n  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;\n}\n\n.footer-container {\n  max-width: 1200px;\n  margin: 0 auto;\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  gap: 30px;\n  padding-bottom: 30px;\n  border-bottom: 1px solid #1E293B;\n}\n\n.footer-brand h3 {\n  font-size: 20px;\n  font-weight: 700;\n  color: white;\n  margin-bottom: 8px;\n  letter-spacing: -0.3px;\n}\n\n.footer-brand p {\n  font-size: 13px;\n  color: #94A3B8;\n}\n\n.footer-links {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 24px;\n  align-items: center;\n}\n\n.footer-links a {\n  color: #CBD5E1;\n  text-decoration: none;\n  font-size: 14px;\n  font-weight: 500;\n  transition: color 0.2s ease;\n}\n\n.footer-links a:hover {\n  color: #E60000;\n}\n\n.footer-contact p {\n  margin: 4px 0;\n  font-size: 13px;\n  color: #94A3B8;\n}\n\n.footer-copyright {\n  text-align: center;\n  padding-top: 20px;\n  font-size: 12px;\n  color: #64748B;\n}\n\n@media (max-width: 768px) {\n  .footer-container {\n    flex-direction: column;\n    text-align: center;\n    gap: 20px;\n  }\n  .footer-links {\n    justify-content: center;\n  }\n  .footer-contact {\n    text-align: center;\n  }\n}\n</style>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=09d0682947d14f14516b5ac5316d435b"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</application>
+        <file_path/>
+        <instance_id>72baa3bf93706614d9f6ddd548373c01</instance_id>
+        <instance_name>dev329537</instance_name>
+        <name>sp_instance_09d0682947d14f14516b5ac5316d435b</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced_placeholder_dimensions&gt;false&lt;/advanced_placeholder_dimensions&gt;&lt;async_load&gt;false&lt;/async_load&gt;&lt;async_load_device_type&gt;desktop,tablet,mobile&lt;/async_load_device_type&gt;&lt;async_load_trigger&gt;viewport&lt;/async_load_trigger&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;placeholder_dimensions&gt;{&amp;#13;	"mobile": {&amp;#13;		"height": "250px",&amp;#13;		"width": "100%"&amp;#13;	},&amp;#13;	"desktop": {&amp;#13;		"height": "250px",&amp;#13;		"width": "100%"&amp;#13;	},&amp;#13;	"tablet": {&amp;#13;		"height": "250px",&amp;#13;		"width": "100%"&amp;#13;	}&amp;#13;}&lt;/placeholder_dimensions&gt;&lt;placeholder_dimensions_script&gt;&lt;![CDATA[function evaluateConfig(options) { return {	"mobile": {		"height": "250px",		"width": "100%"	},	"desktop": {		"height": "250px",		"width": "100%"	},	"tablet": {		"height": "250px",		"width": "100%"	}}; }]]&gt;&lt;/placeholder_dimensions_script&gt;&lt;placeholder_template&gt;&amp;lt;!-- 
+	AngularJS template with configurable options.
+	Use the `options` object to control dynamic behavior.
+	Example: Display an element when max row count is 10:
+	&amp;lt;div ng-if="options.maxRowCount === 10"&amp;gt;&amp;lt;/div&amp;gt;
+	The `skeleton-container` class is used for loading placeholders.
+--&amp;gt;
+	&amp;lt;div class="skeleton-container"&amp;gt;
+	&amp;lt;!-- Header Skeleton --&amp;gt;
+	&amp;lt;div class="skeleton-box skeleton-header"&amp;gt;&amp;lt;/div&amp;gt;
+	&amp;lt;!-- Body Skeleton --&amp;gt;
+	&amp;lt;div class="skeleton-box skeleton-line"&amp;gt;&amp;lt;/div&amp;gt;
+	&amp;lt;div class="skeleton-box skeleton-line small"&amp;gt;&amp;lt;/div&amp;gt;
+	&amp;lt;div class="skeleton-box skeleton-line medium"&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;&lt;/placeholder_template&gt;&lt;preserve_placeholder_size&gt;false&lt;/preserve_placeholder_size&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;db3d7d9b47cd0bd0516b5ac5316d430b&lt;/sp_column&gt;&lt;sp_widget display_value="HTML"&gt;8679ef89cb21120000f8d856634c9c4f&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-05 10:45:05&lt;/sys_created_on&gt;&lt;sys_id&gt;09d0682947d14f14516b5ac5316d435b&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0"&gt;2913deb94745cb90516b5ac5316d4301&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Smart Pharmacy Management System"&gt;2913deb94745cb90516b5ac5316d4301&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_09d0682947d14f14516b5ac5316d435b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-08 15:44:13&lt;/sys_updated_on&gt;&lt;title/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"html": {
+		"value": "&lt;footer class=\"pulse-footer\"&gt;\r\n&lt;div class=\"footer-container\"&gt;\r\n&lt;div class=\"footer-brand\"&gt;\r\n&lt;h3&gt;❤️ Pulse Pharmacy&lt;/h3&gt;\r\n&lt;p&gt;Your Health, Our Beat&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;div class=\"footer-links\"&gt;&lt;a href=\"/pp\"&gt;Home&lt;/a&gt; &lt;a href=\"/pp?id=sc_cat_item&amp;amp;sys_id=66570a20479d0714516b5ac5316d434d\"&gt;Request Medicine&lt;/a&gt; &lt;a href=\"/pp?id=my_requests\"&gt;My Requests&lt;/a&gt; &lt;a href=\"/pp?id=form&amp;amp;table=incident&amp;amp;sys_id=-1&amp;amp;view=sp&amp;amp;sysparm_view_forced=true\"&gt;Report a Problem&lt;/a&gt;&lt;/div&gt;\r\n&lt;div class=\"footer-contact\"&gt;\r\n&lt;p&gt;]]&gt;📍&lt;![CDATA[ 15 El-Tahrir St, Cairo, Egypt&lt;/p&gt;\r\n&lt;p&gt;]]&gt;📞&lt;![CDATA[ 123-456-789&lt;/p&gt;\r\n&lt;p&gt;✉️ care@pulse-pharmacy.com&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;div class=\"footer-copyright\"&gt;\r\n&lt;p&gt;&amp;copy; 2025 Pulse Pharmacy. All rights reserved.&lt;/p&gt;\r\n&lt;/div&gt;\r\n&lt;/footer&gt;\r\n&lt;style&gt;\r\n.pulse-footer {\r\n  background-color: #0F172A;\r\n  color: #94A3B8;\r\n  padding: 40px 20px 20px;\r\n  margin-top: 60px;\r\n  border-radius: 24px 24px 0 0;\r\n  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;\r\n}\r\n\r\n.footer-container {\r\n  max-width: 1200px;\r\n  margin: 0 auto;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: space-between;\r\n  gap: 30px;\r\n  padding-bottom: 30px;\r\n  border-bottom: 1px solid #1E293B;\r\n}\r\n\r\n.footer-brand h3 {\r\n  font-size: 20px;\r\n  font-weight: 700;\r\n  color: white;\r\n  margin-bottom: 8px;\r\n  letter-spacing: -0.3px;\r\n}\r\n\r\n.footer-brand p {\r\n  font-size: 13px;\r\n  color: #94A3B8;\r\n}\r\n\r\n.footer-links {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  gap: 24px;\r\n  align-items: center;\r\n}\r\n\r\n.footer-links a {\r\n  color: #CBD5E1;\r\n  text-decoration: none;\r\n  font-size: 14px;\r\n  font-weight: 500;\r\n  transition: color 0.2s ease;\r\n}\r\n\r\n.footer-links a:hover {\r\n  color: #E60000;\r\n}\r\n\r\n.footer-contact p {\r\n  margin: 4px 0;\r\n  font-size: 13px;\r\n  color: #94A3B8;\r\n}\r\n\r\n.footer-copyright {\r\n  text-align: center;\r\n  padding-top: 20px;\r\n  font-size: 12px;\r\n  color: #64748B;\r\n}\r\n\r\n@media (max-width: 768px) {\r\n  .footer-container {\r\n    flex-direction: column;\r\n    text-align: center;\r\n    gap: 20px;\r\n  }\r\n  .footer-links {\r\n    justify-content: center;\r\n  }\r\n  .footer-contact {\r\n    text-align: center;\r\n  }\r\n}\r\n&lt;/style&gt;",
+		"displayValue": "&lt;footer class=\"pulse-footer\"&gt;\n&lt;div class=\"footer-container\"&gt;\n&lt;div class=\"footer-brand\"&gt;\n&lt;h3&gt;❤️ Pulse Pharmacy&lt;/h3&gt;\n&lt;p&gt;Your Health, Our Beat&lt;/p&gt;\n&lt;/div&gt;\n&lt;div class=\"footer-links\"&gt;&lt;a href=\"/pp\"&gt;Home&lt;/a&gt; &lt;a href=\"/pp?id=sc_cat_item&amp;amp;sys_id=66570a20479d0714516b5ac5316d434d\"&gt;Request Medicine&lt;/a&gt; &lt;a href=\"/pp?id=my_requests\"&gt;My Requests&lt;/a&gt; &lt;a href=\"/pp?id=form&amp;amp;table=incident&amp;amp;sys_id=-1&amp;amp;view=sp&amp;amp;sysparm_view_forced=true\"&gt;Report a Problem&lt;/a&gt;&lt;/div&gt;\n&lt;div class=\"footer-contact\"&gt;\n&lt;p&gt;]]&gt;📍&lt;![CDATA[ 15 El-Tahrir St, Cairo, Egypt&lt;/p&gt;\n&lt;p&gt;]]&gt;📞&lt;![CDATA[ 123-456-789&lt;/p&gt;\n&lt;p&gt;✉️ care@pulse-pharmacy.com&lt;/p&gt;\n&lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"footer-copyright\"&gt;\n&lt;p&gt;&amp;copy; 2025 Pulse Pharmacy. All rights reserved.&lt;/p&gt;\n&lt;/div&gt;\n&lt;/footer&gt;\n&lt;style&gt;\n.pulse-footer {\n  background-color: #0F172A;\n  color: #94A3B8;\n  padding: 40px 20px 20px;\n  margin-top: 60px;\n  border-radius: 24px 24px 0 0;\n  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;\n}\n\n.footer-container {\n  max-width: 1200px;\n  margin: 0 auto;\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  gap: 30px;\n  padding-bottom: 30px;\n  border-bottom: 1px solid #1E293B;\n}\n\n.footer-brand h3 {\n  font-size: 20px;\n  font-weight: 700;\n  color: white;\n  margin-bottom: 8px;\n  letter-spacing: -0.3px;\n}\n\n.footer-brand p {\n  font-size: 13px;\n  color: #94A3B8;\n}\n\n.footer-links {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 24px;\n  align-items: center;\n}\n\n.footer-links a {\n  color: #CBD5E1;\n  text-decoration: none;\n  font-size: 14px;\n  font-weight: 500;\n  transition: color 0.2s ease;\n}\n\n.footer-links a:hover {\n  color: #E60000;\n}\n\n.footer-contact p {\n  margin: 4px 0;\n  font-size: 13px;\n  color: #94A3B8;\n}\n\n.footer-copyright {\n  text-align: center;\n  padding-top: 20px;\n  font-size: 12px;\n  color: #64748B;\n}\n\n@media (max-width: 768px) {\n  .footer-container {\n    flex-direction: column;\n    text-align: center;\n    gap: 20px;\n  }\n  .footer-links {\n    justify-content: center;\n  }\n  .footer-contact {\n    text-align: center;\n  }\n}\n&lt;/style&gt;"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=09d0682947d14f14516b5ac5316d435b"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>914074481</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>2513deb94745cb90516b5ac5316d436e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-08 15:44:14</sys_created_on>
+        <sys_id>50128926475d8754516b5ac5316d43a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19ea7e7e9770000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-08 15:44:14</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>10128926235d8754b09219762cbd89a1</update_guid>
+        <update_guid_history>10128926235d8754b09219762cbd89a1:914074481,478185e2c55d87547d30b812ea1e3448:531901200,cbe0a8297bd14f1498ab842c5c2c91aa:567581388,81d068299fd14f1402c1799d43a78f5e:-1748007788</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">9fd289a6475d8754516b5ac5316d4375</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-08 15:47:42</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>5a28490b8b154f0b99363575702fd899</sys_id>
+        <sys_metadata>09d0682947d14f14516b5ac5316d435b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_scope_delete display_value="">1f0a401f3f154f8685d0015f93a89904</sys_scope_delete>
+        <sys_update_name>sp_instance_09d0682947d14f14516b5ac5316d435b</sys_update_name>
+        <sys_update_version display_value="sp_instance_09d0682947d14f14516b5ac5316d435b">50128926475d8754516b5ac5316d43a2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-08 15:47:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

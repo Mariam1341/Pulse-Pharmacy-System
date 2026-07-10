@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <collection>x_1971078_smart_0_medicine_inventory</collection>
+        <condition/>
+        <content_type>text/html</content_type>
+        <default_digest>false</default_digest>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digest_type>single</digest_type>
+        <digestable>false</digestable>
+        <enable_dynamic_translation>false</enable_dynamic_translation>
+        <event_name>x_1971078_smart_0.pharmacy.expiry_alert</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>event</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p>&nbsp;</p>
+<style>
+        body { font-family: 'Inter', sans-serif; color: #0F172A; }
+        .container { max-width: 600px; margin: 0 auto; border: 1px solid #E2E8F0; border-radius: 16px; padding: 20px; }
+        .header { background-color: #E60000; color: white; padding: 12px; text-align: center; border-radius: 12px 12px 0 0; }
+        .content { padding: 20px; }
+        .alert-box { background-color: #FFF5F5; border-left: 6px solid #E60000; padding: 12px; margin: 16px 0; }
+        .footer { font-size: 12px; color: #64748B; text-align: center; border-top: 1px solid #E2E8F0; padding-top: 12px; margin-top: 20px; }
+    </style>
+<div class="container">
+<div class="header">
+<h2 style="margin: 0;">⚠️ Pharmacy Expiry Alert</h2>
+</div>
+<div class="content">
+<p>Dear Pharmacy Team,</p>
+<p>The following medicine requires your attention:</p>
+<div class="alert-box">
+<p><strong>Medicine Name:</strong> ${medicine_name}</p>
+<p><strong>Status:</strong> <span style="color: #e60000;">${event.parm1}</span></p>
+<p><strong>Expiration Date:</strong> ${event.parm2}</p>
+<p><strong>Batch Number:</strong> ${batch_number}</p>
+<p><strong>Current Quantity:</strong> ${quantity}</p>
+<p><strong>Storage Location:</strong> ${storage_location}</p>
+</div>
+</div>
+<div class="footer">
+<p>Pulse Pharmacy &middot; Smart Healthcare System &middot; Automated Safety Notification</p>
+<p>&copy; 2026 Pulse Pharmacy | This is an automated message, please do not reply.</p>
+</div>
+</div>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Expiry Alert</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields/>
+        <recipient_groups name="Pharmacy Admin">1bd92eb14749cb90516b5ac5316d4331</recipient_groups>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>⚠️ Pharmacy Expiry Alert: ${medicine_name} is ${event.parm1}</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-07 03:26:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>590f818647158354516b5ac5316d43d8</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Expiry Alert</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sysevent_email_action_590f818647158354516b5ac5316d43d8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-07 03:46:05</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>590f818647158354516b5ac5316d43d8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-07 03:29:10</sys_created_on>
+        <sys_id>3230150a47158354516b5ac5316d43b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-07 03:29:10</sys_updated_on>
+        <table>sysevent_email_action</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

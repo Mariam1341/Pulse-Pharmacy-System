@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="MedicineRequest">6806a6794709cb90516b5ac5316d4368</sc_cat_item>
+        <sc_catalog display_value="Pharmacy Services">0db662f94709cb90516b5ac5316d430f</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-05 04:37:32</sys_created_on>
+        <sys_id>81bccf5147d50f14516b5ac5316d433b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Pharmacy Services.MedicineRequest</sys_name>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_81bccf5147d50f14516b5ac5316d433b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-05 04:37:32</sys_updated_on>
+    </sc_cat_item_catalog>
+</record_update>

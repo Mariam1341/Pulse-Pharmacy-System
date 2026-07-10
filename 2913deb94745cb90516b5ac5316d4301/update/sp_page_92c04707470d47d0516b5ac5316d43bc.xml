@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <category>other</category>
+        <css>	  section {&#13;
+	    background-color: $sp-page-bg;&#13;
+	}&#13;
+/* Pulse Pharmacy Login Page Override */&#13;
+.login-page-wrapper,&#13;
+body {&#13;
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 60%, #1a1230 100%) !important;&#13;
+  min-height: 100vh;&#13;
+}&#13;
+&#13;
+.login-page-logo {&#13;
+  display: block;&#13;
+  text-align: center;&#13;
+  font-size: 22px;&#13;
+  font-weight: 700;&#13;
+  color: #FFFFFF;&#13;
+  letter-spacing: -0.3px;&#13;
+  margin-bottom: 8px;&#13;
+  font-family: 'Inter', sans-serif;&#13;
+}&#13;
+&#13;
+.login-page-logo::before {&#13;
+  content: '⬤ ';&#13;
+  color: #E60000;&#13;
+  font-size: 14px;&#13;
+}&#13;
+&#13;
+.login-form-wrapper,&#13;
+.login-panel,&#13;
+.panel.login-panel {&#13;
+  background: #FFFFFF !important;&#13;
+  border-radius: 16px !important;&#13;
+  border: none !important;&#13;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4) !important;&#13;
+  padding: 40px !important;&#13;
+  max-width: 420px;&#13;
+  margin: 0 auto;&#13;
+}&#13;
+&#13;
+.login-panel .panel-heading {&#13;
+  background: transparent !important;&#13;
+  border: none !important;&#13;
+  text-align: center;&#13;
+  padding-bottom: 8px;&#13;
+}&#13;
+&#13;
+.login-panel .panel-heading h1,&#13;
+.login-panel .panel-heading h2 {&#13;
+  font-size: 20px !important;&#13;
+  font-weight: 700 !important;&#13;
+  color: #0F172A !important;&#13;
+}&#13;
+&#13;
+.login-panel .btn-primary {&#13;
+  background: #E60000 !important;&#13;
+  border: none !important;&#13;
+  border-radius: 8px !important;&#13;
+  height: 48px !important;&#13;
+  font-size: 15px !important;&#13;
+  font-weight: 600 !important;&#13;
+  width: 100%;&#13;
+  letter-spacing: 0.1px;&#13;
+  transition: background 0.2s, box-shadow 0.2s;&#13;
+}&#13;
+&#13;
+.login-panel .btn-primary:hover {&#13;
+  background: #B30000 !important;&#13;
+  box-shadow: 0 4px 16px rgba(230, 0, 0, 0.35) !important;&#13;
+}&#13;
+&#13;
+.login-panel .form-control {&#13;
+  border: 1.5px solid #E2E8F0 !important;&#13;
+  border-radius: 8px !important;&#13;
+  height: 44px !important;&#13;
+  font-size: 14px !important;&#13;
+  color: #0F172A !important;&#13;
+  transition: border-color 0.2s, box-shadow 0.2s;&#13;
+}&#13;
+&#13;
+.login-panel .form-control:focus {&#13;
+  border-color: #E60000 !important;&#13;
+  box-shadow: 0 0 0 3px rgba(230, 0, 0, 0.12) !important;&#13;
+}</css>
+        <draft>false</draft>
+        <dynamic_title_structure>Sign in to Pulse Pharmacy</dynamic_title_structure>
+        <human_readable_url_structure/>
+        <id>pp_login</id>
+        <internal>false</internal>
+        <omit_watcher>false</omit_watcher>
+        <public>true</public>
+        <roles/>
+        <seo_script/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-29 03:59:08</sys_created_on>
+        <sys_id>92c04707470d47d0516b5ac5316d43bc</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>pp_login</sys_name>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sp_page_92c04707470d47d0516b5ac5316d43bc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-29 04:44:16</sys_updated_on>
+        <title>Login </title>
+        <use_seo_script>false</use_seo_script>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=92c04707470d47d0516b5ac5316d43bc"/>
+</record_update>

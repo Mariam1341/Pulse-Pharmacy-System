@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_catalog_view_mtom">
+    <sc_catalog_view_mtom action="INSERT_OR_UPDATE">
+        <default>true</default>
+        <sc_catalog display_value="Pharmacy Services">0db662f94709cb90516b5ac5316d430f</sc_catalog>
+        <sys_class_name>sc_catalog_view_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 04:53:20</sys_created_on>
+        <sys_id>8dd666f94709cb90516b5ac5316d43d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Pharmacy Services.catalog_pharmacy_services</sys_name>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_portal_page display_value="catalog_pharmacy_services">05d666f94709cb90516b5ac5316d43b8</sys_portal_page>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sc_catalog_view_mtom_8dd666f94709cb90516b5ac5316d43d4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 04:53:20</sys_updated_on>
+    </sc_catalog_view_mtom>
+</record_update>

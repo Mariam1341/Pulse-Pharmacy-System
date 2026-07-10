@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>sc_req_item</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="sc_req_item">approvalINapproved,rejected^EQ<item display_value="approved,rejected" endquery="false" field="approval" goto="false" newquery="false" operator="IN" or="false" value="approved,rejected"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Notify After All Approvals Completed</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous) {
+
+    var reqSysId = current.request.toString();
+    if (!reqSysId) return;
+
+    // 1. Check if all RITMs under this REQ have been decided (not 'requested')
+    var allRITMs = new GlideRecord('sc_req_item');
+    allRITMs.addQuery('request', reqSysId);
+    allRITMs.query();
+    var allDecided = true;
+    while (allRITMs.next()) {
+        if (allRITMs.approval_state == 'requested') {
+            allDecided = false;
+            break;
+        }
+    }
+    if (!allDecided) return;
+
+    // 2. Prevent duplicate events (using custom field on REQ)
+    var req = new GlideRecord('sc_request');
+    if (!req.get(reqSysId)) return;
+    if (req.u_approval_emails_sent == true) return;
+
+    // 3. Build the medicine list (to be passed as parameter, or we can build it inside notification)
+    //    Instead of building the list here, we can pass reqSysId and let the notification query the data.
+    //    But for simplicity, we can build the list and pass as parm2 (limited length).
+    //    Alternatively, we can build it in a Script Include and call it from the notification.
+    //    I'll pass reqSysId and let the notification's mail script fetch the list.
+
+    // 4. Fire event with reqSys_id as parm1 and req number as parm2 (optional)
+    gs.eventQueue('x_1971078_smart_0.pulse.all.approvals.co', current, reqSysId, req.number);
+
+    // 5. Mark that event has been fired (to prevent duplicates)
+    req.u_approval_emails_sent = true;
+    req.update();
+
+    gs.info('Event pulse.all.approvals.completed fired for REQ ' + req.number);
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-06 03:33:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f5b7ccb94715cf14516b5ac5316d43c1</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Notify After All Approvals Completed</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sys_script_f5b7ccb94715cf14516b5ac5316d43c1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-06 05:41:59</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=f5b7ccb94715cf14516b5ac5316d43c1"/>
+</record_update>

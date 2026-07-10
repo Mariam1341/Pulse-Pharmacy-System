@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access/>
+        <derived_priority>100</derived_priority>
+        <description/>
+        <event_name>x_1971078_smart_0.pharmacy.expiry_alert</event_name>
+        <fired_by/>
+        <priority>100</priority>
+        <queue/>
+        <suffix>pharmacy.expiry_alert</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-07 03:22:34</sys_created_on>
+        <sys_id>186e098247158354516b5ac5316d43cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1971078_smart_0.pharmacy.expiry_alert</sys_name>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sysevent_register_186e098247158354516b5ac5316d43cd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-07 03:22:34</sys_updated_on>
+        <table>x_1971078_smart_0_medicine_inventory</table>
+    </sysevent_register>
+</record_update>

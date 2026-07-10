@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="eed5f8084755cfd0516b5ac5316d436d" sys_domain="global" table="incident" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-31 20:26:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a6d5f8084755cfd0516b5ac5316d4373</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="incident" name="incident" sys_domain="global" view="3bbaa0cc47d1cfd0516b5ac5316d432a">eed5f8084755cfd0516b5ac5316d436d</sys_ui_form>
+            <sys_ui_section caption="Complaint Details" display_value="Complaint Details" name="incident" sys_domain="global" view="3bbaa0cc47d1cfd0516b5ac5316d432a">bbbae4cc47d1cfd0516b5ac5316d4320</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-31 20:26:04</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-31 20:26:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>22d5f8084755cfd0516b5ac5316d4375</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="incident" name="incident" sys_domain="global" view="3bbaa0cc47d1cfd0516b5ac5316d432a">eed5f8084755cfd0516b5ac5316d436d</sys_ui_form>
+            <sys_ui_section caption="Assignment &amp; Status" display_value="Assignment &amp; Status" name="incident" sys_domain="global" view="3bbaa0cc47d1cfd0516b5ac5316d432a">2ed5f8084755cfd0516b5ac5316d436a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-31 20:26:04</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-31 20:26:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e2d5f8084755cfd0516b5ac5316d437c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="incident" name="incident" sys_domain="global" view="3bbaa0cc47d1cfd0516b5ac5316d432a">eed5f8084755cfd0516b5ac5316d436d</sys_ui_form>
+            <sys_ui_section caption="Resolution" display_value="Resolution" name="incident" sys_domain="global" view="3bbaa0cc47d1cfd0516b5ac5316d432a">a2d5f8084755cfd0516b5ac5316d436c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-31 20:26:04</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>incident</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-31 20:26:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eed5f8084755cfd0516b5ac5316d436d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>incident</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+            <sys_update_name>sys_ui_form_sections_eed5f8084755cfd0516b5ac5316d436d</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-31 20:26:04</sys_updated_on>
+            <sys_user/>
+            <view display_value="pharmacy complain" name="pharmacy_complain">3bbaa0cc47d1cfd0516b5ac5316d432a</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

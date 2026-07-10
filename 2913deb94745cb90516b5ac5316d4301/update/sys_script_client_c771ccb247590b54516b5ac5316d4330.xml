@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Validate Medicines Form</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+
+    var reorderLevel = g_form.getValue('reorder_level');
+    var reorderQty = g_form.getValue('reorder_quantity');
+    
+    if (reorderLevel <= 0) {
+        g_form.addErrorMessage('Reorder Level must be a positive number greater than zero.');
+        return false;
+    }
+    if (reorderQty <= 0) {
+        g_form.addErrorMessage('Reorder Quantity must be a positive number greater than zero.');
+        return false;
+    }
+    
+    if (Number(reorderQty) <= Number(reorderLevel)) {
+        g_form.addErrorMessage('Reorder Quantity must be greater than Reorder Level.');
+        return false;
+    }
+    
+    
+    return true;
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-09 05:43:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c771ccb247590b54516b5ac5316d4330</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Validate Medicines Form</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sys_script_client_c771ccb247590b54516b5ac5316d4330</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-09 05:43:07</sys_updated_on>
+        <table>x_1971078_smart_0_medicine_inventory</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

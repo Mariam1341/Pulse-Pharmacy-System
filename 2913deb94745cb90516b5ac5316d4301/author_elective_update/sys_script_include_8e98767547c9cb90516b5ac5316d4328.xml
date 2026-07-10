@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1971078_smart_0.Medicine Scripts</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>Medicine Scripts</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script/>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 06:13:24</sys_created_on>
+        <sys_id>8e98767547c9cb90516b5ac5316d4328</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Medicine Scripts</sys_name>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sys_script_include_8e98767547c9cb90516b5ac5316d4328</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 06:13:24</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</application>
+        <file_path/>
+        <instance_id>72baa3bf93706614d9f6ddd548373c01</instance_id>
+        <instance_name>dev329537</instance_name>
+        <name>sys_script_include_8e98767547c9cb90516b5ac5316d4328</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include"><sys_script_include action="INSERT_OR_UPDATE"><access>package_private</access><active>true</active><api_name>x_1971078_smart_0.Medicine Scripts</api_name><caller_access/><client_callable>false</client_callable><description/><mobile_callable>false</mobile_callable><name>Medicine Scripts</name><sandbox_callable>false</sandbox_callable><script/><sys_class_name>sys_script_include</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-25 06:13:24</sys_created_on><sys_id>8e98767547c9cb90516b5ac5316d4328</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Medicine Scripts</sys_name><sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package><sys_policy>read</sys_policy><sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope><sys_update_name>sys_script_include_8e98767547c9cb90516b5ac5316d4328</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-25 06:13:24</sys_updated_on></sys_script_include></record_update>]]></payload>
+        <payload_hash>-1431131843</payload_hash>
+        <record_name>Medicine Scripts</record_name>
+        <reverted_from/>
+        <source>2513deb94745cb90516b5ac5316d436e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 06:13:24</sys_created_on>
+        <sys_id>8e29bab547c9cb90516b5ac5316d4347</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e5dc446a20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 06:13:24</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>4e29bab5cbc9cb90b614da1963757f46</update_guid>
+        <update_guid_history>4e29bab5cbc9cb90b614da1963757f46:-1431131843</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 06:14:43</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>b490e7e62e9442aa97ceb3be87f488e1</sys_id>
+        <sys_metadata>8e98767547c9cb90516b5ac5316d4328</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Medicine Scripts</sys_name>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_scope_delete display_value="">1f0a401f3f154f8685d0015f93a89904</sys_scope_delete>
+        <sys_update_name>sys_script_include_8e98767547c9cb90516b5ac5316d4328</sys_update_name>
+        <sys_update_version display_value="sys_script_include_8e98767547c9cb90516b5ac5316d4328">8e29bab547c9cb90516b5ac5316d4347</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 06:14:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

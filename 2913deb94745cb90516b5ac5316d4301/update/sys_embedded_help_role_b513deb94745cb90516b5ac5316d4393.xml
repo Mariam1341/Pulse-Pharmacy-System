@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_1971078_smart_0.customer" name="x_1971078_smart_0.customer">f113deb94745cb90516b5ac5316d4391</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 03:27:06</sys_created_on>
+        <sys_id>b513deb94745cb90516b5ac5316d4393</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>f113deb94745cb90516b5ac5316d4391</sys_name>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sys_embedded_help_role_b513deb94745cb90516b5ac5316d4393</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-25 03:27:06</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

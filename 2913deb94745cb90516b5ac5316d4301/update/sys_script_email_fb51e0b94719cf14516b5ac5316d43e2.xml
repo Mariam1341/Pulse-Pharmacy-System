@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>Get Medicines List From REQ</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(current, template, email, email_action, event) {
+
+    // الحصول على reqSysId من الحدث (الذي بعثته Business Rule)
+    var reqSysId = event.parm1;
+    if (!reqSysId) {
+        template.print('<p style="color:red;">Error: No REQ sys_id provided.</p>');
+        return;
+    }
+
+    // جلب بيانات REQ (للحصول على رقم الطلب الحقيقي)
+    var reqGr = new GlideRecord('sc_request');
+    reqGr.get(reqSysId);
+    var reqNumber = reqGr.number.toString();
+
+    // بناء قائمة الأدوية بتنسيق HTML
+    var medicinesHTML = '';
+    var medGr = new GlideRecord('x_1971078_smart_0_medicine_inventory');
+    var ritms = new GlideRecord('sc_req_item');
+    ritms.addQuery('request', reqSysId);
+    ritms.query();
+
+    while (ritms.next()) {
+        var medSysId = ritms.variables.medicine_name;
+        var qty = ritms.variables.quantity_needed || '?';
+        var state = ritms.approval_state.toString();
+
+        var medName = 'Unknown';
+        if (medGr.get(medSysId)) medName = medGr.medicine_name.toString();
+
+        var statusText = '';
+        if (state == 'approved') statusText = '✅ Approved';
+        else if (state == 'rejected') statusText = '❌ Rejected';
+        else if (state == 'not_required') statusText = '❌ Auto-rejected (timeout)';
+
+        medicinesHTML += '<tr style="border-bottom: 1px solid #E2E8F0;">' +
+                         '<td style="padding: 12px 8px; color: #0F172A;">' + medName + '</td>' +
+                         '<td style="padding: 12px 8px; text-align: center; color: #0F172A;">' + qty + '</td>' +
+                         '<td style="padding: 12px 8px; text-align: center;">' + statusText + '</td>' +
+                         '</tr>';
+    }
+
+    // طباعة الجدول (هذا هو الجزء الذي سيتم إدراجه في الإيميل)
+    template.print(medicinesHTML);
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-06 05:26:42</sys_created_on>
+        <sys_id>fb51e0b94719cf14516b5ac5316d43e2</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Get Medicines List From REQ</sys_name>
+        <sys_package display_value="Smart Pharmacy Management System" source="x_1971078_smart_0">2913deb94745cb90516b5ac5316d4301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Pharmacy Management System">2913deb94745cb90516b5ac5316d4301</sys_scope>
+        <sys_update_name>sys_script_email_fb51e0b94719cf14516b5ac5316d43e2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-06 06:14:10</sys_updated_on>
+    </sys_script_email>
+</record_update>
