@@ -178,7 +178,7 @@ This project was developed as an **ITI Graduation Project** in 2026, utilizing S
 
 **Mariam Mohammed**  
 ServiceNow Developer | ITI Graduate  
-[LinkedIn Profile] | [GitHub Repository]
+[[LinkedIn Profile](https://www.linkedin.com/in/mariam-mohammed1341)]
 
 ---
 
